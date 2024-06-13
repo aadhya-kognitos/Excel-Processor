@@ -1,0 +1,28 @@
+Table 0:
+Top Left Coordinate: C3, Actual Value: YEARS REPRESENTED
+Bottom Left Coordinate: C16, Actual Value: 2022
+Top Right Coordinate: C3, Actual Value: YEARS REPRESENTED
+Bottom Right Coordinate: C16, Actual Value: 2022
+
+
+Table 1:
+Top Left Coordinate: B6, Actual Value: REVENUE
+Bottom Left Coordinate: B14, Actual Value: TOTAL REVENUE
+Top Right Coordinate: D6, Actual Value: 2021
+Bottom Right Coordinate: D14, Actual Value: 0
+
+
+Table 2:
+Top Left Coordinate: B16, Actual Value: EXPENSES
+Bottom Left Coordinate: B37, Actual Value: TOTAL EXPENSES
+Top Right Coordinate: D16, Actual Value: 2021
+Bottom Right Coordinate: D37, Actual Value: 0
+
+
+Table 3:
+Top Left Coordinate: B39, Actual Value: NET INCOME BEFORE TAXES
+Bottom Left Coordinate: B43, Actual Value: NET INCOME
+Top Right Coordinate: B39, Actual Value: NET INCOME BEFORE TAXES
+Bottom Right Coordinate: B43, Actual Value: NET INCOME
+
+

@@ -1,0 +1,12 @@
+{
+"Table 1": {
+"Columns": ["A", "B", "C"],
+"Row Names": [],
+"Last Row": ["Cairo", "Abra", "Barracuda"]
+},
+"Table 2": {
+"Columns": ["A"],
+"Row Names": [],
+"Last Row": ["Barracuda"]
+}
+}

@@ -1,0 +1,47 @@
+{
+"Table 1": {
+"Columns": ["CATEGORY", "TASK", "LABOR", "MATERIALS", "FIXED COST", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["", "", "", "", "", "850.00", "800.00", "(50.00)"]
+},
+"Table 2": {
+"Columns": ["SUMMARY", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Total Expenses", "2,423.00", "2,230.00", "193.00"]
+},
+"Table 3": {
+"Columns": ["INCOME", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Category 7", "150.00", "85.00", "(65.00)"]
+},
+"Table 4": {
+"Columns": ["EXPENSES", "OPERATING EXPENSE", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Web Hosting & Domains", "25.00", "25.00", "(25.00)"]
+},
+"Table 5": {
+"Columns": ["PAYROLL", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Contractor Wages", "", "", ""]
+},
+"Table 6": {
+"Columns": ["OFFICE", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Pet Supplies", "", "", ""]
+},
+"Table 7": {
+"Columns": ["ENTERTAINMENT", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Outdoor Recreation", "", "", ""]
+},
+"Table 8": {
+"Columns": ["HEALTH", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Life Insurance", "", "", ""]
+},
+"Table 9": {
+"Columns": ["VACATION/HOLIDAY", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Row Names": [],
+"Last Row": ["Rental Car", "", "", ""]
+}
+}

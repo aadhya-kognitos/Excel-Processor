@@ -1,0 +1,14 @@
+Table 0:
+Top Left Coordinate: B2, Actual Value: A
+Bottom Left Coordinate: B8, Actual Value: Barracuda
+Top Right Coordinate: D2, Actual Value: C
+Bottom Right Coordinate: D8, Actual Value: None
+
+
+Table 1:
+Top Left Coordinate: B5, Actual Value: A
+Bottom Left Coordinate: B8, Actual Value: Barracuda
+Top Right Coordinate: B5, Actual Value: A
+Bottom Right Coordinate: B8, Actual Value: Barracuda
+
+

@@ -1,0 +1,21 @@
+Table 0:
+Top Left Coordinate: A1, Actual Value: Animal
+Bottom Left Coordinate: A8, Actual Value: Cat
+Top Right Coordinate: C1, Actual Value: Age
+Bottom Right Coordinate: C8, Actual Value: 6
+
+
+Table 1:
+Top Left Coordinate: E2, Actual Value: Breed
+Bottom Left Coordinate: E5, Actual Value: Lab
+Top Right Coordinate: F2, Actual Value: Animal
+Bottom Right Coordinate: F5, Actual Value: Dog
+
+
+Table 2:
+Top Left Coordinate: A11, Actual Value: Pet
+Bottom Left Coordinate: A13, Actual Value: Husky
+Top Right Coordinate: B11, Actual Value: Name
+Bottom Right Coordinate: B13, Actual Value: Charlie
+
+

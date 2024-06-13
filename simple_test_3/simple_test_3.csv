@@ -1,0 +1,13 @@
+Animal,Breed,Age,,,
+Dog,German Shepherd,10,,Breed,Animal
+Dog,Pomeranian,3,,German Shepherd,Dog
+Dog,Lab,4,,Pomeranian,Dog
+Dog,Dobermann,8,,Lab,Dog
+Dog,Husky,6,,,
+Cat,Siamese,3,,,
+Cat,Maine Coon,6,,,
+,,,,,
+,,,,,
+Pet,Name,,,,
+Maine Coon,Sparky,,,,
+Husky,Charlie,,,,

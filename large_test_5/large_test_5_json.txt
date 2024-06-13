@@ -1,0 +1,7 @@
+{
+"Table 1": {
+"Columns": ["Command", "Syntax", "Description"],
+"Row Names": [],
+"Last Row": ["nano", "nano <file>", "Opens the nano text editor, which allows you to edit files inside the terminal. If <file> is specified, nano will open it for editing."]
+}
+}

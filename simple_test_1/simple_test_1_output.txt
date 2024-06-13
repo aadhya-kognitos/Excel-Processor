@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B1, Actual Value: A
+Bottom Left Coordinate: B2, Actual Value: Cairo
+Top Right Coordinate: C1, Actual Value: B
+Bottom Right Coordinate: C2, Actual Value: Abra
+
+

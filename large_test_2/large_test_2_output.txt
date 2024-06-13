@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B5, Actual Value: REORDER (auto-fill)
+Bottom Left Coordinate: B39, Actual Value: OK
+Top Right Coordinate: O5, Actual Value: ITEM DISCONTINUED?
+Bottom Right Coordinate: O39, Actual Value: None
+
+

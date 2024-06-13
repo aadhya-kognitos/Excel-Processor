@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: A1, Actual Value: Alpha
+Bottom Left Coordinate: A4, Actual Value: G
+Top Right Coordinate: C1, Actual Value: Gamma
+Bottom Right Coordinate: C4, Actual Value: None
+
+

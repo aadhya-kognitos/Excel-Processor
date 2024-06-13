@@ -1,0 +1,17 @@
+{
+"Table 1": {
+"Columns": ["Animal", "Breed", "Age"],
+"Row Names": [],
+"Last Row": ["Cat", "Maine Coon", "6"]
+},
+"Table 2": {
+"Columns": ["Breed", "Animal"],
+"Row Names": [],
+"Last Row": ["Lab", "Dog"]
+},
+"Table 3": {
+"Columns": ["Pet", "Name"],
+"Row Names": [],
+"Last Row": ["Husky", "Charlie"]
+}
+}

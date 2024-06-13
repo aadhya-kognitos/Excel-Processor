@@ -1,0 +1,7 @@
+{
+"Table 1": {
+"Columns": ["REORDER (auto-fill)", "ITEM NO.", "DATE OF LAST ORDER", "ITEM NAME", "VENDOR", "STOCK LOCATION", "DESCRIPTION", "COST PER ITEM", "STOCK QUANTITY", "TOTAL VALUE", "REORDER LEVEL", "DAYS PER REORDER", "ITEM REORDER QUANTITY", "ITEM DISCONTINUED?"],
+"Row Names": [],
+"Last Row": ["OK", "", "", "", "", "", "", "$0.00", "", "$0.00", "", "", "", ""]
+}
+}

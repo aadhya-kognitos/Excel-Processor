@@ -1,0 +1,22 @@
+local_column_occurrences: [(0, 1), (0, 2)] 
+
+local_row_name_occurrences: [] 
+
+local_last_row_occurrences: [(1, 1), (1, 2)] 
+
+filtered last row occurrences: [(1, 1), (1, 2)] 
+
+filtered column occurrences: [(0, 1), (0, 2)] 
+
+Table 0:
+Top Left Coordinate: [(0, 1), (0, 2)]
+Row Name Coordinate: 
+Row Coordinate: [(1, 1), (1, 2)]
+
+
+Table 0:
+Top Left Coordinate: A1, Actual Value: None
+Bottom Left Coordinate: A2, Actual Value: None
+Top Right Coordinate: B2, Actual Value: Cairo
+
+

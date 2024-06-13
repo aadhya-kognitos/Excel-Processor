@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B7, Actual Value: TASKS
+Bottom Left Coordinate: B19, Actual Value: Launch
+Top Right Coordinate: E7, Actual Value: STATUS
+Bottom Right Coordinate: E19, Actual Value: None
+
+
