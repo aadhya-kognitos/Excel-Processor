@@ -1,5 +1,12 @@
 #!/bin/bash
-TEST_NAME=simple_test_4
+
+# Check for the correct number of arguments
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <test_name>"
+    exit 1
+fi
+
+TEST_NAME="$1"
 
 # Define the required filenames
 EXCEL_FILENAME="$TEST_NAME/$TEST_NAME.xlsx"
