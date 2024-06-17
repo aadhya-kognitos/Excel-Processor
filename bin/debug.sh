@@ -9,10 +9,10 @@ fi
 TEST_NAME="$1"
 
 # Define the required filenames
-EXCEL_FILENAME="$TEST_NAME/$TEST_NAME.xlsx"
-CSV_FILENAME="$TEST_NAME/$TEST_NAME.csv"
-TXT_FILENAME="$TEST_NAME/$TEST_NAME.txt"
-IMAGE_PATH="$TEST_NAME/$TEST_NAME.png"
+EXCEL_FILENAME="tests/$TEST_NAME/$TEST_NAME.xlsx"
+CSV_FILENAME="tests/$TEST_NAME/$TEST_NAME.csv"
+TXT_FILENAME="tests/$TEST_NAME/$TEST_NAME.txt"
+IMAGE_PATH="tests/$TEST_NAME/$TEST_NAME.png"
 
 # Check if TXT_FILENAME exists, generate if it does not
 if [ ! -f "$TXT_FILENAME" ]; then
@@ -30,7 +30,7 @@ fi
 
 # Run the second Python script with the necessary arguments
 echo "Running json_processor.py..."
-python3 src/json_processor.py $TXT_FILENAME > $TEST_NAME/$TEST_NAME\_json.txt
+python3 src/json_processor.py $TXT_FILENAME > tests/$TEST_NAME/$TEST_NAME\_json.txt
 
 # Check if the second script ran successfully
 if [ $? -ne 0 ]; then
@@ -40,7 +40,7 @@ fi
 
 # Run the third Python script with the necessary arguments
 echo "Running excel_process_2.py..."
-python3 src/excel_process_2.py $EXCEL_FILENAME $TEST_NAME/$TEST_NAME\_json.txt #> $TEST_NAME/$TEST_NAME\_output.txt
+python3 src/excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt #> tests/$TEST_NAME/$TEST_NAME\_output.txt
 
 # Check if the third script ran successfully
 if [ $? -ne 0 ]; then

@@ -2,15 +2,15 @@
 
 for test_type in simple_test large_test; do
     for i in {1..5}; do
-        TEST_NAME="${test_type}_${i}"
+        TEST_NAME="{test_type}_${i}"
 
         echo "Running test $TEST_NAME..."
 
         # Define the required filenames
-        EXCEL_FILENAME="$TEST_NAME/$TEST_NAME.xlsx"
-        CSV_FILENAME="$TEST_NAME/$TEST_NAME.csv"
-        TXT_FILENAME="$TEST_NAME/$TEST_NAME.txt"
-        IMAGE_PATH="$TEST_NAME/$TEST_NAME.png"
+        EXCEL_FILENAME="tests/$TEST_NAME/$TEST_NAME.xlsx"
+        CSV_FILENAME="tests/$TEST_NAME/$TEST_NAME.csv"
+        TXT_FILENAME="tests/$TEST_NAME/$TEST_NAME.txt"
+        IMAGE_PATH="tests/$TEST_NAME/$TEST_NAME.png"
 
         # Run the first Python script with the necessary arguments
         echo "Running excel_process_1.py..."
@@ -24,9 +24,9 @@ for test_type in simple_test large_test; do
 
         # Run the second Python script with the necessary arguments
         echo "Running json_processor.py..."
-            python3 src/json_processor.py $TXT_FILENAME > $TEST_NAME/$TEST_NAME\_json.txt
+        python3 src/json_processor.py $TXT_FILENAME > tests/$TEST_NAME/$TEST_NAME\_json.txt
 
-            rm -f $TXT_FILENAME
+        rm -f $TXT_FILENAME
 
         # Check if the second script ran successfully
         if [ $? -ne 0 ]; then
@@ -36,7 +36,7 @@ for test_type in simple_test large_test; do
 
         # Run the third Python script with the necessary arguments
         echo "Running excel_process_2.py..."
-        python3 src/excel_process_2.py $EXCEL_FILENAME $TEST_NAME/$TEST_NAME\_json.txt > $TEST_NAME/$TEST_NAME\_output.txt
+        python3 src/excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
 
         # Check if the third script ran successfully
         if [ $? -ne 0 ]; then
