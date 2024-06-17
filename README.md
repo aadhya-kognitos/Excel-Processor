@@ -90,7 +90,7 @@ For `simple_test_5` the program does not return a table. This is because there i
 
 ## Next Steps
 
-I am currently in the testing stages of a new method I discovered to allow the user to just upload a spreadsheet an extract a screenshot of the spreadsheet from their xlsx file, thereby eliminating the need to manually take screenshots of the spreadsheet. I will update here as necessary.
+I am currently in the testing stages of a new method which enables the user to upload just a spreadsheet. This eliminates the need for them to manually take screenshots. I will update here as necessary.
 
 ## Conclusion
 
