@@ -61,17 +61,17 @@ Navigate to the `bin` folder to find the shell scripts for running the tests. He
 
 - **all_tests.sh**
   - Runs all the tests available. Terminal output will indicate if a test fails.
-  - Usage: `./all_tests.sh`
+  - Usage: `./bin/all_tests.sh`
 
 - **one_test.sh**
   - Runs a specific test. Terminal output will indicate if a test fails.
   - Takes one argument: the name of the test to be run (e.g., `large_test_#` or `simple_test_#`).
-  - Usage: `./one_test.sh <test_name>`
+  - Usage: `./bin/one_test.sh <test_name>`
 
 - **debug.sh**
   - Allows debugging of a specific test.
   - Takes one argument: the name of the test to be debugged.
-  - Usage: `./debug.sh <test_name>`
+  - Usage: `./bin/debug.sh <test_name>`
   - You will need to set `pdb.set_trace()` in the python programs for debugging purposes.
 
 **Output for all tests will be in the corresponding subdirectory for a test, in the output txt file.**
