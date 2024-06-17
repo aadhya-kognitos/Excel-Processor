@@ -14,7 +14,7 @@ for test_type in simple_test large_test; do
 
         # Run the first Python script with the necessary arguments
         echo "Running excel_process_1.py..."
-        python3 excel_process_1.py $EXCEL_FILENAME $CSV_FILENAME $TXT_FILENAME $IMAGE_PATH > $TXT_FILENAME
+        python3 src/excel_process_1.py $EXCEL_FILENAME $CSV_FILENAME $TXT_FILENAME $IMAGE_PATH > $TXT_FILENAME
 
         # Check if the first script ran successfully
         if [ $? -ne 0 ]; then
@@ -24,7 +24,7 @@ for test_type in simple_test large_test; do
 
         # Run the second Python script with the necessary arguments
         echo "Running json_processor.py..."
-            python3 json_processor.py $TXT_FILENAME > $TEST_NAME/$TEST_NAME\_json.txt
+            python3 src/json_processor.py $TXT_FILENAME > $TEST_NAME/$TEST_NAME\_json.txt
 
             rm -f $TXT_FILENAME
 
@@ -36,7 +36,7 @@ for test_type in simple_test large_test; do
 
         # Run the third Python script with the necessary arguments
         echo "Running excel_process_2.py..."
-        python3 excel_process_2.py $EXCEL_FILENAME $TEST_NAME/$TEST_NAME\_json.txt > $TEST_NAME/$TEST_NAME\_output.txt
+        python3 src/excel_process_2.py $EXCEL_FILENAME $TEST_NAME/$TEST_NAME\_json.txt > $TEST_NAME/$TEST_NAME\_output.txt
 
         # Check if the third script ran successfully
         if [ $? -ne 0 ]; then
