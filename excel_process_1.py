@@ -55,8 +55,8 @@ class ExcelPreProcessor:
     TABLE 1
     INVENTORY | QUANTITY | PRICE | TOTAL
     ----------|----------|-------|--------
-    Apples    | 10       | 2.00  | 20.00
-    Oranges   | 15       | 1.50  | 22.50
+    Apples    | 10       | $2.00  | $20.00
+    Oranges   | 15       | $1.50  | $22.50
 
             TABLE 2
             TRIATHLETE | Run | Swim | Cycle
@@ -67,8 +67,8 @@ class ExcelPreProcessor:
     TABLE 3
     Company | Stock
     ----------|----------|
-    Google   | 1000
-    Nvidia   | 2000
+    Google   | $1000
+    Nvidia   | $2000
 
 
     the output you would give is simply as follows:
@@ -76,7 +76,7 @@ class ExcelPreProcessor:
     {{"Table 1":{{
     "Columns": ["INVENTORY", "QUANTITY", "PRICE", "TOTAL"],
     "Row Names: [],
-    "Last Row": ["Oranges", "15", "1.50", "22.50"]
+    "Last Row": ["Oranges", "15", "$1.50", "$22.50"]
     }},
     "Table 2": {{
     "Columns": ["TRIATHLETE", "Run", "Swim", "Cycle"],
@@ -86,7 +86,7 @@ class ExcelPreProcessor:
     "Table 3": {{
     "Columns": ["Company", "Stock"],
     "Row Names: [],
-    "Last Row": ["Nvidia", "2000"]
+    "Last Row": ["Nvidia", "$2000"]
     }}
     }}
     

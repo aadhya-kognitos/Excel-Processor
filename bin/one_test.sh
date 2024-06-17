@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEST_NAME="simple_test_4"
+TEST_NAME="large_test_1"
 
 echo "Running test $TEST_NAME..."
 
