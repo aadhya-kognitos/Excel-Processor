@@ -40,6 +40,8 @@ class ExcelProcessor:
         self.columns_found = []
         self.row_names_found = []
         self.last_row_found = []
+        self.corner_coordinates = []
+
     
     def get_row(self,row):
         """ Converts 1-indexed row to 0-indexed row."""
@@ -325,6 +327,8 @@ class ExcelProcessor:
 
                 bottom_right_xl = self.xy_to_excel(top_right_col + 1, bottom_left[0] + 1)
 
+
+                self.corner_coordinates.append((self.ws[top_left_xl].value, self.ws[bottom_left_xl].value, self.ws[top_right_xl].value, self.ws[bottom_right_xl].value))
                 print(f"Table {index}:")    
                 print(f"Top Left Coordinate: {top_left_xl}, Actual Value: {self.ws[top_left_xl].value}")
                 print(f"Bottom Left Coordinate: {bottom_left_xl}, Actual Value: {self.ws[bottom_left_xl].value}")
