@@ -1,6 +1,8 @@
 import pytest
 from pytest_mock import mocker
-import excel_process_1
+import sys
+sys.path.append('../')
+from src.excel_process_2 import ExcelPreProcessor
 import base64
 
 @pytest.fixture
@@ -9,7 +11,7 @@ def processor():
     csv_test_file = './large_test_1/large_test_1.csv'
     txt_test_file = './large_test_1/large_test_1.txt'
     image_test_path = './large_test_1/large_test_1.png'
-    processor = excel_process_1.ExcelPreProcessor(excel_test_file, csv_test_file, txt_test_file, image_test_path)
+    processor = ExcelPreProcessor(excel_test_file, csv_test_file, txt_test_file, image_test_path)
     return processor
 
 def test_init(processor):
