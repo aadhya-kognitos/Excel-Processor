@@ -1,8 +1,8 @@
 {
 "Table 1": {
-"Columns": ["CATEGORY", "TASK", "LABOR", "MATERIALS", "FIXED COST", "BUDGET", "ACTUAL", "UNDER/OVER"],
+"Columns": ["CATEGORY", "TASK", "LABOR", "HRS", "RATE", "MATERIALS", "UNITS", "$/UNIT", "FIXED COST", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["", "", "", "", "", "$850.00", "$800.00", "($50.00)"]
+"Last Row": ["", "", "", "", "", "", "", "", "", "$850.00", "$800.00", "($50.00)"]
 },
 "Table 2": {
 "Columns": ["SUMMARY", "BUDGET", "ACTUAL", "UNDER/OVER"],
@@ -12,36 +12,36 @@
 "Table 3": {
 "Columns": ["INCOME", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Category 7", "$150.00", "$0.00", "($150.00)"]
+"Last Row": ["Category 7", "$150.00", "$85.00", "($65.00)"]
 },
 "Table 4": {
 "Columns": ["EXPENSES", "OPERATING EXPENSE", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Web Hosting & Domains", "$0.00", "$0.00", "$0.00"]
+"Last Row": ["Travel & Licenses", "$50.00", "$21.00", "($29.00)"]
 },
 "Table 5": {
 "Columns": ["PAYROLL", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Contractor Wages", "$0.00", "$0.00", "$0.00"]
+"Last Row": ["Contractor Wages", "", "", ""]
 },
 "Table 6": {
 "Columns": ["OFFICE", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Pet Supplies", "$0.00", "$0.00", "$0.00"]
+"Last Row": ["Pet Supplies", "", "", ""]
 },
 "Table 7": {
 "Columns": ["ENTERTAINMENT", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Outdoor Recreation", "$0.00", "$0.00", "$0.00"]
+"Last Row": ["Outdoor Recreation", "", "", ""]
 },
 "Table 8": {
 "Columns": ["HEALTH", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Life Insurance", "$0.00", "$0.00", "$0.00"]
+"Last Row": ["Life Insurance", "", "", ""]
 },
 "Table 9": {
 "Columns": ["VACATION/HOLIDAY", "BUDGET", "ACTUAL", "UNDER/OVER"],
 "Row Names": [],
-"Last Row": ["Rental Car", "$0.00", "$0.00", "$0.00"]
+"Last Row": ["Rental Car", "", "", ""]
 }
 }

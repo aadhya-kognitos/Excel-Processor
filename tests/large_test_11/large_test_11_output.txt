@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B9, Actual Value: Item
+Bottom Left Coordinate: B25, Actual Value: Winter jacket
+Top Right Coordinate: H9, Actual Value: Total cost
+Bottom Right Coordinate: H25, Actual Value: 0
+
+

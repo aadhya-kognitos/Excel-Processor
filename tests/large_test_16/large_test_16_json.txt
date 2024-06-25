@@ -1,0 +1,12 @@
+{
+"Table 1": {
+"Columns": ["CHECKLIST ITEMS"],
+"Row Names": [],
+"Last Row": ["Recap with Sponsors"]
+},
+"Table 2": {
+"Columns": ["CATEGORY", "TYPE", "ASSIGNED TO", "SUB-TOTALS"],
+"Row Names": [],
+"Last Row": ["Sale of items", "Income", "Flora Berggren", "$0.00"]
+}
+}

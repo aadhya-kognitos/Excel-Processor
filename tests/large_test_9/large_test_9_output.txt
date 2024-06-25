@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: C7, Actual Value: Phase
+Bottom Left Coordinate: B16, Actual Value: 0
+Top Right Coordinate: E7, Actual Value: Notes
+Bottom Right Coordinate: E16, Actual Value: Meeting
+
+

@@ -1,0 +1,12 @@
+{
+"Table 1": {
+"Columns": ["", "Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", "Year"],
+"Row Names": ["Total expenses", "Cash short/extra"],
+"Last Row": ["Cash short/extra", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0"]
+},
+"Table 2": {
+"Columns": ["Category", "Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", "Year"],
+"Row Names": ["Wages", "Interest/dividends", "Miscellaneous"],
+"Last Row": ["Total", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0", "$0"]
+}
+}

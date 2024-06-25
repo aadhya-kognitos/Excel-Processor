@@ -1,0 +1,7 @@
+{
+"Table 1": {
+"Columns": ["Expense", "Category", "Budget", "Actual", "Difference ($)", "Difference (%)"],
+"Row Names": ["Advertising", "Debts", "Benefits", "Supplies", "Postage", "Rent or mortgage", "Sales expenses", "Taxes", "Utilities", "Other", "Insurance", "Interest", "Telephone", "Maintenance and repairs", "Legal fees", "Depreciation", "Shipping", "Storage", "Store", "Salespeople", "Other"],
+"Last Row": ["Total expenses", "$", "-", "$", "-", "$", "-"]
+}
+}

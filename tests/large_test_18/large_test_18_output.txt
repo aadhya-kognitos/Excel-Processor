@@ -1,0 +1,42 @@
+Table 0:
+Top Left Coordinate: B9, Actual Value: Assignment #
+Bottom Left Coordinate: H60, Actual Value: 0
+Top Right Coordinate: I9, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 1:
+Top Left Coordinate: B15, Actual Value: Assignment #
+Bottom Left Coordinate: H60, Actual Value: 0
+Top Right Coordinate: I15, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 2:
+Top Left Coordinate: B21, Actual Value: Assignment #
+Bottom Left Coordinate: H60, Actual Value: 0
+Top Right Coordinate: I21, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 3:
+Top Left Coordinate: B27, Actual Value: Assignment #
+Bottom Left Coordinate: H60, Actual Value: 0
+Top Right Coordinate: I27, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 4:
+Top Left Coordinate: B33, Actual Value: Assignment #
+Bottom Left Coordinate: H60, Actual Value: 0
+Top Right Coordinate: I33, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 5:
+Top Left Coordinate: B39, Actual Value: Assignment #
+Bottom Left Coordinate: H60, Actual Value: 0
+Top Right Coordinate: I39, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+

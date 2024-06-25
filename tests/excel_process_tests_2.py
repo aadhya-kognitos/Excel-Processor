@@ -66,6 +66,177 @@ test_cases = [
         ]
     },
     {
+        "test_name": "large_test_6",
+        "expected_values_table_1": [
+            "Income 1", "Total monthly income", "$4,300.00", "$4,600.00"
+        ],
+        "expected_values_table_2": [
+            "Income 1", "Total monthly income", "$4,300.00", "$4,300.00"
+        ],
+        "expected_values_table_3": [
+            "PROJECTED BALANCE", "(Actual minus projected)", "$3,405.00", "($341.00)"
+        ],
+        "expected_values_table_4": [
+            "HOUSING", "Subtotal", "Difference", "-$41.00"
+        ],
+        "expected_values_table_5": [
+            "TRANSPORTATION", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_6": [
+            "INSURANCE", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_7": [
+            "FOOD", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_8": [
+            "PETS", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_9": [
+            "PERSONAL CARE", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_10": [
+            "ENTERTAINMENT", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_11": [
+            "LOANS", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_12": [
+            "TAXES", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_13": [
+            "SAVINGS OR INVESTMENTS", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_14": [
+            "GIFTS AND DONATIONS", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_15": [
+            "LEGAL", "Subtotal", "Difference", "$0.00"
+        ],
+        "expected_values_table_16": [
+            "TOTAL PROJECTED COST", "TOTAL INFERENCE", "$1,195.00", "($41.00)"
+        ]
+    },
+    {
+        "test_name": "large_test_7",
+        "expected_values_table_1": [
+            "Task", "Gather feedback", "END", "7/19/24"
+        ]
+    },
+    {
+        "test_name": "large_test_8",
+        "expected_values_table_1": [
+            "BUDGET TOTALS", "Balance (income minus expenses)", "DIFFERENCE", "985"
+        ],
+        "expected_values_table_2": [
+            "ACTUAL EXPENSES", "Total", "15% REDUCTION", "2895.00"
+        ]
+    },
+    {
+        "test_name": "large_test_9",
+        "expected_values_table_1": [
+            "% Done", "0 %", "Notes", "Meeting"
+        ]
+    },
+    {
+        "test_name": "large_test_10",
+        "expected_values_table_1": [
+            "SUMMARY", "Total budget", "OVER/UNDER", "None"
+        ],
+        "expected_values_table_2": [
+            "APPAREL", "Total for apparel", "OVER/UNDER", "None"
+        ],
+        "expected_values_table_3": [
+            "DECORATIONS", "Total for decorations", "OVER/UNDER", "None"
+        ]
+    },
+    {
+        "test_name": "large_test_11",
+        "expected_values_table_1": [
+            "Budget", "Remaining cash", "$1,500.00", "$1,135.00"
+        ],
+        "expected_values_table_2": [
+            "Item", "Winter jacket", "Total cost", "-"
+        ],
+    },
+    {
+        "test_name": "large_test_12",
+        "expected_values_table_1": [
+            "Expense", "Total expenses", "Difference (%)", "-"
+        ],
+    },
+    {
+        "test_name": "large_test_13",
+        "expected_values_table_1": [
+            "Expenses", "Total", "Year", "$None"
+        ]
+    },
+    {
+        "test_name": "large_test_14",
+        "expected_values_table_1": [
+            "None", "Cash short/extra", "Year", "$0"
+        ],
+        "expected_values_table_2": [
+            "Category", "Total", "None", "$0"
+        ]
+    },
+    {
+        "test_name": "large_test_15",
+        "expected_values_table_1": [
+            "Loan No.", "Totals", "Annual Interest Rate", "None"
+        ],
+        "expected_values_table_2": [
+            "Beginning Date", "5/1/2024", "10%", "5/1/2034"
+        ],
+        "expected_values_table_3": [
+            "Current Monthly Payment", "$190.92", "Annual Payment", "$2,291.02"
+        ]
+    },
+    {
+        "test_name": "large_test_16",
+        "expected_values_table_1": [
+            "CATEGORY", "Sale of items", "SUB-TOTALS", "$0.00"
+        ]
+    },
+    {
+        "test_name": "large_test_17",
+        "expected_values_table_1": [
+            "COURSE ID", "PSY 101", "DURATION", "1:00"
+        ]
+    },
+    {
+        "test_name": "large_test_18",
+        "expected_values_table_1": [
+            "Student name", "Teacher name", "Details", "None"
+        ],
+        "expected_values_table_2": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_3": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_4": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_5": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_6": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_7": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_8": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_9": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ],
+        "expected_values_table_10": [
+            "Assignment #", "Marks scored", "Subject total (%)", "None"
+        ]
+    },
+    {
         "test_name": "simple_test_1",
         "expected_values_table_1": ["A", "Cairo", "B", "Abra"]
     },

@@ -1,0 +1,17 @@
+{
+"Table 1": {
+"Columns": ["SUMMARY", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
+"Row Names": [],
+"Last Row": ["Total budget", "$21,300.00", "$21,000.00", ""]
+},
+"Table 2": {
+"Columns": ["APPAREL", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
+"Row Names": [],
+"Last Row": ["Total for apparel", "$5,000.00", "$5,000.00", ""]
+},
+"Table 3": {
+"Columns": ["DECORATIONS", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
+"Row Names": [],
+"Last Row": ["Total for decorations", "$2,300.00", "$2,300.00", ""]
+}
+}

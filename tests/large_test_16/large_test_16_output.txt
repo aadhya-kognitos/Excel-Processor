@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: P30, Actual Value: CATEGORY
+Bottom Left Coordinate: P41, Actual Value: Sale of items
+Top Right Coordinate: Z30, Actual Value: ASSIGNED TO
+Bottom Right Coordinate: Z41, Actual Value: Flora Berggren
+
+

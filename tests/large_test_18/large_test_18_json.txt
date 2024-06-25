@@ -1,0 +1,42 @@
+{
+"Table 1": {
+"Columns": ["Student name", "Age", "Grade", "Teacher name"],
+"Row Names": [],
+"Last Row": ["", "", "", ""]
+},
+"Table 2": {
+"Columns": ["Term starts", "Term ends", "Total term marks possible", "Total marks scored this term", "Overall marks (%)"],
+"Row Names": [],
+"Last Row": ["", "", "0", "0.0", ""]
+},
+"Table 3": {
+"Columns": ["Assignment #", "1", "2", "3", "4", "5", "Marks to date", "Subject total (%)"],
+"Row Names": ["Due date", "Marks (total)", "Marks scored"],
+"Last Row": ["", "", "", "", "", "", "0", "0.0"]
+},
+"Table 4": {
+"Columns": ["Assignment #", "1", "2", "3", "4", "5", "Marks to date", "Subject total (%)"],
+"Row Names": ["Due date", "Marks (total)", "Marks scored"],
+"Last Row": ["", "", "", "", "", "", "0", "0.0"]
+},
+"Table 5": {
+"Columns": ["Assignment #", "1", "2", "3", "4", "5", "Marks to date", "Subject total (%)"],
+"Row Names": ["Due date", "Marks (total)", "Marks scored"],
+"Last Row": ["", "", "", "", "", "", "0", "0.0"]
+},
+"Table 6": {
+"Columns": ["Assignment #", "1", "2", "3", "4", "5", "Marks to date", "Subject total (%)"],
+"Row Names": ["Due date", "Marks (total)", "Marks scored"],
+"Last Row": ["", "", "", "", "", "", "0", "0.0"]
+},
+"Table 7": {
+"Columns": ["Assignment #", "1", "2", "3", "4", "5", "Marks to date", "Subject total (%)"],
+"Row Names": ["Due date", "Marks (total)", "Marks scored"],
+"Last Row": ["", "", "", "", "", "", "0", "0.0"]
+},
+"Table 8": {
+"Columns": ["Assignment #", "1", "2", "3", "4", "5", "Marks to date", "Subject total (%)"],
+"Row Names": ["Due date", "Marks (total)", "Marks scored"],
+"Last Row": ["", "", "", "", "", "", "0", "0.0"]
+}
+}

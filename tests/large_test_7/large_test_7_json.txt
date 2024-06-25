@@ -1,0 +1,7 @@
+{
+"Table 1": {
+"Columns": ["TASK", "ASSIGNED TO", "PROGRESS", "START", "END"],
+"Row Names": [],
+"Last Row": ["Gather feedback", "Olivia Wilson", "50%", "7/14/24", "7/19/24"]
+}
+}

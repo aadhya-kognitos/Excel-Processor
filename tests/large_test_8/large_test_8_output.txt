@@ -1,0 +1,14 @@
+Table 0:
+Top Left Coordinate: B5, Actual Value: BUDGET TOTALS
+Bottom Left Coordinate: B9, Actual Value: Balance (income minus expenses)
+Top Right Coordinate: E5, Actual Value: DIFFERENCE
+Bottom Right Coordinate: E9, Actual Value: -980
+
+
+Table 1:
+Top Left Coordinate: B11, Actual Value: ACTUAL EXPENSES
+Bottom Left Coordinate: B17, Actual Value: Total
+Top Right Coordinate: E11, Actual Value: 15% REDUCTION
+Bottom Right Coordinate: E17, Actual Value: 2895.0000123
+
+
