@@ -88,6 +88,103 @@ For `simple_test_2`, the program returns a table encompassing both of the tables
 
 For `simple_test_5` the program does not return a table. This is because there is a row value with the same value as a column header.
 
+
+## Error Log
+
+**Large Test 1**
+Total Tables: 10
+Error(s): First table missing (CURRENT BUDGET)
+
+**Large Test 2**
+Total Tables: 1
+Error(s): None
+
+**Large Test 3**
+Total Tables: 1
+Error(s): None
+
+**Large Test 4**
+Total Tables: 4
+Error(s): 
+Table 1 (Company Name) not represented accurately (column 1 is not present)
+Only 1st column present in final table
+
+**Large Test 5**
+Total Tables: 1
+Error(s): None
+
+**Large Test 6**
+Total Tables: 16
+Error(s): 
+First table only extracts middle column
+2nd table only extracts middle column
+PROJECTED BALANCE SHEET NOT PRESENT
+Entertainment table bottem left corner is wrong coordinate (but has correct value)
+Table 9-11 inaccurately represented (wrong coordinates)
+Gifts and Donations table has bottom left coordinate represented incorrectly
+Legal table missing
+Total Projected Cost only has one column
+
+**Large Test 7**
+Total Tables: 3
+Error(s):
+Not split into subtables
+
+**Large Test 8**
+Total Tables: 2
+Error(s): None
+
+**Large Test 9**
+Total Tables: 1
+Error(s):
+% Done column coordinate not present
+
+**Large Test 10**
+Total Tables: 3
+Error(s): None
+
+**Large Test 11**
+Total Tables: 2
+Error(s):
+Missing first table
+
+**Large Test 12**
+Total Tables: 1
+Error(s): Table not found
+
+**Large Test 13**
+Total Tables: 1
+Error(s): 
+No Output
+
+**Large Test 14**
+Total Tables: 2
+Error(s): 
+No Output
+
+**Large Test 15**
+Total Tables: 3
+Error(s):
+2nd table's first column is not showing
+3rd table not showing
+
+**Large Test 16**
+Total Tables: 3
+Error(s):
+Agenda table not present
+Event Checklist not present
+Event Categories not present
+
+**Large Test 17**
+Total Tables: 1
+Error(s): None
+
+**Large Test 18**
+Total Tables: 11
+Error(s):
+All Tables have error in 2nd and 4th coordinate display
+
+
 ## Next Steps
 
 I am currently in the testing stages of a new method which enables the user to upload just a spreadsheet. This eliminates the need for them to manually take screenshots. I will update here as necessary.
