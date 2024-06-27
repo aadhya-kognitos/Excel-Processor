@@ -41,7 +41,17 @@ class ExcelPreProcessor:
         self.write_csv_to_txt()
         system_prompt = self.system_prompt()
         user_prompt = self.user_prompt(self.txt_filename)
-        self.query_openai(system_prompt, user_prompt)
+        prompt_1 = self.query_openai(system_prompt, user_prompt)
+        add_on = f"""Given this initial response from GPT: {prompt_1}, I want you to go in and take a look at
+        the csv again: {self.txt_filename}. 
+        When looking at the csv, here are the steps you should follow
+        1. For each column header list, row name list, or rows list, find the corresponding row in the CSV
+        that is a close match or match for that list.
+        2. Leave values that are exact matches in that row. If you see a value in the original response JSON
+        that does not match a CSV value, please update that value with the CSV value.
+        3. Keep going till you reach the end of the table."""
+        prompt_2 = self.query_openai(system_prompt, add_on)
+        print(prompt_2)
 
     def system_prompt(self):
         return f"""
@@ -76,7 +86,7 @@ class ExcelPreProcessor:
     {{"Table 1":{{
     "Columns": ["INVENTORY", "QUANTITY", "PRICE", "TOTAL"],
     "Row Names: [],
-    "Last Row": ["Oranges", "15", "$1.50", "$22.50"]
+    "Last Row": ["Oranges", "15", "$1.50", "22.50"]
     }},
     "Table 2": {{
     "Columns": ["TRIATHLETE", "Run", "Swim", "Cycle"],
@@ -92,10 +102,14 @@ class ExcelPreProcessor:
     
     No need to place the ```json in the output.
     Please use only curly braces, as in standard JSON format. Don't use square brackets.
+    When processing tables, please look at the CSV values I provide first, then look at the image.
+    The CSV values will tell you the exact value of data at a certain location.
+
+    If the last row has some kind of string value, please include at least one of that rather than numerical values.
     If a cell value is empty, no need to provide it in the JSON representation.
     The Last Row should always have values, not be empty. If it appears that the last row is empty in the image,
     use the closest row above that that is not empty belonging to the same table.
-
+    
     Here are some steps to identify a table/tables
     A table is a section of data that is formatted in a way that is easy to read and understand. If there are multiple tables in a spreadsheet,
     each table will have its own section, which will most likely be colored differently than the background of the spreadsheet. Tables also will have
@@ -104,6 +118,7 @@ class ExcelPreProcessor:
     Make sure to read the tables carefully, line by line, from left to right and accurately extract the given values from each table.
 
     Don't add any additional text apart from the desired values from each table.
+    Make sure to defer to the csv values for each table, rather than the image values.
     Please make sure to capture ALL the tables in the spreadsheet, and ensure each table has its own JSON representation.
     However, be sure to check that you are not repeating the same table more than once.
     Note that sometimes column headers can span multiple rows.
@@ -112,7 +127,12 @@ class ExcelPreProcessor:
     
     def user_prompt(self, csv_text):
         return f"""
-        Consider the following txt representation the spreadsheet in csv format before parsing the image: ${csv_text}
+        Consider the following txt representation of the spreadsheet in csv format before parsing the image: ${csv_text}.
+        The csv text generally contains the true values present in the spreadsheet. For each table, use the csv values
+        rather than the image values.
+        For instance, if the csv contains "1000" for a cell, and the image contains "$1,000", use "1000"
+        For instance, if the csv contains "850" for a 
+        cell, and the image contains "850.00", use "850"
         Image is provided in base64 format: """
 
     def query_openai(self, system_prompt, user_prompt):
@@ -141,7 +161,7 @@ class ExcelPreProcessor:
             temperature=0
         )
         returned_text = completion.choices[0].message.content
-        print(returned_text)
+        return returned_text
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:

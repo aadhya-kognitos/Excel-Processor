@@ -30,7 +30,7 @@ fi
 
 # Run the second Python script with the necessary arguments
 echo "Running json_processor.py..."
-python3 src/json_processor.py $TXT_FILENAME > tests/$TEST_NAME/$TEST_NAME\_json.txt
+python3 src/json_processor.py $TXT_FILENAME > tests/$TEST_NAME/$TEST_NAME\_json.txt 
 
 # Check if the second script ran successfully
 if [ $? -ne 0 ]; then
@@ -40,7 +40,7 @@ fi
 
 # Run the third Python script with the necessary arguments
 echo "Running excel_process_2.py..."
-python3 src/excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt #> tests/$TEST_NAME/$TEST_NAME\_output.txt
+python3 src/debug_excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
 
 # Check if the third script ran successfully
 if [ $? -ne 0 ]; then

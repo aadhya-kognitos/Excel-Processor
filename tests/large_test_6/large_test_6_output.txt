@@ -1,105 +1,84 @@
 Table 0:
-Top Left Coordinate: C4, Actual Value: Income 1
-Bottom Left Coordinate: C10, Actual Value: Total monthly income
-Top Right Coordinate: C4, Actual Value: Income 1
-Bottom Right Coordinate: C10, Actual Value: Total monthly income
-
-
-Table 1:
-Top Left Coordinate: C8, Actual Value: Income 1
-Bottom Left Coordinate: B10, Actual Value: None
-Top Right Coordinate: C8, Actual Value: Income 1
-Bottom Right Coordinate: C10, Actual Value: Total monthly income
-
-
-Table 2:
 Top Left Coordinate: B12, Actual Value: HOUSING
 Bottom Left Coordinate: B23, Actual Value: Subtotal
 Top Right Coordinate: E12, Actual Value: Difference
 Bottom Right Coordinate: E23, Actual Value: -41
 
 
-Table 3:
+Table 1:
 Top Left Coordinate: B25, Actual Value: TRANSPORTATION
 Bottom Left Coordinate: B33, Actual Value: Subtotal
 Top Right Coordinate: E25, Actual Value: Difference
 Bottom Right Coordinate: E33, Actual Value: 0
 
 
-Table 4:
+Table 2:
 Top Left Coordinate: B35, Actual Value: INSURANCE
 Bottom Left Coordinate: B40, Actual Value: Subtotal
 Top Right Coordinate: E35, Actual Value: Difference
 Bottom Right Coordinate: E40, Actual Value: 0
 
 
-Table 5:
+Table 3:
 Top Left Coordinate: B42, Actual Value: FOOD
 Bottom Left Coordinate: B46, Actual Value: Subtotal
 Top Right Coordinate: E42, Actual Value: Difference
 Bottom Right Coordinate: E46, Actual Value: 0
 
 
-Table 6:
+Table 4:
 Top Left Coordinate: B48, Actual Value: PETS
 Bottom Left Coordinate: B54, Actual Value: Subtotal
 Top Right Coordinate: E48, Actual Value: Difference
 Bottom Right Coordinate: E54, Actual Value: 0
 
 
-Table 7:
+Table 5:
 Top Left Coordinate: B56, Actual Value: PERSONAL CARE
 Bottom Left Coordinate: B64, Actual Value: Subtotal
 Top Right Coordinate: E56, Actual Value: Difference
 Bottom Right Coordinate: E64, Actual Value: 0
 
 
-Table 8:
+Table 6:
 Top Left Coordinate: G12, Actual Value: ENTERTAINMENT
 Bottom Left Coordinate: D22, Actual Value: 0
 Top Right Coordinate: J12, Actual Value: Difference
 Bottom Right Coordinate: J22, Actual Value: 0
 
 
-Table 9:
+Table 7:
 Top Left Coordinate: G20, Actual Value: Other
 Bottom Left Coordinate: D31, Actual Value: None
 Top Right Coordinate: J20, Actual Value: 0
 Bottom Right Coordinate: J31, Actual Value: 0
 
 
-Table 10:
+Table 8:
 Top Left Coordinate: G21, Actual Value: Other
 Bottom Left Coordinate: D38, Actual Value: None
 Top Right Coordinate: J21, Actual Value: 0
 Bottom Right Coordinate: J38, Actual Value: 0
 
 
-Table 11:
+Table 9:
 Top Left Coordinate: G30, Actual Value: Other
 Bottom Left Coordinate: D44, Actual Value: None
 Top Right Coordinate: J30, Actual Value: 0
 Bottom Right Coordinate: J44, Actual Value: 0
 
 
-Table 12:
+Table 10:
 Top Left Coordinate: G46, Actual Value: GIFTS AND DONATIONS
 Bottom Left Coordinate: D50, Actual Value: None
 Top Right Coordinate: J46, Actual Value: Difference
 Bottom Right Coordinate: J50, Actual Value: 0
 
 
-Table 13:
+Table 11:
 Top Left Coordinate: G37, Actual Value: Other
 Bottom Left Coordinate: D57, Actual Value: None
 Top Right Coordinate: J37, Actual Value: 0
 Bottom Right Coordinate: J57, Actual Value: 0
-
-
-Table 14:
-Top Left Coordinate: G59, Actual Value: TOTAL PROJECTED COST
-Bottom Left Coordinate: G63, Actual Value: TOTAL DIFFERENCE
-Top Right Coordinate: G59, Actual Value: TOTAL PROJECTED COST
-Bottom Right Coordinate: G63, Actual Value: TOTAL DIFFERENCE
 
 

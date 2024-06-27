@@ -1,0 +1,42 @@
+(None, 'Back to school', 'planner', None, None, None, None, None)
+(None, None, None, None, None, None, None, None)
+(None, 'Track your shopping progress against the budget category amounts entered in budget breakdown.', None, None, None, None, None, None)
+(None, 'Budget summary', None, None, 'Purchasing progress (1 of 6)', None, None, None)
+(None, 'Budget', 1500, None, 0.16666666666666666, None, None, None)
+(None, 'Shopping list total', 365, None, None, None, None, None)
+(None, 'Remaining cash', 1135, None, None, None, None, None)
+(None, 'Shopping list', None, None, None, None, None, None)
+(None, 'Item', 'Category', 'Qty', 'To buy', 'Cost', 'Bought', 'Total cost')
+(None, 'Math', 'Textbooks', 1, 1, 55, 1, 55)
+(None, 'English', 'Textbooks', 1, 1, None, None, 0)
+(None, 'Backpack', 'Supplies', 1, None, 30, None, 30)
+(None, 'Calculator', 'Supplies', 1, None, None, None, 0)
+(None, 'Highlighters', 'Supplies', 3, None, None, None, 0)
+(None, 'Uniform', 'Clothes', 2, 1, 100, None, 200)
+(None, 'Shirt, button-up', 'Clothes', 4, None, None, None, 0)
+(None, 'Shirt, t-shirts', 'Clothes', 5, None, None, None, 0)
+(None, 'Shorts', 'Clothes', 2, None, None, None, 0)
+(None, 'Sneakers', 'Clothes', 2, 1, None, None, 0)
+(None, 'Socks', 'Clothes', 10, None, None, None, 0)
+(None, 'Spring jacket', 'Clothes', 1, 1, 80, None, 80)
+(None, 'Sweaters', 'Clothes', 1, None, None, None, 0)
+(None, 'Sweatshirts', 'Clothes', 1, None, None, None, 0)
+(None, 'Underwear', 'Clothes', 10, None, None, None, 0)
+(None, 'Winter jacket', 'Clothes', 1, 1, None, None, 0)
+Table Name: Table 1
+local_column_occurrences: [(8, 2), (4, 1)] 
+
+local_row_name_occurrences: [] 
+
+local_last_row_occurrences: [] 
+
+Local Column Occurrences: [(8, 2), (4, 1)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [] 
+
+filtered last row occurrences: [] 
+
+filtered column occurrences: [] 
+
