@@ -1,0 +1,18 @@
+{
+"Table 1": {
+"Columns": ["% Done", "Phase", "Due By", "Notes"],
+"Row Names": [],
+"Last Row": ["0%", "Follow-up", "1-Feb", "Meeting"]
+}
+}
+ne Phase Due By Notes      
+ 1 Planning 2023-12-10 00:00:00 Research local contractors      
+ 1 Preparation 2023-01-10 00:00:00 Select winning bid      
+ 1 Task a 2023-01-12 00:00:00 Consult      
+ 0.5 Task b 2023-01-15 00:00:00 Follow-up meeting      
+ 0 Task c 2023-01-20 00:00:00 Sign paperwork      
+ 0 Task d 2023-01-20 00:00:00 Begin work       
+ 0 Paperwork 2023-01-23 00:00:00 Mail in      
+ 0 Complete 2023-01-25 00:00:00 Inspection      
+ 0 Follow-up 2023-02-01 00:00:00 Meeting      
+          

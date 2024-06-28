@@ -1,3 +1,92 @@
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, 'College Loan \nCalculator', None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, 70000, None, None, datetime.datetime(2021, 3, 1, 0, 0), None, None)
+(None, None, None, None, None, None, None, None, None, None, None, 'Estimated Annual Salary After Graduation', None, 'Date you begin paying back loans', None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, "It's suggested that your total monthly student loan repayments do not exceed 8% of your first year annual salary.", None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, 'Your combined current monthly payment is:', None, None, 106.06551523907524, None, None, None, None, None, 'Your combined scheduled monthly payment is:', None, None, 190.91792743033542, None)
+(None, None, 'Percentage of current monthly income: ', None, None, 0.01818265975527004, None, None, None, None, None, 'Percentage of scheduled monthly income:', None, None, 0.03272878755948608, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, 'GENERAL LOAN DETAILS', None, None, None, None, 'LOAN PAYBACK DATA', None, None, None, 'PAYMENT DETAILS', None, None, None, None)
+(None, None, 'Loan No.', 'Lender', 'Loan Amount', 'Annual Interest Rate', 'Column1', 'Beginning Date', 'Length (Yrs)', 'Ending Date', 'Column2', 'Current Monthly Payment', 'Total Interest', 'Scheduled Payment', 'Annual Payment', None)
+(None, None, '10998M88', 'Woodgrove Bank', 10000, 0.05, None, datetime.datetime(2022, 2, 3, 0, 0), 10, datetime.datetime(2032, 2, 3, 0, 0), None, 106.06551523907524, 2727.8618286890287, 106.06551523907524, 1272.7861828689029, None)
+(None, None, '20987N87', 'Ducat Bank', 8000, 0.05, None, datetime.datetime(2023, 5, 1, 0, 0), 10, datetime.datetime(2033, 5, 1, 0, 0), None, None, 2182.289462951223, 84.85241219126019, 1018.2289462951222, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, 'Totals', None, 18000, None, None, None, None, None, None, 106.06551523907524, 4910.151291640252, 190.91792743033542, 2291.015129164025, None)
+(None, None, 'Averages', None, 9000, 0.05, None, None, None, None, None, None, 2455.075645820126, None, 1145.5075645820125, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, 'Total consolidated loan payback:', None, 'Estimated monthly income after graduation:', None, None)
+(None, None, None, None, None, None, None, None, None, None, None, 22910.15129164025, None, 5833.333333333333, None, None)
+(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Table Name: Table 1
+local_column_occurrences: [(13, 2), (13, 3), (13, 4), (13, 5)] 
+
+local_row_name_occurrences: [] 
+
+local_last_row_occurrences: [(21, 2)] 
+
+Local Column Occurrences: [(13, 2), (13, 3), (13, 4), (13, 5)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(21, 2)] 
+
+filtered last row occurrences: [(21, 2)] 
+
+filtered column occurrences: [(13, 2)] 
+
+Table: 0
+Column Coordinates: [(13, 2)]
+Row Name Coordinates: []
+Row Coordinate: [(21, 2), (21, 2), (21, 3), (21, 4), (21, 5), (21, 2)]
+
+
+Table Name: Table 2
+local_column_occurrences: [(13, 7), (13, 8), (13, 9)] 
+
+local_row_name_occurrences: [] 
+
+local_last_row_occurrences: [(14, 8), (15, 8)] 
+
+Local Column Occurrences: [(13, 7), (13, 8), (13, 9)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(14, 8), (15, 8)] 
+
+filtered last row occurrences: [(14, 8), (15, 8)] 
+
+filtered column occurrences: [(13, 8)] 
+
+Table: 0
+Column Coordinates: [(13, 8)]
+Row Name Coordinates: []
+Row Coordinate: [(14, 8), (15, 8), (14, 8), (14, 9), (14, 8), (14, 7)]
+
+
+Table Name: Table 3
+local_column_occurrences: [(13, 11), (13, 12), (13, 13), (13, 14)] 
+
+local_row_name_occurrences: [] 
+
+local_last_row_occurrences: [] 
+
+Local Column Occurrences: [(13, 11), (13, 12), (13, 13), (13, 14)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [] 
+
+filtered last row occurrences: [] 
+
+filtered column occurrences: [] 
+
 Table 0:
 Top Left Coordinate: C14, Actual Value: Loan No.
 Bottom Left Coordinate: C22, Actual Value: Averages

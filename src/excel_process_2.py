@@ -3,8 +3,11 @@ from openpyxl.utils import get_column_letter
 import json
 from sys import argv
 from math import inf
+import locale
+import datetime
 import pdb
 
+locale.setlocale(locale.LC_ALL, '')
 # Helper class to represent a table in the spreadsheet
 class Table:
     def __init__(self):
@@ -56,6 +59,13 @@ class ExcelProcessor:
         # y is the row index (1-based)
         column_letter = get_column_letter(x)
         return f"{column_letter}{y}"
+
+    def format_cells_in_ws(self):
+        for row in range(1, self.max_row + 1):
+            for col in range(1, self.max_col + 1):
+                cell = self.ws.cell(row=row, column=col)
+                formatted_value = self.format_cell_value(cell)
+                cell.value = formatted_value
     
     def read_json(self):
         """ Read contents of txt file with 
@@ -104,7 +114,7 @@ class ExcelProcessor:
                 for col in range(1, self.max_col + 1):
                     cell_value = self.ws.cell(row=row, column=col).value
                     cell_value = str(cell_value)
-                    if cell_value == column:
+                    if column == cell_value:
                         local_column_occurrences.append((self.get_row(row), self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Column"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = column
@@ -115,7 +125,7 @@ class ExcelProcessor:
                 for col in range(1, self.max_col + 1):
                     cell_value = self.ws.cell(row=row, column=col).value
                     cell_value = str(cell_value)
-                    if cell_value == row_name:
+                    if row_name == cell_value:
                         local_row_name_occurrences.append((self.get_row(row),self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Row Name"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = row_name
@@ -126,7 +136,7 @@ class ExcelProcessor:
                 for col in range(1, self.max_col + 1):
                     cell_value = self.ws.cell(row=row, column=col).value
                     cell_value = str(cell_value)
-                    if cell_value == last_row_value:
+                    if last_row_value == cell_value:
                         local_last_row_occurrences.append((self.get_row(row),self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Last Row"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = last_row_value

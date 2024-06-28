@@ -2,7 +2,7 @@
 "Table 1": {
 "Columns": ["Loan No.", "Lender", "Loan Amount", "Annual Interest Rate"],
 "Row Names": [],
-"Last Row": ["Averages", "9000.00", "5.00%"]
+"Last Row": ["Averages", "$9,000.00", "5.00%"]
 },
 "Table 2": {
 "Columns": ["Beginning Date", "Length (Yrs)", "Ending Date"],
@@ -12,6 +12,6 @@
 "Table 3": {
 "Columns": ["Current Monthly Payment", "Total Interest", "Scheduled Payment", "Annual Payment"],
 "Row Names": [],
-"Last Row": ["", "2455.08", "", "1145.51"]
+"Last Row": ["$190.92", "$4,910.15", "$190.92", "$2,291.02"]
 }
 }

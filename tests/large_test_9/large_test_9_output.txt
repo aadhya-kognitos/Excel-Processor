@@ -1,3 +1,43 @@
+(None, None, None, None, None, None, None, None, None, None, None)
+(None, 'HOME REMODEL', None, None, None, None, None, None, None, None, None)
+(None, 'TO-DO LIST', None, None, None, None, None, None, None, None, None)
+(None, 'TO BE COMPLETED BY', None, 'Iris Lepik', None, None, None, None, None, None, None)
+(None, 'DEADLINE', None, '01/31/20XX', None, None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None)
+(None, '% Done', 'Phase', 'Due By', 'Notes', None, None, None, None, None, None)
+(None, 1, 'Planning', datetime.datetime(2023, 12, 10, 0, 0), 'Research local contractors', None, None, None, None, None, None)
+(None, 1, 'Preparation', datetime.datetime(2023, 1, 10, 0, 0), 'Select winning bid', None, None, None, None, None, None)
+(None, 1, 'Task a', datetime.datetime(2023, 1, 12, 0, 0), 'Consult', None, None, None, None, None, None)
+(None, 0.5, 'Task b', datetime.datetime(2023, 1, 15, 0, 0), 'Follow-up meeting', None, None, None, None, None, None)
+(None, 0, 'Task c', datetime.datetime(2023, 1, 20, 0, 0), 'Sign paperwork', None, None, None, None, None, None)
+(None, 0, 'Task d', datetime.datetime(2023, 1, 20, 0, 0), 'Begin work ', None, None, None, None, None, None)
+(None, 0, 'Paperwork', datetime.datetime(2023, 1, 23, 0, 0), 'Mail in', None, None, None, None, None, None)
+(None, 0, 'Complete', datetime.datetime(2023, 1, 25, 0, 0), 'Inspection', None, None, None, None, None, None)
+(None, 0, 'Follow-up', datetime.datetime(2023, 2, 1, 0, 0), 'Meeting', None, None, None, None, None, None)
+(None, None, None, None, None, None, None, None, None, None, None)
+Table Name: Table 1
+local_column_occurrences: [(6, 1), (6, 2), (6, 3), (6, 4)] 
+
+local_row_name_occurrences: [] 
+
+local_last_row_occurrences: [(15, 2), (15, 4)] 
+
+Local Column Occurrences: [(6, 1), (6, 2), (6, 3), (6, 4)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(15, 2), (15, 4)] 
+
+filtered last row occurrences: [(15, 2), (15, 4)] 
+
+filtered column occurrences: [(6, 2), (6, 4)] 
+
+Table: 0
+Column Coordinates: [(6, 2), (6, 4)]
+Row Name Coordinates: []
+Row Coordinate: [(15, 2), (15, 4), (15, 2), (15, 3), (15, 4), (15, 2), (15, 1)]
+
+
 Table 0:
 Top Left Coordinate: C7, Actual Value: Phase
 Bottom Left Coordinate: B16, Actual Value: 0
