@@ -190,8 +190,8 @@ Error(s):
 All Tables have error in 2nd and 4th coordinate display
 
 **Final Success Rate**
-Total Tables: 66,  
-Success Rate: 37/64
+Total Tables: 66,    
+**Success Rate**: 37/64
 
 
 
