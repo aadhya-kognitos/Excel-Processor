@@ -7,7 +7,6 @@ import locale
 import datetime
 import pdb
 
-locale.setlocale(locale.LC_ALL, '')
 # Helper class to represent a table in the spreadsheet
 class Table:
     def __init__(self):
@@ -102,6 +101,7 @@ class ExcelProcessor:
                 if cell_value in columns:
                     self.global_col_coordinates.append((self.get_row(row), self.get_col(col)))
     
+    
     def pre_pass(self, columns, row_names, last_row):
         """ Store arrays for each table that provides just their row and column information."""
         local_column_occurrences = []
@@ -161,7 +161,7 @@ class ExcelProcessor:
             for row_index in range(coord[0], -1, -1):
                 if (row_index, col_index) in self.global_col_coordinates and (row_index, col_index) not in local_column_occurrences: 
                     break
-                if (row_index, col_index) in local_column_occurrences:
+                elif (row_index, col_index) in self.global_col_coordinates and (row_index, col_index) in local_column_occurrences:
                     filtered_last_row_occurrences.append(coord)
                     break
         #print(f"filtered last row occurrences: {filtered_last_row_occurrences} \n")

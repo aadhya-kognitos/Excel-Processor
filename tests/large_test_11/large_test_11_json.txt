@@ -1,12 +1,12 @@
 {
 "Table 1": {
-"Columns": ["Budget", "Shopping list total", "Remaining cash"],
+"Columns": ["Budget summary", "Purchasing progress (1 of 6)"],
 "Row Names": [],
-"Last Row": ["$1,500.00", "$365.00", "$1,135.00"]
+"Last Row": ["Remaining cash", "1135"]
 },
 "Table 2": {
 "Columns": ["Item", "Category", "Qty", "To buy", "Cost", "Bought", "Total cost"],
 "Row Names": [],
-"Last Row": ["Winter jacket", "Clothes", "1", "✔", "$", "$"]
+"Last Row": ["Winter jacket", "Clothes", "1", "", "", "", ""]
 }
 }

@@ -2,6 +2,6 @@
 "Table 1": {
 "Columns": ["Alpha", "Beta", "Gamma"],
 "Row Names": [],
-"Last Row": ["G", "", ""]
+"Last Row": ["G"]
 }
 }

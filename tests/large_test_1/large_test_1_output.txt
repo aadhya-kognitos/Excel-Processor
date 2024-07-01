@@ -13,55 +13,48 @@ Bottom Right Coordinate: E34, Actual Value: None
 
 
 Table 2:
-Top Left Coordinate: B1, Actual Value: BUSINESS BUDGET TEMPLATE
-Bottom Left Coordinate: B34, Actual Value: Total Expenses
-Top Right Coordinate: E1, Actual Value: None
-Bottom Right Coordinate: E34, Actual Value: None
-
-
-Table 3:
 Top Left Coordinate: B37, Actual Value: INCOME
 Bottom Left Coordinate: B45, Actual Value: Category 7
 Top Right Coordinate: E37, Actual Value: None
 Bottom Right Coordinate: E45, Actual Value: None
 
 
-Table 4:
+Table 3:
 Top Left Coordinate: B49, Actual Value: EXPENSES
 Bottom Left Coordinate: B62, Actual Value: Web Hosting & Domains
 Top Right Coordinate: E49, Actual Value: None
 Bottom Right Coordinate: E62, Actual Value: None
 
 
-Table 5:
+Table 4:
 Top Left Coordinate: B64, Actual Value: PAYROLL
 Bottom Left Coordinate: B67, Actual Value: Contractor Wages
 Top Right Coordinate: E64, Actual Value: None
 Bottom Right Coordinate: E67, Actual Value: None
 
 
-Table 6:
+Table 5:
 Top Left Coordinate: B69, Actual Value: OFFICE
 Bottom Left Coordinate: B76, Actual Value: Pet Supplies
 Top Right Coordinate: E69, Actual Value: None
 Bottom Right Coordinate: E76, Actual Value: None
 
 
-Table 7:
+Table 6:
 Top Left Coordinate: B78, Actual Value: ENTERTAINMENT
 Bottom Left Coordinate: B82, Actual Value: Outdoor Recreation
 Top Right Coordinate: E78, Actual Value: None
 Bottom Right Coordinate: E82, Actual Value: None
 
 
-Table 8:
+Table 7:
 Top Left Coordinate: B84, Actual Value: HEALTH
 Bottom Left Coordinate: B90, Actual Value: Life Insurance
 Top Right Coordinate: E84, Actual Value: None
 Bottom Right Coordinate: E90, Actual Value: None
 
 
-Table 9:
+Table 8:
 Top Left Coordinate: B92, Actual Value: VACATION/HOLIDAY
 Bottom Left Coordinate: B98, Actual Value: Rental Car
 Top Right Coordinate: E92, Actual Value: None

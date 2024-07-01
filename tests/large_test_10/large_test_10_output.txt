@@ -6,16 +6,79 @@ Bottom Right Coordinate: E16, Actual Value: 10
 
 
 Table 1:
-Top Left Coordinate: B20, Actual Value: APPAREL
-Bottom Left Coordinate: B29, Actual Value: Total for apparel
-Top Right Coordinate: E20, Actual Value: OVER/UNDER
-Bottom Right Coordinate: E29, Actual Value: 0
+Top Left Coordinate: M5, Actual Value: Rank
+Bottom Left Coordinate: M15, Actual Value: 10
+Top Right Coordinate: R5, Actual Value: Ref
+Bottom Right Coordinate: R15, Actual Value: 10
 
 
 Table 2:
+Top Left Coordinate: B20, Actual Value: APPAREL
+Bottom Left Coordinate: E69, Actual Value: 0
+Top Right Coordinate: E20, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E69, Actual Value: 0
+
+
+Table 3:
 Top Left Coordinate: G20, Actual Value: DECORATIONS
-Bottom Left Coordinate: D27, Actual Value: 0
+Bottom Left Coordinate: H68, Actual Value: 0
 Top Right Coordinate: J20, Actual Value: OVER/UNDER
-Bottom Right Coordinate: J27, Actual Value: 0
+Bottom Right Coordinate: J68, Actual Value: 0
+
+
+Table 4:
+Top Left Coordinate: G30, Actual Value: FLOWERS
+Bottom Left Coordinate: H68, Actual Value: 0
+Top Right Coordinate: J30, Actual Value: OVER/UNDER
+Bottom Right Coordinate: J68, Actual Value: 0
+
+
+Table 5:
+Top Left Coordinate: B32, Actual Value: GIFTS
+Bottom Left Coordinate: B37, Actual Value: Total for gifts
+Top Right Coordinate: E32, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E37, Actual Value: -100
+
+
+Table 6:
+Top Left Coordinate: C40, Actual Value: ESTIMATED
+Bottom Left Coordinate: C44, Actual Value: 1200
+Top Right Coordinate: E40, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E44, Actual Value: 50
+
+
+Table 7:
+Top Left Coordinate: G40, Actual Value: PHOTOGRAPHY
+Bottom Left Coordinate: H68, Actual Value: 0
+Top Right Coordinate: J40, Actual Value: OVER/UNDER
+Bottom Right Coordinate: J68, Actual Value: 0
+
+
+Table 8:
+Top Left Coordinate: B47, Actual Value: RECEPTION
+Bottom Left Coordinate: B57, Actual Value: Total for reception
+Top Right Coordinate: E47, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E57, Actual Value: -200
+
+
+Table 9:
+Top Left Coordinate: G50, Actual Value: STATIONERY / PRINTING
+Bottom Left Coordinate: H68, Actual Value: 0
+Top Right Coordinate: J50, Actual Value: OVER/UNDER
+Bottom Right Coordinate: J68, Actual Value: 0
+
+
+Table 10:
+Top Left Coordinate: B60, Actual Value: OTHER EXPENSES
+Bottom Left Coordinate: B69, Actual Value: Total for other expenses
+Top Right Coordinate: E60, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E69, Actual Value: 0
+
+
+Table 11:
+Top Left Coordinate: G64, Actual Value: TRANSPORTATION
+Bottom Left Coordinate: D69, Actual Value: 300
+Top Right Coordinate: J64, Actual Value: OVER/UNDER
+Bottom Right Coordinate: J69, Actual Value: -50
 
 

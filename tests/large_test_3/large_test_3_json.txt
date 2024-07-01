@@ -2,6 +2,6 @@
 "Table 1": {
 "Columns": ["TASKS", "ASSIGNED TO", "PRIORITY", "STATUS"],
 "Row Names": [],
-"Last Row": ["Launch", "", "", "NOT STARTED"]
+"Last Row": ["System Testing", "Kennedy K.", "★", "NOT STARTED"]
 }
 }

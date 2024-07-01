@@ -2,11 +2,11 @@
 "Table 1": {
 "Columns": ["BUDGET TOTALS", "ESTIMATED", "ACTUAL", "DIFFERENCE"],
 "Row Names": [],
-"Last Row": ["Balance (income minus expenses)", "8,800.00", "", ""]
+"Last Row": ["Balance (income minus expenses)", "8800", "7820", "-980"]
 },
 "Table 2": {
 "Columns": ["ACTUAL EXPENSES", "AMOUNT", "% OF EXPENSES", "15% REDUCTION"],
 "Row Names": [],
-"Last Row": ["Total", "19,300.00", "54.3%", "2,895.00"]
+"Last Row": ["Total", "19300.000082", "0.5432029294117647", "2895.0000123"]
 }
 }

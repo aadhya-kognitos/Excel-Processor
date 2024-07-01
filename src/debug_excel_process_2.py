@@ -138,9 +138,9 @@ class ExcelProcessor:
                         local_last_row_occurrences.append((self.get_row(row),self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Last Row"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = last_row_value
-        print(f"local_column_occurrences: {local_column_occurrences} \n")
-        print(f"local_row_name_occurrences: {local_row_name_occurrences} \n")
-        print(f"local_last_row_occurrences: {local_last_row_occurrences} \n")
+        # print(f"local_column_occurrences: {local_column_occurrences} \n")
+        # print(f"local_row_name_occurrences: {local_row_name_occurrences} \n")
+        # print(f"local_last_row_occurrences: {local_last_row_occurrences} \n")
         return local_column_occurrences, local_row_name_occurrences, local_last_row_occurrences
         
     
@@ -358,6 +358,9 @@ class ExcelProcessor:
         for table_name, table_data in self.json_data.items():
             print(f"Table Name: {table_name}")
             columns, row_names, last_row = self.get_table_data(table_data)
+            print(f"With columns of {columns}")
+            print(f"With row names of {row_names}")
+            print(f"With last rows of {last_row}")
             local_column_occurrences, local_row_name_occurrences, local_last_row_occurrences = self.pre_pass(columns, row_names, last_row)
             # self.print_matrix()
             print(f"Local Column Occurrences: {local_column_occurrences} \n")

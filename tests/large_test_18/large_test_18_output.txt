@@ -1,42 +1,70 @@
 Table 0:
+Top Left Coordinate: B2, Actual Value: Details
+Bottom Left Coordinate: B6, Actual Value: Teacher name
+Top Right Coordinate: F2, Actual Value: Term Result
+Bottom Right Coordinate: F6, Actual Value: Total marks scored this term
+
+
+Table 1:
 Top Left Coordinate: B9, Actual Value: Assignment #
-Bottom Left Coordinate: H60, Actual Value: 0
+Bottom Left Coordinate: B60, Actual Value: Marks scored
 Top Right Coordinate: I9, Actual Value: Subject total (%)
 Bottom Right Coordinate: I60, Actual Value: None
 
 
-Table 1:
+Table 2:
 Top Left Coordinate: B15, Actual Value: Assignment #
-Bottom Left Coordinate: H60, Actual Value: 0
+Bottom Left Coordinate: B60, Actual Value: Marks scored
 Top Right Coordinate: I15, Actual Value: Subject total (%)
 Bottom Right Coordinate: I60, Actual Value: None
 
 
-Table 2:
+Table 3:
 Top Left Coordinate: B21, Actual Value: Assignment #
-Bottom Left Coordinate: H60, Actual Value: 0
+Bottom Left Coordinate: B60, Actual Value: Marks scored
 Top Right Coordinate: I21, Actual Value: Subject total (%)
 Bottom Right Coordinate: I60, Actual Value: None
 
 
-Table 3:
+Table 4:
 Top Left Coordinate: B27, Actual Value: Assignment #
-Bottom Left Coordinate: H60, Actual Value: 0
+Bottom Left Coordinate: B60, Actual Value: Marks scored
 Top Right Coordinate: I27, Actual Value: Subject total (%)
 Bottom Right Coordinate: I60, Actual Value: None
 
 
-Table 4:
+Table 5:
 Top Left Coordinate: B33, Actual Value: Assignment #
-Bottom Left Coordinate: H60, Actual Value: 0
+Bottom Left Coordinate: B60, Actual Value: Marks scored
 Top Right Coordinate: I33, Actual Value: Subject total (%)
 Bottom Right Coordinate: I60, Actual Value: None
 
 
-Table 5:
+Table 6:
 Top Left Coordinate: B39, Actual Value: Assignment #
-Bottom Left Coordinate: H60, Actual Value: 0
+Bottom Left Coordinate: B60, Actual Value: Marks scored
 Top Right Coordinate: I39, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 7:
+Top Left Coordinate: B45, Actual Value: Assignment #
+Bottom Left Coordinate: B60, Actual Value: Marks scored
+Top Right Coordinate: I45, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 8:
+Top Left Coordinate: B51, Actual Value: Assignment #
+Bottom Left Coordinate: B60, Actual Value: Marks scored
+Top Right Coordinate: I51, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+
+Table 9:
+Top Left Coordinate: B57, Actual Value: Assignment #
+Bottom Left Coordinate: B60, Actual Value: Marks scored
+Top Right Coordinate: I57, Actual Value: Subject total (%)
 Bottom Right Coordinate: I60, Actual Value: None
 
 

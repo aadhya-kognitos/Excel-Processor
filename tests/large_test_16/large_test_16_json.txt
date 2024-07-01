@@ -2,21 +2,16 @@
 "Table 1": {
 "Columns": ["EVENT TITLE", "EVENT ORGANIZER", "VENUE / LOCATION", "EVENT START DATE & TIME", "EVENT END DATE & TIME", "ADDITIONAL INFO"],
 "Row Names": [],
-"Last Row": ["", "", "", "", "", ""]
+"Last Row": []
 },
 "Table 2": {
 "Columns": ["TIME", "TOPIC", "PRESENTER"],
 "Row Names": [],
-"Last Row": ["", "", ""]
+"Last Row": []
 },
 "Table 3": {
-"Columns": ["CHECKLIST ITEMS"],
+"Columns": ["CHECKLIST ITEMS", "CATEGORY", "TYPE", "ASSIGNED TO", "SUB-TOTALS"],
 "Row Names": [],
-"Last Row": ["Recap with Sponsors"]
-},
-"Table 4": {
-"Columns": ["CATEGORY", "TYPE", "ASSIGNED TO", "SUB-TOTALS"],
-"Row Names": [],
-"Last Row": ["Sale of items", "Income", "Flora Berggren", "0.00"]
+"Last Row": ["☐", "Sale of items", "Income", "Flora Berggren", "0"]
 }
 }

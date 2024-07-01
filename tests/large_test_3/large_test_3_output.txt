@@ -1,7 +1,7 @@
 Table 0:
 Top Left Coordinate: B7, Actual Value: TASKS
-Bottom Left Coordinate: B19, Actual Value: Launch
+Bottom Left Coordinate: B18, Actual Value: System Testing
 Top Right Coordinate: E7, Actual Value: STATUS
-Bottom Right Coordinate: E19, Actual Value: None
+Bottom Right Coordinate: E18, Actual Value: NOT STARTED
 
 

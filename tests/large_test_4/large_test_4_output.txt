@@ -1,15 +1,15 @@
 Table 0:
 Top Left Coordinate: B6, Actual Value: REVENUE
-Bottom Left Coordinate: B14, Actual Value: TOTAL REVENUE
+Bottom Left Coordinate: C43, Actual Value: 0
 Top Right Coordinate: D6, Actual Value: 2021
-Bottom Right Coordinate: D14, Actual Value: 0
+Bottom Right Coordinate: D43, Actual Value: 0
 
 
 Table 1:
 Top Left Coordinate: B16, Actual Value: EXPENSES
-Bottom Left Coordinate: B37, Actual Value: TOTAL EXPENSES
+Bottom Left Coordinate: C43, Actual Value: 0
 Top Right Coordinate: D16, Actual Value: 2021
-Bottom Right Coordinate: D37, Actual Value: 0
+Bottom Right Coordinate: D43, Actual Value: 0
 
 
 Table 2:

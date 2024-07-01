@@ -1,17 +1,17 @@
 {
 "Table 1": {
 "Columns": ["REVENUE", "2022", "2021"],
-"Row Names": ["Sales Revenue", "Service Revenue", "Interest Revenue", "Other (specify)", "Other (specify)", "TOTAL", "LESS SALES RETURNS / ALLOWANCES ( enter \"-\" negative amount )", "TOTAL REVENUE"],
-"Last Row": ["TOTAL REVENUE", "$", "-", "$", "-"]
+"Row Names": ["Sales Revenue", "Service Revenue", "Interest Revenue", "Other (specify)", "Other (specify)", "TOTAL", "LESS SALES RETURNS / ALLOWANCES", "TOTAL REVENUE"],
+"Last Row": ["TOTAL REVENUE", "0", "0"]
 },
 "Table 2": {
 "Columns": ["EXPENSES", "2022", "2021"],
 "Row Names": [],
-"Last Row": ["TOTAL EXPENSES", "$", "-", "$", "-"]
+"Last Row": ["TOTAL EXPENSES", "0", "0"]
 },
 "Table 3": {
 "Columns": ["NET INCOME BEFORE TAXES", "2022", "2021"],
 "Row Names": [],
-"Last Row": ["NET INCOME", "$", "-", "$", "-"]
+"Last Row": ["NET INCOME", "0", "0"]
 }
 }

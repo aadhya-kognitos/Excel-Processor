@@ -1,4 +1,11 @@
 Table 0:
+Top Left Coordinate: B4, Actual Value: Budget summary
+Bottom Left Coordinate: B7, Actual Value: Remaining cash
+Top Right Coordinate: B4, Actual Value: Budget summary
+Bottom Right Coordinate: B7, Actual Value: Remaining cash
+
+
+Table 1:
 Top Left Coordinate: B9, Actual Value: Item
 Bottom Left Coordinate: B25, Actual Value: Winter jacket
 Top Right Coordinate: H9, Actual Value: Total cost
