@@ -54,7 +54,7 @@ To add your own tests, create a new subdirectory entitled `large_test_(# of test
 
 ## UPDATE: User-Oriented Benchmarks
 
-I've also created several user-oriented benchmarks in the user_tests directory. These simulate the end-to-end process of a user querying for a table. These tests are runnable with the python program `run_user_tests.py`.
+I've also created several user-oriented benchmarks in the user_tests directory. These simulate the end-to-end process of a user querying for a table. These tests are runnable with the python program `run_user_tests.py`. The results of these runs can be found in the user_tests directory, in the subdirectories for each test. (ex. test_1, test_2, test_3....test_30). `user_prompt.txt` is the user query that the program is expected to answer, and `test_n_output.txt` is the output of the program, complete with the Dataframe.
 
 ```bash
 python3 run_user_tests.py
