@@ -1,0 +1,69 @@
+Table Name: Table 1
+With columns of ['Alpha', 'Beta', 'Gamma']
+With row names of []
+With last rows of ['10', '12', '13']
+Local Column Occurrences: [(2, 1), (3, 0), (4, 0), (5, 0), (6, 0), (9, 1), (10, 0), (11, 0), (12, 0), (13, 0), (16, 1), (17, 0), (18, 0), (19, 0), (20, 0), (2, 2), (9, 2), (16, 2), (2, 3), (9, 3), (16, 3)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(7, 1), (14, 1), (21, 1), (7, 2), (14, 2), (21, 2), (7, 3), (14, 3), (21, 3)] 
+
+Columns Found: [(2, 1), (2, 2), (2, 3)] 
+
+Row Names Found: [] 
+
+Last Row Found: [(7, 1), (7, 2), (7, 3)] 
+
+Table Name: Table 2
+With columns of ['Alpha', 'Beta', 'Gamma']
+With row names of []
+With last rows of ['10', '12', '13']
+Local Column Occurrences: [(2, 1), (3, 0), (4, 0), (5, 0), (6, 0), (9, 1), (10, 0), (11, 0), (12, 0), (13, 0), (16, 1), (17, 0), (18, 0), (19, 0), (20, 0), (2, 2), (9, 2), (16, 2), (2, 3), (9, 3), (16, 3)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(7, 1), (14, 1), (21, 1), (7, 2), (14, 2), (21, 2), (7, 3), (14, 3), (21, 3)] 
+
+Columns Found: [(9, 1), (9, 2), (9, 3)] 
+
+Row Names Found: [] 
+
+Last Row Found: [(14, 1), (14, 2), (14, 3)] 
+
+Table Name: Table 3
+With columns of ['Alpha', 'Beta', 'Gamma']
+With row names of []
+With last rows of ['10', '12', '13']
+Local Column Occurrences: [(2, 1), (3, 0), (4, 0), (5, 0), (6, 0), (9, 1), (10, 0), (11, 0), (12, 0), (13, 0), (16, 1), (17, 0), (18, 0), (19, 0), (20, 0), (2, 2), (9, 2), (16, 2), (2, 3), (9, 3), (16, 3)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(7, 1), (14, 1), (21, 1), (7, 2), (14, 2), (21, 2), (7, 3), (14, 3), (21, 3)] 
+
+Columns Found: [(16, 1), (16, 2), (16, 3)] 
+
+Row Names Found: [] 
+
+Last Row Found: [(21, 1), (21, 2), (21, 3)] 
+
+Table 0:
+Top Left Coordinate: B3, Actual Value: Alpha
+Bottom Left Coordinate: B8, Actual Value: 10
+Top Right Coordinate: D3, Actual Value: Gamma
+Bottom Right Coordinate: D8, Actual Value: 13
+
+
+Table 1:
+Top Left Coordinate: B10, Actual Value: Alpha
+Bottom Left Coordinate: B15, Actual Value: 10
+Top Right Coordinate: D10, Actual Value: Gamma
+Bottom Right Coordinate: D15, Actual Value: 13
+
+
+Table 2:
+Top Left Coordinate: B17, Actual Value: Alpha
+Bottom Left Coordinate: B22, Actual Value: 10
+Top Right Coordinate: D17, Actual Value: Gamma
+Bottom Right Coordinate: D22, Actual Value: 13
+
+

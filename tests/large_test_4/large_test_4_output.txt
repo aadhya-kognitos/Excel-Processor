@@ -12,10 +12,3 @@ Top Right Coordinate: D16, Actual Value: 2021
 Bottom Right Coordinate: D43, Actual Value: 0
 
 
-Table 2:
-Top Left Coordinate: B39, Actual Value: NET INCOME BEFORE TAXES
-Bottom Left Coordinate: B43, Actual Value: NET INCOME
-Top Right Coordinate: D39, Actual Value: 0
-Bottom Right Coordinate: D43, Actual Value: 0
-
-

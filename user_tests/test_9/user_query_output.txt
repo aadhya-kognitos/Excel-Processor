@@ -1,0 +1,7 @@
+{
+  "Table": {
+    "Columns": ["ENTERTAINMENT", "Projected Cost", "Actual Cost", "Difference"],
+    "Row Names": ["Night out", "Music platforms", "Movies", "Concerts", "Sporting events", "Live theater", "Other", "Other", "Other"],
+    "Last Row": ["Subtotal", "$0.00", "$0.00", "$0.00"]
+  }
+}

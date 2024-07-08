@@ -1,6 +1,6 @@
 Table 0:
 Top Left Coordinate: C30, Actual Value: CHECKLIST ITEMS
-Bottom Left Coordinate: C41, Actual Value: ☐
+Bottom Left Coordinate: V41, Actual Value: Income
 Top Right Coordinate: AH30, Actual Value: SUB-TOTALS
 Bottom Right Coordinate: AH41, Actual Value: 0
 

@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["Loan No.", "Lender", "Loan Amount", "Annual Interest Rate"],
+    "Row Names": ["10998M88", "20987N87"],
+    "Last Row": ["Averages", "$9,000.00", "5.00%"]
+  }
+}

@@ -1,47 +1,22 @@
 {
 "Table 1": {
 "Columns": ["TASK", "LABOR HRS", "RATE", "MATERIALS UNITS", "$/UNIT", "FIXED COST", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": ["CATEGORY", "CATEGORY", "CATEGORY"],
+"Row Names": ["Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task", "Task"],
 "Last Row": ["Task", "", "", "", "", "", "850.00", "800.00", ""]
 },
 "Table 2": {
 "Columns": ["SUMMARY", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": [],
+"Row Names": ["Total Income", "Total Expenses"],
 "Last Row": ["Total Expenses", "2430.00", "2300.00", "130.00"]
 },
 "Table 3": {
 "Columns": ["INCOME", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": ["OPERATING INCOME"],
-"Last Row": ["Category 7", "115.00", "50.00", "(65.00)"]
+"Row Names": ["OPERATING INCOME", "Category 1", "Category 2", "Category 3", "Category 4", "Category 5", "Category 6", "Category 7"],
+"Last Row": ["Category 7", "115.00", "50.00", "65.00"]
 },
 "Table 4": {
 "Columns": ["EXPENSES", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": ["OPERATING EXPENSE"],
-"Last Row": ["Web Hosting & Domains", "", "", ""]
-},
-"Table 5": {
-"Columns": ["PAYROLL", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": [],
-"Last Row": ["Contractor Wages", "", "", ""]
-},
-"Table 6": {
-"Columns": ["OFFICE", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": [],
-"Last Row": ["Pet Supplies", "", "", ""]
-},
-"Table 7": {
-"Columns": ["ENTERTAINMENT", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": [],
-"Last Row": ["Outdoor Recreation", "", "", ""]
-},
-"Table 8": {
-"Columns": ["HEALTH", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": [],
-"Last Row": ["Life Insurance", "", "", ""]
-},
-"Table 9": {
-"Columns": ["VACATION/HOLIDAY", "BUDGET", "ACTUAL", "UNDER/OVER"],
-"Row Names": [],
+"Row Names": ["OPERATING EXPENSE", "Accounting & Legal", "Advertising", "Depreciation", "Dues & Subscriptions", "Insurance", "Interest Expense", "Maintenance/Improvements", "Taxes & Licenses", "Telephone", "Travel", "Utilities", "Web Hosting & Domains", "PAYROLL", "Payroll Expenses", "Salaries & Wages", "Contractor Wages", "OFFICE", "Office Supplies", "Postage", "Clothing", "Cleaning", "Salon/Barber", "Pet Supplies", "ENTERTAINMENT", "Video/DVD/Movies", "Concerts/Plays", "Sports", "Outdoor Recreation", "HEALTH", "Health Insurance", "Gym Membership", "Doctors/Dentist Visits", "Medicine/Prescriptions", "Veterinarian", "Life Insurance", "VACATION/HOLIDAY", "Airfare", "Accommodations", "Food", "Souvenirs", "Pet Boarding", "Rental Car"],
 "Last Row": ["Rental Car", "", "", ""]
 }
 }

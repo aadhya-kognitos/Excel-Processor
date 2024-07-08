@@ -1,0 +1,17 @@
+{
+"Table 1": {
+"Columns": ["Alpha", "Beta", "Gamma"],
+"Row Names": [],
+"Last Row": ["10", "12", "13"]
+},
+"Table 2": {
+"Columns": ["Alpha", "Beta", "Gamma"],
+"Row Names": [],
+"Last Row": ["10", "12", "13"]
+},
+"Table 3": {
+"Columns": ["Alpha", "Beta", "Gamma"],
+"Row Names": [],
+"Last Row": ["10", "12", "13"]
+}
+}

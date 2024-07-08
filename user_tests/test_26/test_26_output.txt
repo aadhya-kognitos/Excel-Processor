@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B9, Actual Value: Assignment #
+Bottom Left Coordinate: B60, Actual Value: Marks scored
+Top Right Coordinate: I9, Actual Value: Subject total (%)
+Bottom Right Coordinate: I60, Actual Value: None
+
+

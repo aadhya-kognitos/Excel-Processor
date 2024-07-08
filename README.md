@@ -52,6 +52,12 @@ To add your own tests, create a new subdirectory entitled `large_test_(# of test
 
 **Ex.** To create a new test called large_test_6, create a new subdirectory entitled `large_test_6` and add an excel file entitled `large_test_6.xlsx`. Also add a png screenshot of your spreadsheet entitled `large_test_6.png`.
 
+I've also created several user-oriented benchmarks in the user_tests directory. These simulate the end-to-end process of a user querying for a table. These tests are runnable with the python program `run_user_tests.py`.
+
+```bash
+python3 run_user_tests.py
+```
+
 ### 3. Running the Tests
 
 Navigate to the `bin` folder to find the shell scripts for running the tests. Here are the available scripts and their usage:
@@ -192,8 +198,6 @@ All Tables have error in 2nd and 4th coordinate display
 **Final Success Rate**
 Total Tables: 64,    
 **Success Rate**: 37/64
-
-
 
 ## Next Steps
 

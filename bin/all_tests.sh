@@ -36,7 +36,7 @@ for test_type in simple_test; do
 
         # Run the third Python script with the necessary arguments
         echo "Running excel_process_2.py..."
-        python3 src/excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
+        python3 src/exp_excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
 
         # Check if the third script ran successfully
         if [ $? -ne 0 ]; then
@@ -83,7 +83,7 @@ for test_type in large_test; do
 
         # Run the third Python script with the necessary arguments
         echo "Running excel_process_2.py..."
-        python3 src/excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
+        python3 src/exp_excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
 
         # Check if the third script ran successfully
         if [ $? -ne 0 ]; then

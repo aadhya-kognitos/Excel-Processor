@@ -1,0 +1,7 @@
+{
+"Table": {
+"Columns": ["DECORATIONS", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
+"Row Names": ["Bows for church pews", "Table centerpieces", "Candles", "Lighting", "Balloons", "Others"],
+"Last Row": ["Total for decorations", "$2,300.00", "$2,300.00", "0"]
+}
+}

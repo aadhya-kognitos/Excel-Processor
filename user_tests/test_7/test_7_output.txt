@@ -1,0 +1,21 @@
+Table 0:
+Top Left Coordinate: B6, Actual Value: REVENUE
+Bottom Left Coordinate: B14, Actual Value: TOTAL REVENUE
+Top Right Coordinate: D6, Actual Value: 2021
+Bottom Right Coordinate: D14, Actual Value: 0
+
+
+DF: 
+
+                                                   0       1       2
+0                                            REVENUE  2022.0  2021.0
+1                                      Sales Revenue     NaN     NaN
+2                                    Service Revenue     NaN     NaN
+3                                   Interest Revenue     NaN     NaN
+4                                    Other (specify)     NaN     NaN
+5                                    Other (specify)     NaN     NaN
+6                                              TOTAL     0.0     0.0
+7  LESS SALES RETURNS / ALLOWANCES   ( enter "-" ...     NaN     NaN
+8                                      TOTAL REVENUE     0.0     0.0
+
+

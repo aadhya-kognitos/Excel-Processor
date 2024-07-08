@@ -1,0 +1,19 @@
+Table 0:
+Top Left Coordinate: B11, Actual Value: ACTUAL EXPENSES
+Bottom Left Coordinate: B17, Actual Value: Total
+Top Right Coordinate: E11, Actual Value: 15% REDUCTION
+Bottom Right Coordinate: E17, Actual Value: 2895.0000123
+
+
+DF: 
+
+                         0             1              2              3
+0          ACTUAL EXPENSES        AMOUNT  % OF EXPENSES  15% REDUCTION
+1  Maintenance and repairs   4600.000015       0.129468     690.000002
+2                 Supplies   4500.000021       0.126654     675.000003
+3         Rent or mortgage   4500.000018       0.126654     675.000003
+4                    Taxes   3200.000022       0.090065     480.000003
+5              Advertising   2500.000006       0.070363     375.000001
+6                    Total  19300.000082       0.543203    2895.000012
+
+

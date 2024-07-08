@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: C20, Actual Value: ESTIMATED
+Bottom Left Coordinate: E69, Actual Value: 0
+Top Right Coordinate: J20, Actual Value: OVER/UNDER
+Bottom Right Coordinate: J69, Actual Value: -50
+
+

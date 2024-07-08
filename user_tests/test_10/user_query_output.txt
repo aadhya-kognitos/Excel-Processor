@@ -1,0 +1,7 @@
+{
+"Table": {
+"Columns": ["TAXES", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Federal", "State", "Local", "Other"],
+"Last Row": ["Subtotal", "$0.00", "$0.00", "$0.00"]
+}
+}

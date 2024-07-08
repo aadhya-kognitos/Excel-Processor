@@ -11,7 +11,7 @@
 },
 "Table 3": {
 "Columns": ["CHECKLIST ITEMS", "CATEGORY", "TYPE", "ASSIGNED TO", "SUB-TOTALS"],
-"Row Names": [],
-"Last Row": ["☐", "Sale of items", "Income", "Flora Berggren", "0"]
+"Row Names": ["✔ Venue Availability", "✖ Venue Rental Fee", "☐ Early Access Policy", "☐ Communication with Speakers", "☐ Survey your attendees", "☐ Recap with Sponsors", "☐", "☐", "☐", "☐"],
+"Last Row": ["☐ Sale of items", "Income", "Flora Berggren", "0"]
 }
 }

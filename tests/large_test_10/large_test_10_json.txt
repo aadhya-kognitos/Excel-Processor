@@ -1,62 +1,62 @@
 {
 "Table 1": {
 "Columns": ["SUMMARY", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Reception", "Apparel", "Photography", "Decorations", "Transportation", "Gifts", "Music", "Flowers", "Stationery / Printing", "Other Expenses"],
 "Last Row": ["Total budget", "21300", "21000", "10"]
 },
 "Table 2": {
 "Columns": ["Rank", "Category", "Estimated", "Actual", "Ranking Value", "Ref"],
-"Row Names": [],
+"Row Names": ["2", "4", "6", "8", "7", "3", "1", "9", "5", "10"],
 "Last Row": ["10", "Other Expenses", "300", "300", "300.0015", "10"]
 },
 "Table 3": {
 "Columns": ["APPAREL", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Engagement ring", "Wedding rings", "Tux, suit, and/or dresses", "Veil/headpiece", "Shoes", "Jewelry", "Accessories", "Others"],
 "Last Row": ["Total for apparel", "5000", "5000", "0"]
 },
 "Table 4": {
 "Columns": ["DECORATIONS", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Bows for church pews", "Table centerpieces", "Candles", "Lighting", "Balloons", "Others"],
 "Last Row": ["Total for decorations", "2300", "2300", "0"]
 },
 "Table 5": {
 "Columns": ["FLOWERS", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
-"Last Row": ["Bouquets", "800", "800", "0"]
+"Row Names": ["Bouquets", "Boutonnières", "Corsages", "Ceremony", "Reception", "Others"],
+"Last Row": ["Total for flowers", "800", "800", "0"]
 },
 "Table 6": {
 "Columns": ["GIFTS", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Attendants", "Parents", "Readers/other participants", "Others"],
 "Last Row": ["Total for gifts", "1400", "1300", "-100"]
 },
 "Table 7": {
 "Columns": ["MUSIC", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Musicians for ceremony", "Band/DJ for reception", "Others"],
 "Last Row": ["Total for music", "1200", "1250", "50"]
 },
 "Table 8": {
 "Columns": ["PHOTOGRAPHY", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Formals", "Candid's", "Extra prints", "Photo albums", "Videography", "Others"],
 "Last Row": ["Total for photography", "2950", "2950", "0"]
 },
 "Table 9": {
 "Columns": ["RECEPTION", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Room/hall fees", "Tables and chairs", "Food", "Drinks", "Linens", "Cake", "Favors", "Staff and gratuities", "Others"],
 "Last Row": ["Total for reception", "5500", "5300", "-200"]
 },
 "Table 10": {
 "Columns": ["STATIONERY / PRINTING", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Invitations", "Announcements", "Thank-You cards", "Personal stationery", "Guest book", "Programs", "Reception napkins", "Matchbooks", "Calligraphy", "Others"],
 "Last Row": ["Total for stationery / printing", "400", "400", "0"]
 },
 "Table 11": {
 "Columns": ["OTHER EXPENSES", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Officiant", "Church/ceremony site fee", "Wedding coordinator", "Rehearsal dinner", "Engagement party", "Showers", "Bachelor/ette parties", "Hotel rooms"],
 "Last Row": ["Total for other expenses", "300", "300", "0"]
 },
 "Table 12": {
 "Columns": ["TRANSPORTATION", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
-"Row Names": [],
+"Row Names": ["Limousines/trolleys", "Parking", "Taxis", "Others"],
 "Last Row": ["Total for transportation", "1450", "1400", "-50"]
 }
 }

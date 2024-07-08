@@ -1,0 +1,23 @@
+Table Name: Table 1
+With columns of ['Alpha', 'Beta', 'Gamma']
+With row names of []
+With last rows of ['Alpha']
+Local Column Occurrences: [(0, 0), (3, 0), (0, 1), (0, 2)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(0, 0), (3, 0)] 
+
+Columns Found: [(0, 0), (0, 1), (0, 2)] 
+
+Row Names Found: [] 
+
+Last Row Found: [(3, 0)] 
+
+Table 0:
+Top Left Coordinate: A1, Actual Value: Alpha
+Bottom Left Coordinate: A4, Actual Value: Alpha
+Top Right Coordinate: C1, Actual Value: Gamma
+Bottom Right Coordinate: C4, Actual Value: None
+
+

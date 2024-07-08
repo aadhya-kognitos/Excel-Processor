@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["REVENUE", "2022", "2021"],
+    "Row Names": ["Sales Revenue", "Service Revenue", "Interest Revenue", "Other (specify)", "Other (specify)", "LESS SALES RETURNS / ALLOWANCES   ( enter \"-\" negative amount )"],
+    "Last Row": ["TOTAL REVENUE", "$", "-", "$", "-"]
+  }
+}

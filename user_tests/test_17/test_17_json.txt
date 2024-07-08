@@ -1,0 +1,7 @@
+{
+"Table 2": {
+"Columns": ["APPAREL", "ESTIMATED", "ACTUAL", "OVER/UNDER"],
+"Row Names": ["Engagement ring", "Wedding rings", "Tux, suit, and/or dresses", "Veil/headpiece", "Shoes", "Jewelry", "Accessories", "Others"],
+"Last Row": ["Total for apparel", "$5,000.00", "$5,000.00", "$0.00"]
+}
+}

@@ -1,0 +1,7 @@
+{
+"Table 1": {
+"Columns": ["HOUSING", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Mortgage or rent", "Phone", "Electricity", "Gas", "Water and sewer", "Cable", "Waste removal", "Maintenance or repairs", "Supplies", "Other"],
+"Last Row": ["Subtotal", "", "", "-$41.00"]
+}
+}

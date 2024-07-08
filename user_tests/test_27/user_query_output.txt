@@ -1,0 +1,7 @@
+{
+"Table": {
+"Columns": ["GIFTS AND DONATIONS", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Charity 1", "Charity 2", "Charity 3"],
+"Last Row": ["Subtotal", "$0.00", "$0.00", "$0.00"]
+}
+}

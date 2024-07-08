@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["Budget", "Shopping list total", "Remaining cash"],
+    "Row Names": [],
+    "Last Row": ["1500", "365", "1135"]
+  }
+}

@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B5, Actual Value: SUMMARY
+Bottom Left Coordinate: B16, Actual Value: Total budget
+Top Right Coordinate: E5, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E16, Actual Value: 10
+
+

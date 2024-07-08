@@ -6,7 +6,7 @@
 },
 "Table 2": {
 "Columns": ["Item", "Category", "Qty", "To buy", "Cost", "Bought", "Total cost"],
-"Row Names": [],
-"Last Row": ["Winter jacket", "Clothes", "1", "", "", "", ""]
+"Row Names": ["Math", "English", "Backpack", "Calculator", "Highlighters", "Uniform", "Shirt, button-up", "Shirt, t-shirts", "Shorts", "Sneakers", "Socks", "Spring jacket", "Sweaters", "Sweatshirts", "Underwear"],
+"Last Row": ["Winter jacket", "Clothes", "1", "1"]
 }
 }

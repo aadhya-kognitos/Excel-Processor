@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: C14, Actual Value: Loan No.
+Bottom Left Coordinate: C22, Actual Value: Averages
+Top Right Coordinate: F14, Actual Value: Annual Interest Rate
+Bottom Right Coordinate: F22, Actual Value: 0.05
+
+

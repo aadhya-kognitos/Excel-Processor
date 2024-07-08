@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["TASKS", "ASSIGNED TO", "PRIORITY", "STATUS"],
+    "Row Names": ["Set Kick-Off Meeting", "Agree on Objectives", "Detailed Requests", "Hardware Requests", "Final Resource Plan", "Staffing", "Technical Requests", "Testing", "Dev. Complete", "Hardware Configuration"],
+    "Last Row": ["System Testing", "Kennedy K.", "★", "NOT STARTED"]
+  }
+}

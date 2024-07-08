@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["BUDGET TOTALS", "ESTIMATED", "ACTUAL", "DIFFERENCE"],
+    "Row Names": ["Income", "Personnel expenses", "Operating expenses"],
+    "Last Row": ["Balance (income minus expenses)", "8800", "7820", "-980"]
+  }
+}

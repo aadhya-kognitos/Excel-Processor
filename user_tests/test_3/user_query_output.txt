@@ -1,0 +1,1 @@
+Error: Table not found. The user query is: Get me the Fruits table.

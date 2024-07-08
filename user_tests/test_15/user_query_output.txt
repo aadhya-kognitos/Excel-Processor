@@ -1,0 +1,7 @@
+{
+"Table": {
+"Columns": ["ACTUAL EXPENSES", "AMOUNT", "% OF EXPENSES", "15% REDUCTION"],
+"Row Names": ["Maintenance and repairs", "Supplies", "Rent or mortgage", "Taxes", "Advertising"],
+"Last Row": ["Total", "19300.000082", "0.5432029294117647", "2895.0000123"]
+}
+}

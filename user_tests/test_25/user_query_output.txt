@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["COURSE ID", "NAME", "INSTRUCTOR", "DAY", "YEAR", "SEMESTER", "TIME START", "TIME END", "DURATION"],
+    "Row Names": ["CS 120", "CS 120", "WR 121", "WR 121", "SP 111", "SP 111"],
+    "Last Row": ["PSY 101", "Basic Psychology", "Gael Torres", "Friday", "2024", "Spring", "10:00 AM", "11:00 AM", "1:00"]
+  }
+}

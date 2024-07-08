@@ -1,0 +1,49 @@
+Table 0:
+Top Left Coordinate: B5, Actual Value: REORDER (auto-fill)
+Bottom Left Coordinate: B39, Actual Value: OK
+Top Right Coordinate: O5, Actual Value: ITEM DISCONTINUED?
+Bottom Right Coordinate: O39, Actual Value: None
+
+
+DF: 
+
+                     0         1   ...                     12                  13
+0   REORDER (auto-fill)  ITEM NO.  ...  ITEM REORDER QUANTITY  ITEM DISCONTINUED?
+1                    OK      A123  ...                    100                 Yes
+2                    OK      B123  ...                     20                None
+3               REORDER      C123  ...                     50                None
+4               REORDER      D123  ...                     10                None
+5                    OK      E123  ...                    100                None
+6                    OK      F123  ...                     20                None
+7               REORDER      G123  ...                     50                 Yes
+8               REORDER      H123  ...                     10                None
+9                    OK      None  ...                   None                None
+10                   OK      None  ...                   None                None
+11                   OK      None  ...                   None                None
+12                   OK      None  ...                   None                None
+13                   OK      None  ...                   None                None
+14                   OK      None  ...                   None                None
+15                   OK      None  ...                   None                None
+16                   OK      None  ...                   None                None
+17                   OK      None  ...                   None                None
+18                   OK      None  ...                   None                None
+19                   OK      None  ...                   None                None
+20                   OK      None  ...                   None                None
+21                   OK      None  ...                   None                None
+22                   OK      None  ...                   None                None
+23                   OK      None  ...                   None                None
+24                   OK      None  ...                   None                None
+25                   OK      None  ...                   None                None
+26                   OK      None  ...                   None                None
+27                   OK      None  ...                   None                None
+28                   OK      None  ...                   None                None
+29                   OK      None  ...                   None                None
+30                   OK      None  ...                   None                None
+31                   OK      None  ...                   None                None
+32                   OK      None  ...                   None                None
+33                   OK      None  ...                   None                None
+34                   OK      None  ...                   None                None
+
+[35 rows x 14 columns]
+
+

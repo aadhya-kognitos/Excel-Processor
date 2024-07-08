@@ -1,3 +1,19 @@
+Table Name: Table 1
+With columns of ['A', 'B']
+With row names of []
+With last rows of ['Cairo', 'Abra']
+Local Column Occurrences: [(0, 1), (0, 2)] 
+
+Local Row Name Occurrences: [] 
+
+Local Last Row Occurrences: [(1, 1), (1, 2)] 
+
+Columns Found: [(0, 1), (0, 2)] 
+
+Row Names Found: [] 
+
+Last Row Found: [(1, 1), (1, 2)] 
+
 Table 0:
 Top Left Coordinate: B1, Actual Value: A
 Bottom Left Coordinate: B2, Actual Value: Cairo

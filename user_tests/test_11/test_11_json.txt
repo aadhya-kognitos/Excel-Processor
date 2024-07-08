@@ -1,0 +1,7 @@
+{
+"Table": {
+"Columns": ["PERSONAL CARE", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Medical", "Hair/nails", "Clothing", "Dry cleaning", "Health club", "Organization dues or fees", "Other"],
+"Last Row": ["Subtotal", "$0.00", "$0.00", "$0.00"]
+}
+}

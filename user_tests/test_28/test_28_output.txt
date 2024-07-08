@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B12, Actual Value: HOUSING
+Bottom Left Coordinate: B64, Actual Value: Subtotal
+Top Right Coordinate: E12, Actual Value: Difference
+Bottom Right Coordinate: E64, Actual Value: 0
+
+

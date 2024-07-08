@@ -1,12 +1,12 @@
 {
 "Table 1": {
 "Columns": ["BUDGET TOTALS", "ESTIMATED", "ACTUAL", "DIFFERENCE"],
-"Row Names": [],
+"Row Names": ["Income", "Personnel expenses", "Operating expenses"],
 "Last Row": ["Balance (income minus expenses)", "8800", "7820", "-980"]
 },
 "Table 2": {
 "Columns": ["ACTUAL EXPENSES", "AMOUNT", "% OF EXPENSES", "15% REDUCTION"],
-"Row Names": [],
+"Row Names": ["Maintenance and repairs", "Supplies", "Rent or mortgage", "Taxes", "Advertising"],
 "Last Row": ["Total", "19300.000082", "0.5432029294117647", "2895.0000123"]
 }
 }

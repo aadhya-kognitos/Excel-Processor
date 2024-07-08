@@ -1,0 +1,22 @@
+Table 0:
+Top Left Coordinate: C7, Actual Value: Phase
+Bottom Left Coordinate: B16, Actual Value: 0
+Top Right Coordinate: E7, Actual Value: Notes
+Bottom Right Coordinate: E16, Actual Value: Meeting
+
+
+DF: 
+
+             0                    1                           2
+0        Phase               Due By                       Notes
+1     Planning  2023-12-10 00:00:00  Research local contractors
+2  Preparation  2023-01-10 00:00:00          Select winning bid
+3       Task a  2023-01-12 00:00:00                     Consult
+4       Task b  2023-01-15 00:00:00           Follow-up meeting
+5       Task c  2023-01-20 00:00:00              Sign paperwork
+6       Task d  2023-01-20 00:00:00                 Begin work 
+7    Paperwork  2023-01-23 00:00:00                     Mail in
+8     Complete  2023-01-25 00:00:00                  Inspection
+9    Follow-up  2023-02-01 00:00:00                     Meeting
+
+

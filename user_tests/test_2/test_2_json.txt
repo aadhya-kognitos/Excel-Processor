@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["TASK", "LABOR HRS", "RATE", "MATERIALS UNITS", "$/UNIT", "FIXED COST", "BUDGET", "ACTUAL", "UNDER/OVER"],
+    "Row Names": ["CATEGORY", "Task", "Task", "Task", "Task", "CATEGORY", "Task", "Task", "Task", "Task", "Task", "CATEGORY", "Task", "Task", "Task", "Task"],
+    "Last Row": ["Task", "", "", "", "", "", "", "", ""]
+  }
+}

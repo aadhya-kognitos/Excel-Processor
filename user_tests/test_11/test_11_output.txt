@@ -1,0 +1,55 @@
+Table 0:
+Top Left Coordinate: B22, Actual Value: Other
+Bottom Left Coordinate: B64, Actual Value: Subtotal
+Top Right Coordinate: E22, Actual Value: 0
+Bottom Right Coordinate: E64, Actual Value: 0
+
+
+DF: 
+
+                            0               1            2           3
+0                       Other               0            0           0
+1                    Subtotal            None         None         -41
+2                        None            None         None        None
+3              TRANSPORTATION  Projected Cost  Actual Cost  Difference
+4             Vehicle payment            None         None           0
+5               Bus/taxi fare            None         None           0
+6                   Insurance            None         None           0
+7                   Licensing            None         None           0
+8                        Fuel            None         None           0
+9                 Maintenance            None         None           0
+10                      Other            None         None           0
+11                   Subtotal            None         None           0
+12                       None            None         None        None
+13                  INSURANCE  Projected Cost  Actual Cost  Difference
+14                       Home            None         None           0
+15                     Health            None         None           0
+16                       Life            None         None           0
+17                      Other            None         None           0
+18                   Subtotal            None         None           0
+19                       None            None         None        None
+20                       FOOD  Projected Cost  Actual Cost  Difference
+21                  Groceries            None         None           0
+22                 Dining out            None         None           0
+23                      Other            None         None           0
+24                   Subtotal            None         None           0
+25                       None            None         None        None
+26                       PETS  Projected Cost  Actual Cost  Difference
+27                       Food            None         None           0
+28                    Medical            None         None           0
+29                   Grooming            None         None           0
+30                       Toys            None         None           0
+31                      Other            None         None           0
+32                   Subtotal            None         None           0
+33                       None            None         None        None
+34              PERSONAL CARE  Projected Cost  Actual Cost  Difference
+35                    Medical            None         None           0
+36                 Hair/nails            None         None           0
+37                   Clothing            None         None           0
+38               Dry cleaning            None         None           0
+39                Health club            None         None           0
+40  Organization dues or fees            None         None           0
+41                      Other            None         None           0
+42                   Subtotal            None         None           0
+
+

@@ -1,0 +1,24 @@
+Table 0:
+Top Left Coordinate: B7, Actual Value: TASKS
+Bottom Left Coordinate: B18, Actual Value: System Testing
+Top Right Coordinate: E7, Actual Value: STATUS
+Bottom Right Coordinate: E18, Actual Value: NOT STARTED
+
+
+DF: 
+
+                         0            1         2            3
+0                    TASKS  ASSIGNED TO  PRIORITY       STATUS
+1     Set Kick-Off Meeting      Alex B.      None     COMPLETE
+2      Agree on Objectives     Frank C.         ★     COMPLETE
+3        Detailed Requests     Jacob S.      None     COMPLETE
+4        Hardware Requests     Jacob S.         ★      OVERDUE
+5      Final Resource Plan     Jacob S.      None  IN PROGRESS
+6                 Staffing      Alex B.         ★  IN PROGRESS
+7       Technical Requests     Frank C.      None  NOT STARTED
+8                  Testing   Kennedy K.         ★  NOT STARTED
+9            Dev. Complete     Jacob S.         ★  NOT STARTED
+10  Hardware Configuration      Alex B.      None  NOT STARTED
+11          System Testing   Kennedy K.         ★  NOT STARTED
+
+

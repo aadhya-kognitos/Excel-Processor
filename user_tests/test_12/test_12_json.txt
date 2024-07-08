@@ -1,0 +1,7 @@
+{
+  "Table": {
+    "Columns": ["TASK", "ASSIGNED TO", "PROGRESS", "START", "END"],
+    "Row Names": ["Define goals", "Conduct studies", "Establish comms", "Develop charter", "Set up team", "Create schedule", "Identify deliverables", "Develop budget", "Define scope", "Identify risks", "Execute tasks", "Monitor progress", "Manage resources", "Provide updates", "Testing and validation", "Monitor progress", "Track expenses", "Evaluate progress", "Address risks"],
+    "Last Row": ["Gather feedback", "Olivia Wilson", "50%", "7/14/24", "7/19/24"]
+  }
+}

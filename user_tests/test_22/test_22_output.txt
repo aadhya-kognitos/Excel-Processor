@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: C14, Actual Value: Loan No.
+Bottom Left Coordinate: C21, Actual Value: Totals
+Top Right Coordinate: O14, Actual Value: Annual Payment
+Bottom Right Coordinate: O21, Actual Value: 2291.015129164025
+
+

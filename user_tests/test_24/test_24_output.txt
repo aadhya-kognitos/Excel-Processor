@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: C2, Actual Value: Jan
+Bottom Left Coordinate: C10, Actual Value: 0
+Top Right Coordinate: O2, Actual Value: Year
+Bottom Right Coordinate: O10, Actual Value: 0
+
+

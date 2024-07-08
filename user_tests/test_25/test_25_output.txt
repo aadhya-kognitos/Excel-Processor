@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: B4, Actual Value: COURSE ID
+Bottom Left Coordinate: B11, Actual Value: PSY 101
+Top Right Coordinate: J4, Actual Value: DURATION
+Bottom Right Coordinate: J11, Actual Value: 01:00:00
+
+

@@ -1,0 +1,22 @@
+Table 0:
+Top Left Coordinate: B20, Actual Value: APPAREL
+Bottom Left Coordinate: B29, Actual Value: Total for apparel
+Top Right Coordinate: E20, Actual Value: OVER/UNDER
+Bottom Right Coordinate: E29, Actual Value: 0
+
+
+DF: 
+
+                           0          1       2           3
+0                    APPAREL  ESTIMATED  ACTUAL  OVER/UNDER
+1            Engagement ring       5000    5000           0
+2              Wedding rings          0       0           0
+3  Tux, suit, and/or dresses          0       0           0
+4             Veil/headpiece          0       0           0
+5                      Shoes          0       0           0
+6                    Jewelry          0       0           0
+7                Accessories          0       0           0
+8                     Others          0       0           0
+9          Total for apparel       5000    5000           0
+
+

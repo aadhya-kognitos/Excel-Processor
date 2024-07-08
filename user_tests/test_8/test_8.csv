@@ -1,0 +1,7 @@
+Command,Syntax,Description
+cd,cd <newPath,cd stands for Change Directory. Used for navigating to a different directory specified in <newPath>.
+mkdir,mkdir <newDir>,Make Directory. Creates a new directory named <newDir> within the current working directory.
+ls,ls <dir>,"List contents of the current working directory (with no arguments).
+List contents of directory <dir> if specified. <dir> may be a relative or absolute path."
+sudo,sudo <command>,"Superuser Do. Some commands require elevated security permissions to run. For those, use sudo in front of the command."
+nano,nano <file>,"Opens the nano text editor, which allows you to edit files inside the terminal. If <file> is specified, nano will open it for editing."

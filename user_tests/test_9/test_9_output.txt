@@ -1,0 +1,58 @@
+Table 0:
+Top Left Coordinate: G12, Actual Value: ENTERTAINMENT
+Bottom Left Coordinate: G57, Actual Value: Subtotal
+Top Right Coordinate: J12, Actual Value: Difference
+Bottom Right Coordinate: J57, Actual Value: 0
+
+
+DF: 
+
+                               0               1            2           3
+0                  ENTERTAINMENT  Projected Cost  Actual Cost  Difference
+1                      Night out            None         None           0
+2                Music platforms            None         None           0
+3                         Movies            None         None           0
+4                       Concerts            None         None           0
+5                Sporting events            None         None           0
+6                   Live theater            None         None           0
+7                          Other            None         None           0
+8                          Other            None         None           0
+9                          Other            None         None           0
+10                      Subtotal            None         None           0
+11                          None            None         None        None
+12                         LOANS  Projected Cost  Actual Cost  Difference
+13                      Personal            None         None           0
+14                       Student            None         None           0
+15                   Credit card            None         None           0
+16                   Credit card            None         None           0
+17                   Credit card            None         None           0
+18                         Other            None         None           0
+19                      Subtotal            None         None           0
+20                          None            None         None        None
+21                         TAXES  Projected Cost  Actual Cost  Difference
+22                       Federal            None         None           0
+23                         State            None         None           0
+24                         Local            None         None           0
+25                         Other            None         None           0
+26                      Subtotal            None         None           0
+27                          None            None         None        None
+28        SAVINGS OR INVESTMENTS  Projected Cost  Actual Cost  Difference
+29            Retirement account            None         None           0
+30            Investment account            None         None           0
+31                         Other            None         None           0
+32                      Subtotal            None         None           0
+33                          None            None         None        None
+34           GIFTS AND DONATIONS  Projected Cost  Actual Cost  Difference
+35                     Charity 1            None         None           0
+36                     Charity 2            None         None           0
+37                     Charity 3            None         None           0
+38                      Subtotal            None         None           0
+39                          None            None         None        None
+40                         LEGAL  Projected Cost  Actual Cost  Difference
+41                      Attorney            None         None           0
+42                       Alimony            None         None           0
+43  Payments on lien or judgment            None         None           0
+44                         Other            None         None           0
+45                      Subtotal            None         None           0
+
+

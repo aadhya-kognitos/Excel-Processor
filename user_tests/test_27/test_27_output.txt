@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: G46, Actual Value: GIFTS AND DONATIONS
+Bottom Left Coordinate: G57, Actual Value: Subtotal
+Top Right Coordinate: J46, Actual Value: Difference
+Bottom Right Coordinate: J57, Actual Value: 0
+
+

@@ -1,62 +1,102 @@
 {
 "Table 1": {
-"Columns": ["PROJECTED MONTHLY INCOME", "", "", "", "PROJECTED BALANCE"],
+"Columns": ["PROJECTED MONTHLY INCOME", "Income 1", "Extra income", "Total monthly income"],
 "Row Names": [],
-"Last Row": ["Total monthly income", "4600", "", "", "3405"]
+"Last Row": ["Total monthly income", "4600"]
 },
 "Table 2": {
-"Columns": ["ACTUAL MONTHLY INCOME", "", "", "", "ACTUAL BALANCE"],
+"Columns": ["ACTUAL MONTHLY INCOME", "Income 1", "Extra income", "Total monthly income"],
 "Row Names": [],
-"Last Row": ["Total monthly income", "4300", "", "", "3064"]
+"Last Row": ["Total monthly income", "4300"]
 },
 "Table 3": {
-"Columns": ["", "", "", "", "DIFFERENCE"],
+"Columns": ["PROJECTED BALANCE", "(Projected income minus expenses)"],
 "Row Names": [],
-"Last Row": ["", "", "", "", "-341"]
+"Last Row": ["(Projected income minus expenses)", "3405"]
 },
 "Table 4": {
-"Columns": ["HOUSING", "Projected Cost", "Actual Cost", "Difference", "ENTERTAINMENT", "Projected Cost", "Actual Cost", "Difference"],
+"Columns": ["ACTUAL BALANCE", "(Actual income minus expenses)"],
 "Row Names": [],
-"Last Row": ["Subtotal", "-41", "", "", "Subtotal", "", "", "0"]
+"Last Row": ["(Actual income minus expenses)", "3064"]
 },
 "Table 5": {
-"Columns": ["TRANSPORTATION", "Projected Cost", "Actual Cost", "Difference", "LOANS", "Projected Cost", "Actual Cost", "Difference"],
+"Columns": ["DIFFERENCE", "(Actual minus projected)"],
 "Row Names": [],
-"Last Row": ["Subtotal", "0", "", "", "Subtotal", "", "", "0"]
+"Last Row": ["(Actual minus projected)", "-341"]
 },
 "Table 6": {
-"Columns": ["INSURANCE", "Projected Cost", "Actual Cost", "Difference", "TAXES", "Projected Cost", "Actual Cost", "Difference"],
-"Row Names": [],
-"Last Row": ["Subtotal", "0", "", "", "Subtotal", "", "", "0"]
+"Columns": ["HOUSING", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Mortgage or rent", "Phone", "Electricity", "Gas", "Water and sewer", "Cable", "Waste removal", "Maintenance or repairs", "Supplies", "Other"],
+"Last Row": ["Subtotal", "-41"]
 },
 "Table 7": {
-"Columns": ["FOOD", "Projected Cost", "Actual Cost", "Difference", "SAVINGS OR INVESTMENTS", "Projected Cost", "Actual Cost", "Difference"],
-"Row Names": [],
-"Last Row": ["Subtotal", "0", "", "", "Subtotal", "", "", "0"]
+"Columns": ["ENTERTAINMENT", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Night out", "Music platforms", "Movies", "Concerts", "Sporting events", "Live theater", "Other", "Other", "Other"],
+"Last Row": ["Subtotal", "0"]
 },
 "Table 8": {
-"Columns": ["PETS", "Projected Cost", "Actual Cost", "Difference", "GIFTS AND DONATIONS", "Projected Cost", "Actual Cost", "Difference"],
-"Row Names": [],
-"Last Row": ["Subtotal", "0", "", "", "Subtotal", "", "", "0"]
+"Columns": ["LOANS", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Personal", "Student", "Credit card", "Credit card", "Credit card", "Other"],
+"Last Row": ["Subtotal", "0"]
 },
 "Table 9": {
-"Columns": ["PERSONAL CARE", "Projected Cost", "Actual Cost", "Difference", "LEGAL", "Projected Cost", "Actual Cost", "Difference"],
-"Row Names": [],
-"Last Row": ["Subtotal", "0", "", "", "Subtotal", "", "", "0"]
+"Columns": ["TRANSPORTATION", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Vehicle payment", "Bus/taxi fare", "Insurance", "Licensing", "Fuel", "Maintenance", "Other"],
+"Last Row": ["Subtotal", "0"]
 },
 "Table 10": {
-"Columns": ["", "", "", "", "TOTAL PROJECTED COST", "", "", ""],
-"Row Names": [],
-"Last Row": ["", "", "", "", "1195", "", "", ""]
+"Columns": ["TAXES", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Federal", "State", "Local", "Other"],
+"Last Row": ["Subtotal", "0"]
 },
 "Table 11": {
-"Columns": ["", "", "", "", "TOTAL ACTUAL COST", "", "", ""],
-"Row Names": [],
-"Last Row": ["", "", "", "", "1236", "", "", ""]
+"Columns": ["INSURANCE", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Home", "Health", "Life", "Other"],
+"Last Row": ["Subtotal", "0"]
 },
 "Table 12": {
-"Columns": ["", "", "", "", "TOTAL DIFFERENCE", "", "", ""],
+"Columns": ["SAVINGS OR INVESTMENTS", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Retirement account", "Investment account", "Other"],
+"Last Row": ["Subtotal", "0"]
+},
+"Table 13": {
+"Columns": ["FOOD", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Groceries", "Dining out", "Other"],
+"Last Row": ["Subtotal", "0"]
+},
+"Table 14": {
+"Columns": ["GIFTS AND DONATIONS", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Charity 1", "Charity 2", "Charity 3"],
+"Last Row": ["Subtotal", "0"]
+},
+"Table 15": {
+"Columns": ["PETS", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Food", "Medical", "Grooming", "Toys", "Other"],
+"Last Row": ["Subtotal", "0"]
+},
+"Table 16": {
+"Columns": ["LEGAL", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Attorney", "Alimony", "Payments on lien or judgment", "Other"],
+"Last Row": ["Subtotal", "0"]
+},
+"Table 17": {
+"Columns": ["PERSONAL CARE", "Projected Cost", "Actual Cost", "Difference"],
+"Row Names": ["Medical", "Hair/nails", "Clothing", "Dry cleaning", "Health club", "Organization dues or fees", "Other"],
+"Last Row": ["Subtotal", "0"]
+},
+"Table 18": {
+"Columns": ["TOTAL PROJECTED COST"],
 "Row Names": [],
-"Last Row": ["", "", "", "", "-41", "", "", ""]
+"Last Row": ["TOTAL PROJECTED COST", "1195"]
+},
+"Table 19": {
+"Columns": ["TOTAL ACTUAL COST"],
+"Row Names": [],
+"Last Row": ["TOTAL ACTUAL COST", "1236"]
+},
+"Table 20": {
+"Columns": ["TOTAL DIFFERENCE"],
+"Row Names": [],
+"Last Row": ["TOTAL DIFFERENCE", "-41"]
 }
 }

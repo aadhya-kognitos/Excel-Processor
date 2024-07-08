@@ -1,0 +1,7 @@
+Table 0:
+Top Left Coordinate: D3, Actual Value: Budget
+Bottom Left Coordinate: D25, Actual Value: 0
+Top Right Coordinate: G3, Actual Value: Difference (%)
+Bottom Right Coordinate: G25, Actual Value: None
+
+

@@ -1,0 +1,17 @@
+Table 0:
+Top Left Coordinate: B5, Actual Value: BUDGET TOTALS
+Bottom Left Coordinate: B9, Actual Value: Balance (income minus expenses)
+Top Right Coordinate: E5, Actual Value: DIFFERENCE
+Bottom Right Coordinate: E9, Actual Value: -980
+
+
+DF: 
+
+                                 0          1       2           3
+0                    BUDGET TOTALS  ESTIMATED  ACTUAL  DIFFERENCE
+1                           Income      63300   57450       -5850
+2               Personnel expenses      18500   14100        4400
+3               Operating expenses      36000   35530         470
+4  Balance (income minus expenses)       8800    7820        -980
+
+

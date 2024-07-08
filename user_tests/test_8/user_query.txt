@@ -1,0 +1,1 @@
+Get me the Command Table which has the command and description columns

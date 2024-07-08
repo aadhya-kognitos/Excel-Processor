@@ -1,0 +1,7 @@
+{
+  "Table 1": {
+    "Columns": ["% Done", "Phase", "Due By", "Notes"],
+    "Row Names": ["Planning", "Preparation", "Task a", "Task b", "Task c", "Task d", "Paperwork", "Complete"],
+    "Last Row": ["Follow-up", "0%", "1-Feb", "Meeting"]
+  }
+}

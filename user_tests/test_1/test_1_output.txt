@@ -1,0 +1,21 @@
+Table 0:
+Top Left Coordinate: B37, Actual Value: INCOME
+Bottom Left Coordinate: B45, Actual Value: Category 7
+Top Right Coordinate: E37, Actual Value: None
+Bottom Right Coordinate: E45, Actual Value: None
+
+
+DF: 
+
+                  0       1       2     3
+0            INCOME     NaN     NaN  None
+1  OPERATING INCOME     NaN     NaN  None
+2        Category 1  6000.0  6000.0  None
+3        Category 2   200.0   150.0  None
+4        Category 3   100.0   100.0  None
+5        Category 4    55.0    20.0  None
+6        Category 5   500.0   500.0  None
+7        Category 6   300.0   200.0  None
+8        Category 7   115.0    50.0  None
+
+

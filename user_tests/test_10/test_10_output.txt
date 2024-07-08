@@ -1,0 +1,51 @@
+Table 0:
+Top Left Coordinate: G19, Actual Value: Other
+Bottom Left Coordinate: G57, Actual Value: Subtotal
+Top Right Coordinate: J19, Actual Value: 0
+Bottom Right Coordinate: J57, Actual Value: 0
+
+
+DF: 
+
+                               0               1            2           3
+0                          Other            None         None           0
+1                          Other            None         None           0
+2                          Other            None         None           0
+3                       Subtotal            None         None           0
+4                           None            None         None        None
+5                          LOANS  Projected Cost  Actual Cost  Difference
+6                       Personal            None         None           0
+7                        Student            None         None           0
+8                    Credit card            None         None           0
+9                    Credit card            None         None           0
+10                   Credit card            None         None           0
+11                         Other            None         None           0
+12                      Subtotal            None         None           0
+13                          None            None         None        None
+14                         TAXES  Projected Cost  Actual Cost  Difference
+15                       Federal            None         None           0
+16                         State            None         None           0
+17                         Local            None         None           0
+18                         Other            None         None           0
+19                      Subtotal            None         None           0
+20                          None            None         None        None
+21        SAVINGS OR INVESTMENTS  Projected Cost  Actual Cost  Difference
+22            Retirement account            None         None           0
+23            Investment account            None         None           0
+24                         Other            None         None           0
+25                      Subtotal            None         None           0
+26                          None            None         None        None
+27           GIFTS AND DONATIONS  Projected Cost  Actual Cost  Difference
+28                     Charity 1            None         None           0
+29                     Charity 2            None         None           0
+30                     Charity 3            None         None           0
+31                      Subtotal            None         None           0
+32                          None            None         None        None
+33                         LEGAL  Projected Cost  Actual Cost  Difference
+34                      Attorney            None         None           0
+35                       Alimony            None         None           0
+36  Payments on lien or judgment            None         None           0
+37                         Other            None         None           0
+38                      Subtotal            None         None           0
+
+

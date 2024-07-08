@@ -1,0 +1,41 @@
+Table 0:
+Top Left Coordinate: B5, Actual Value: TASK
+Bottom Left Coordinate: B31, Actual Value: Gather feedback
+Top Right Coordinate: F5, Actual Value: END
+Bottom Right Coordinate: F31, Actual Value: 2023-09-20 00:00:00
+
+
+DF: 
+
+                         0  ...                    4
+0                     TASK  ...                  END
+1                     None  ...                 None
+2                     None  ...                 None
+3               Initiation  ...                 None
+4             Define goals  ...  2023-08-25 00:00:00
+5          Conduct studies  ...  2023-08-27 00:00:00
+6          Establish comms  ...  2023-08-31 00:00:00
+7          Develop charter  ...  2023-09-05 00:00:00
+8              Set up team  ...  2023-08-28 00:00:00
+9      Planning and design  ...                 None
+10         Create schedule  ...  2023-08-31 00:00:00
+11   Identify deliverables  ...  2023-09-03 00:00:00
+12          Develop budget  ...  2023-09-06 00:00:00
+13            Define scope  ...  2023-09-05 00:00:00
+14          Identify risks  ...  2023-09-06 00:00:00
+15               Execution  ...                 None
+16           Execute tasks  ...  2023-09-11 00:00:00
+17        Monitor progress  ...  2023-09-16 00:00:00
+18        Manage resources  ...  2023-09-22 00:00:00
+19         Provide updates  ...  2023-09-27 00:00:00
+20  Testing and validation  ...  2023-09-21 00:00:00
+21              Evaluation  ...                 None
+22        Monitor progress  ...  2023-09-11 00:00:00
+23          Track expenses  ...  2023-09-15 00:00:00
+24       Evaluate progress  ...  2023-09-19 00:00:00
+25           Address risks  ...  2023-09-16 00:00:00
+26         Gather feedback  ...  2023-09-20 00:00:00
+
+[27 rows x 5 columns]
+
+

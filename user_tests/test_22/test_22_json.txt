@@ -1,0 +1,7 @@
+{
+"Table 1": {
+"Columns": ["Loan No.", "Lender", "Loan Amount", "Annual Interest Rate", "Beginning Date", "Length (Yrs)", "Ending Date", "Current Monthly Payment", "Total Interest", "Scheduled Payment", "Annual Payment"],
+"Row Names": ["10998M88", "20987N87"],
+"Last Row": ["Totals", "18000", "106.06551523907524", "4910.151291640252", "190.91792743033542", "2291.015129164025"]
+}
+}
