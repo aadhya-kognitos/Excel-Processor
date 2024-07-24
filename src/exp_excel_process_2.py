@@ -36,6 +36,7 @@ class ExcelProcessor:
         self.matrix =  [[None for _ in range(self.max_col)] for _ in range(self.max_row)]
         self.json_data = None
         self.global_coordinates_found = []
+        self.global_columns_found = []
         self.tables = []
         # for all such coordinates found
         self.columns_found = []
@@ -135,7 +136,7 @@ class ExcelProcessor:
         return local_column_occurrences, local_row_name_occurrences, local_last_row_occurrences
         
     
-    def find_last_row(self, local_last_row_occurrences, local_last_row_names):
+    def find_last_row(self, local_last_row_occurrences, local_last_row_names, filtered_col_occurrences):
         """ Find the last row for the given table"""
 
         #If a coordinate has already been seen (global last row coords), skip it
@@ -148,11 +149,21 @@ class ExcelProcessor:
         local_coords_found = []
         potential_lst_score = inf
         for coord in local_last_row_occurrences:
-            if coord == (22, 1) or coord == (21, 6) or coord == (22,4):
-                #pdb.set_trace()
-                print(coord)
-
+            identical_not_match = False
             if (coord[0], coord[1]) in self.global_coordinates_found:
+                continue
+            """ A couple of comments to explain what's going on here """
+            # We want to capture only the rows/row names that occur directly underneath the column headers
+            # So we check each cell in the same column as the current coordinate to check if there is a header directly above it
+            # If there is a header but the header doesn't belong to the current group of headers, skip the coordinate
+            for col in range(coord[1] - 1, coord[1] + 1):
+                if col > self.max_col or col < 0:
+                    continue
+                for row in range(coord[0], -1, -1):
+                    if (row, col) in self.global_columns_found and (row, col) not in filtered_col_occurrences:
+                        identical_not_match = True
+                        break
+            if identical_not_match:
                 continue
             else:
                 #Create a list to store current last row values seen
@@ -179,7 +190,7 @@ class ExcelProcessor:
             #Get the score by diving the last rows seen by the length of local_last_row_names
             last_row_lst_score = last_rows_seen / len(local_last_row_names)
             #If the score is less than the potential score, update the potential score and the potential lst
-            if abs(1 - last_row_lst_score) < potential_lst_score:
+            if abs(1 - last_row_lst_score) <= potential_lst_score:
                 potential_lst = last_row_lst
                 potential_lst_score = abs(1- last_row_lst_score)
         
@@ -188,7 +199,7 @@ class ExcelProcessor:
         return filtered_last_row_occurrences
     
     
-    def find_row_names(self, local_row_name_occurrences, local_row_name_names):
+    def find_row_names(self, local_row_name_occurrences, local_row_name_names, filtered_col_occurrences):
         """ Finds the row names for a given table."""
         #If a coordinate has already been seen (global last row coords), skip it
         #Else
@@ -199,8 +210,21 @@ class ExcelProcessor:
         potential_lst = []
         potential_lst_score = inf
         for coord in local_row_name_occurrences:
-            #pdb.set_trace()
+            identical_not_match = False
             if (coord[0], coord[1]) in self.global_coordinates_found:
+                continue
+            """ A couple of comments to explain what's going on here """
+            # We want to capture only the rows/row names that occur directly underneath the column headers
+            # So we check each cell in the same column as the current coordinate to check if there is a header directly above it
+            # If there is a header but the header doesn't belong to the current group of headers, skip the coordinate
+            for col in range(coord[1] - 1, coord[1] + 1):
+                if col > self.max_col or col < 0:
+                    continue
+                for row in range(coord[0], -1, -1):
+                    if (row, col) in self.global_columns_found and (row, col) not in filtered_col_occurrences:
+                        identical_not_match = True
+                        break
+            if identical_not_match:
                 continue
             else:
                 #Create a list to store current row name values seen
@@ -227,7 +251,7 @@ class ExcelProcessor:
             #Get the score by diving the last rows seen by the length of local_last_row_names
             row_name_lst_score = row_names_seen / len(local_row_name_names)
             #If the score is less than the potential score, update the potential score and the potential lst
-            if abs(1 - row_name_lst_score) < potential_lst_score:
+            if abs(1 - row_name_lst_score) <= potential_lst_score:
                 potential_lst = row_name_lst
                 potential_lst_score = abs(1 - row_name_lst_score)
         
@@ -281,6 +305,7 @@ class ExcelProcessor:
         
         filtered_column_occurrences = potential_lst.copy()
         self.global_coordinates_found.extend(filtered_column_occurrences)
+        self.global_columns_found.extend(filtered_column_occurrences)
         return filtered_column_occurrences
     
     def form_table(self, filtered_column_occurrences, filtered_last_row_occurrences, filtered_row_name_occurrences, num_columns):
@@ -345,9 +370,9 @@ class ExcelProcessor:
             print(f"Local Last Row Occurrences: {local_last_row_occurrences} \n")
             filtered_column_occurrences = self.find_column(local_column_occurrences, columns)
             print(f"Columns Found: {filtered_column_occurrences} \n")
-            filtered_row_name_occurrences = self.find_row_names(local_row_name_occurrences, row_names)
+            filtered_row_name_occurrences = self.find_row_names(local_row_name_occurrences, row_names, filtered_column_occurrences)
             print(f"Row Names Found: {filtered_row_name_occurrences} \n")
-            filtered_last_row_occurrences = self.find_last_row(local_last_row_occurrences, last_row)
+            filtered_last_row_occurrences = self.find_last_row(local_last_row_occurrences, last_row, filtered_column_occurrences)
             print(f"Last Row Found: {filtered_last_row_occurrences} \n")
             filtered_table = self.form_table(filtered_column_occurrences, filtered_last_row_occurrences, filtered_row_name_occurrences, num_columns)
             self.tables.append(filtered_table)
