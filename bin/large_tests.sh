@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for test_type in large_test; do
-    for i in {13..18}; do
+    for i in {17..18}; do
         TEST_NAME="${test_type}_${i}"
 
         echo "Running test $TEST_NAME..."

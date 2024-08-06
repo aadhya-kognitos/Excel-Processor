@@ -133,17 +133,23 @@ class ExcelPreProcessor:
     each table will have its own section, which will most likely be colored differently than the background of the spreadsheet. Tables also will have
     a relatively close density of values/colors while empty space will not contain this density.
 
-    Assume the column headers are all on one row, there are not above or below each other.
-    In cases where column headers span multiple, please provide only the columns on the bottom-most row you see.
+    Each individual column header should remain only on one row, while the sequence of column headers can span multiple rows.
+    For instance, if you see something like 
+
+    LABOR | TASK | MATERIALS
+    HRS
+
+    you should provide it like {{"Columns": ["LABOR", "TASK", "MATERIALS", "HRS"]}} (with the assumption that none of these values are a row name)
+    Use the csv values to determine the column header values rather than the image.
 
     Always try to capture as many subtables as you see.
     Make sure to read the tables carefully, line by line, from left to right and accurately extract the given values from each table.
 
+    Please defer to keeping tables separate even if they appear together.
+
     Don't add any additional text apart from the desired values from each table.
     Make sure to defer to the csv values for each table, rather than the image values.
     Please make sure to capture ALL the tables in the spreadsheet, and ensure each table has its own JSON representation.
-    However, be sure to check that you are not repeating the same table more than once.
-    Note that sometimes column headers can span multiple rows.
     Make sure the JSON is correctly formatted, and ONLY provide the JSON. Don't add any additional text.
 """
     
@@ -182,10 +188,7 @@ class ExcelPreProcessor:
                     ]
                  }
             ],
-            temperature=0,
-            top_p=1,
-            frequency_penalty=0,
-            presence_penalty=0
+            top_p=0.01
         )
         returned_text = completion.choices[0].message.content
         return returned_text

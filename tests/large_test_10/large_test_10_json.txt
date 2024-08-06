@@ -6,8 +6,8 @@
 },
 "Table 2": {
 "Columns": ["Rank", "Category", "Estimated", "Actual", "Ranking Value", "Ref"],
-"Row Names": ["2", "4", "6", "8", "7", "3", "1", "9", "5", "10"],
-"Last Row": ["10", "Other Expenses", "300", "300", "300.0015", "10"]
+"Row Names": [],
+"Last Row": ["Other Expenses", "300", "300", "300.0015", "10"]
 },
 "Table 3": {
 "Columns": ["APPAREL", "ESTIMATED", "ACTUAL", "OVER/UNDER"],

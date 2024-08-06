@@ -1,14 +1,45 @@
-Table 0:
-Top Left Coordinate: C14, Actual Value: Loan No.
-Bottom Left Coordinate: C22, Actual Value: Averages
-Top Right Coordinate: F14, Actual Value: Annual Interest Rate
-Bottom Right Coordinate: F22, Actual Value: 0.05
+Table Name: Table 1
+Column Sequences: [[(13, 2), (13, 3), (13, 4), (13, 5)]] 
+
+Table Name: Table 2
+Column Sequences: [[(13, 7), (13, 8), (13, 9)]] 
+
+Table Name: Table 3
+Column Sequences: [[(13, 11), (13, 12), (13, 13), (13, 14)]] 
+
+Top Left: C14, Value: Loan No.
+Top Right: F14, Value: Annual Interest Rate
+Bottom Left: C22, Value: Averages
+Bottom Right: F22, Value: 0.05
+DF: 
+
+          0               1            2                     3
+0  Loan No.          Lender  Loan Amount  Annual Interest Rate
+1  10998M88  Woodgrove Bank        10000                  0.05
+2  20987N87      Ducat Bank         8000                  0.05
+3      None            None         None                  None
+4      None            None         None                  None
+5      None            None         None                  None
+6      None            None         None                  None
+7    Totals            None        18000                  None
+8  Averages            None         9000                  0.05
 
 
-Table 1:
-Top Left Coordinate: F10, Actual Value: 106.06551523907524
-Bottom Left Coordinate: L22, Actual Value: None
-Top Right Coordinate: O10, Actual Value: 190.91792743033542
-Bottom Right Coordinate: O22, Actual Value: 1145.5075645820125
+Top Left: L14, Value: Current Monthly Payment
+Top Right: O14, Value: Annual Payment
+Bottom Left: L22, Value: None
+Bottom Right: O22, Value: 1145.5075645820125
+DF: 
+
+                         0               1                  2               3
+0  Current Monthly Payment  Total Interest  Scheduled Payment  Annual Payment
+1               106.065515     2727.861829         106.065515     1272.786183
+2                     None     2182.289463          84.852412     1018.228946
+3                     None            None               None            None
+4                     None            None               None            None
+5                     None            None               None            None
+6                     None            None               None            None
+7               106.065515     4910.151292         190.917927     2291.015129
+8                     None     2455.075646               None     1145.507565
 
 

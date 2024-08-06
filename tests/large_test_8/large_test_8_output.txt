@@ -1,14 +1,26 @@
-Table 0:
-Top Left Coordinate: B5, Actual Value: BUDGET TOTALS
-Bottom Left Coordinate: B9, Actual Value: Balance (income minus expenses)
-Top Right Coordinate: E5, Actual Value: DIFFERENCE
-Bottom Right Coordinate: E9, Actual Value: -980
+Table Name: Table 1
+Column Sequences: [[(4, 1), (4, 2), (4, 3), (4, 4)]] 
+
+Table Name: Table 2
+Column Sequences: [[(10, 1), (10, 2), (10, 3), (10, 4)]] 
+
+Top Left: B5, Value: BUDGET TOTALS
+Top Right: E5, Value: DIFFERENCE
+Bottom Left: B9, Value: Balance (income minus expenses)
+Bottom Right: E9, Value: -980
+DF: 
+
+               0
+0  BUDGET TOTALS
 
 
-Table 1:
-Top Left Coordinate: B11, Actual Value: ACTUAL EXPENSES
-Bottom Left Coordinate: B17, Actual Value: Total
-Top Right Coordinate: E11, Actual Value: 15% REDUCTION
-Bottom Right Coordinate: E17, Actual Value: 2895.0000123
+Top Left: B11, Value: ACTUAL EXPENSES
+Top Right: E11, Value: 15% REDUCTION
+Bottom Left: B17, Value: Total
+Bottom Right: E17, Value: 2895.0000123
+DF: 
+
+                 0
+0  ACTUAL EXPENSES
 
 

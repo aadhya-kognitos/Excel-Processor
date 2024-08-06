@@ -1,7 +1,17 @@
-Table 0:
-Top Left Coordinate: B7, Actual Value: TASKS
-Bottom Left Coordinate: B18, Actual Value: System Testing
-Top Right Coordinate: E7, Actual Value: STATUS
-Bottom Right Coordinate: E18, Actual Value: NOT STARTED
+Table Name: Table 1
+Column Sequences: [[(1, 1)], [(2, 1)], [(3, 1)], [(4, 1)]] 
+
+[[(1, 1)], [(2, 1)], [(3, 1)], [(4, 1)]]
+Table Name: Table 2
+Column Sequences: [[(6, 1), (6, 2), (6, 3), (6, 4)]] 
+
+Top Left: B7, Value: TASKS
+Top Right: E7, Value: STATUS
+Bottom Left: B18, Value: System Testing
+Bottom Right: E18, Value: NOT STARTED
+DF: 
+
+       0
+0  TASKS
 
 

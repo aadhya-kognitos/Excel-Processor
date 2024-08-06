@@ -1,7 +1,13 @@
-Table 0:
-Top Left Coordinate: B5, Actual Value: TASK
-Bottom Left Coordinate: B31, Actual Value: Gather feedback
-Top Right Coordinate: F5, Actual Value: END
-Bottom Right Coordinate: F31, Actual Value: 2023-09-20 00:00:00
+Table Name: Table 1
+Column Sequences: [[(4, 1), (4, 2), (4, 3), (4, 4), (4, 5)]] 
+
+Top Left: B5, Value: TASK
+Top Right: F5, Value: END
+Bottom Left: B31, Value: Gather feedback
+Bottom Right: F31, Value: 2023-09-20 00:00:00
+DF: 
+
+      0
+0  TASK
 
 

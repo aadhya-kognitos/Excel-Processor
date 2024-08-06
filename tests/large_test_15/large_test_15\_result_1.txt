@@ -1,0 +1,17 @@
+{
+"Table 1": {
+"Columns": ["Loan No.", "Lender", "Loan Amount", "Annual Interest Rate"],
+"Row Names": ["10998M88", "20987N87"],
+"Last Row": ["Averages", "9000", "0.05"]
+},
+"Table 2": {
+"Columns": ["Beginning Date", "Length (Yrs)", "Ending Date"],
+"Row Names": ["2/3/2022", "5/1/2024"],
+"Last Row": []
+},
+"Table 3": {
+"Columns": ["Current Monthly Payment", "Total Interest", "Scheduled Payment", "Annual Payment"],
+"Row Names": ["106.06551523907524", "84.85241219126019"],
+"Last Row": ["Averages", "2455.075645820126", "1145.5075645820125"]
+}
+}

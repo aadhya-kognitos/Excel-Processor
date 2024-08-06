@@ -14,11 +14,12 @@ TEST_NAME="$1"
 EXCEL_FILENAME="tests/$TEST_NAME/$TEST_NAME.xlsx"
 CSV_FILENAME="tests/$TEST_NAME/$TEST_NAME.csv"
 TXT_FILENAME="tests/$TEST_NAME/$TEST_NAME.txt"
+RESULT_1_FILENAME="tests/$TEST_NAME/$TEST_NAME\_result_1.txt"
 IMAGE_PATH="tests/$TEST_NAME/$TEST_NAME.png"
 
 # Run the first Python script with the necessary arguments
 echo "Running excel_process_1.py..."
-python3 src/excel_process_1.py $EXCEL_FILENAME $CSV_FILENAME $TXT_FILENAME $IMAGE_PATH > $TXT_FILENAME
+python3 src/excel_process_1.py $EXCEL_FILENAME $CSV_FILENAME $TXT_FILENAME $IMAGE_PATH > $RESULT_1_FILENAME
 
 # Check if the first script ran successfully
 if [ $? -ne 0 ]; then
@@ -28,7 +29,7 @@ fi
 
 # Run the second Python script with the necessary arguments
 echo "Running json_processor.py..."
-    python3 src/json_processor.py $TXT_FILENAME > tests/$TEST_NAME/$TEST_NAME\_json.txt
+    python3 src/json_processor.py $RESULT_1_FILENAME > tests/$TEST_NAME/$TEST_NAME\_json.txt
 
     rm -f $TXT_FILENAME
 
@@ -39,8 +40,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # Run the third Python script with the necessary arguments
-echo "Running excel_process_2.py..."
-python3 src/exp_excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
+echo "Running excel_process_3.py..."
+python3 src/excel_process_2.py $EXCEL_FILENAME tests/$TEST_NAME/$TEST_NAME\_json.txt > tests/$TEST_NAME/$TEST_NAME\_output.txt
 
 # Check if the third script ran successfully
 if [ $? -ne 0 ]; then

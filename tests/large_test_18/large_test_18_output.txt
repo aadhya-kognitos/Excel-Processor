@@ -1,70 +1,161 @@
-Table 0:
-Top Left Coordinate: B2, Actual Value: Details
-Bottom Left Coordinate: B6, Actual Value: Teacher name
-Top Right Coordinate: F2, Actual Value: Term Result
-Bottom Right Coordinate: F6, Actual Value: Total marks scored this term
+Table Name: Table 1
+Column Sequences: [[(1, 1), (1, 5)], [(2, 8)]] 
+
+Table Name: Table 2
+Column Sequences: [[(8, 1), (8, 2), (8, 3), (8, 4), (8, 5), (8, 6), (8, 7), (8, 8)], [(14, 1), (14, 2), (14, 3), (14, 4), (14, 5), (14, 6), (14, 7), (14, 8)], [(20, 1), (20, 2), (20, 3), (20, 4), (20, 5), (20, 6), (20, 7), (20, 8)], [(26, 1), (26, 2), (26, 3), (26, 4), (26, 5), (26, 6), (26, 7), (26, 8)], [(32, 1), (32, 2), (32, 3), (32, 4), (32, 5), (32, 6), (32, 7), (32, 8)], [(38, 1), (38, 2), (38, 3), (38, 4), (38, 5), (38, 6), (38, 7), (38, 8)], [(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 3
+Column Sequences: [[(14, 1), (14, 2), (14, 3), (14, 4), (14, 5), (14, 6), (14, 7), (14, 8)], [(20, 1), (20, 2), (20, 3), (20, 4), (20, 5), (20, 6), (20, 7), (20, 8)], [(26, 1), (26, 2), (26, 3), (26, 4), (26, 5), (26, 6), (26, 7), (26, 8)], [(32, 1), (32, 2), (32, 3), (32, 4), (32, 5), (32, 6), (32, 7), (32, 8)], [(38, 1), (38, 2), (38, 3), (38, 4), (38, 5), (38, 6), (38, 7), (38, 8)], [(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 4
+Column Sequences: [[(20, 1), (20, 2), (20, 3), (20, 4), (20, 5), (20, 6), (20, 7), (20, 8)], [(26, 1), (26, 2), (26, 3), (26, 4), (26, 5), (26, 6), (26, 7), (26, 8)], [(32, 1), (32, 2), (32, 3), (32, 4), (32, 5), (32, 6), (32, 7), (32, 8)], [(38, 1), (38, 2), (38, 3), (38, 4), (38, 5), (38, 6), (38, 7), (38, 8)], [(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 5
+Column Sequences: [[(26, 1), (26, 2), (26, 3), (26, 4), (26, 5), (26, 6), (26, 7), (26, 8)], [(32, 1), (32, 2), (32, 3), (32, 4), (32, 5), (32, 6), (32, 7), (32, 8)], [(38, 1), (38, 2), (38, 3), (38, 4), (38, 5), (38, 6), (38, 7), (38, 8)], [(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 6
+Column Sequences: [[(32, 1), (32, 2), (32, 3), (32, 4), (32, 5), (32, 6), (32, 7), (32, 8)], [(38, 1), (38, 2), (38, 3), (38, 4), (38, 5), (38, 6), (38, 7), (38, 8)], [(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 7
+Column Sequences: [[(38, 1), (38, 2), (38, 3), (38, 4), (38, 5), (38, 6), (38, 7), (38, 8)], [(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 8
+Column Sequences: [[(44, 1), (44, 2), (44, 3), (44, 4), (44, 5), (44, 6), (44, 7), (44, 8)], [(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 9
+Column Sequences: [[(50, 1), (50, 2), (50, 3), (50, 4), (50, 5), (50, 6), (50, 7), (50, 8)], [(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Table Name: Table 10
+Column Sequences: [[(56, 1), (56, 2), (56, 3), (56, 4), (56, 5), (56, 6), (56, 7), (56, 8)]] 
+
+Top Left: B2, Value: Details
+Top Right: F2, Value: Term Result
+Bottom Left: B6, Value: Teacher name
+Bottom Right: F6, Value: Total marks scored this term
+DF: 
+
+              0     1     2     3                             4
+0       Details  None  None  None                   Term Result
+1  Student name  None  None  None                   Term starts
+2           Age  None  None  None                     Term ends
+3         Grade  None  None  None     Total term marks possible
+4  Teacher name  None  None  None  Total marks scored this term
 
 
-Table 1:
-Top Left Coordinate: B9, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I9, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B9, Value: Assignment #
+Top Right: I9, Value: Subject total (%)
+Bottom Left: B12, Value: Marks scored
+Bottom Right: I12, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 2:
-Top Left Coordinate: B15, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I15, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B15, Value: Assignment #
+Top Right: I15, Value: Subject total (%)
+Bottom Left: B18, Value: Marks scored
+Bottom Right: I18, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 3:
-Top Left Coordinate: B21, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I21, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B21, Value: Assignment #
+Top Right: I21, Value: Subject total (%)
+Bottom Left: B24, Value: Marks scored
+Bottom Right: I24, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 4:
-Top Left Coordinate: B27, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I27, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B27, Value: Assignment #
+Top Right: I27, Value: Subject total (%)
+Bottom Left: B30, Value: Marks scored
+Bottom Right: I30, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 5:
-Top Left Coordinate: B33, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I33, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B33, Value: Assignment #
+Top Right: I33, Value: Subject total (%)
+Bottom Left: B36, Value: Marks scored
+Bottom Right: I36, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 6:
-Top Left Coordinate: B39, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I39, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B39, Value: Assignment #
+Top Right: I39, Value: Subject total (%)
+Bottom Left: B42, Value: Marks scored
+Bottom Right: I42, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 7:
-Top Left Coordinate: B45, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I45, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B45, Value: Assignment #
+Top Right: I45, Value: Subject total (%)
+Bottom Left: B48, Value: Marks scored
+Bottom Right: I48, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 8:
-Top Left Coordinate: B51, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I51, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B51, Value: Assignment #
+Top Right: I51, Value: Subject total (%)
+Bottom Left: B54, Value: Marks scored
+Bottom Right: I54, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 
-Table 9:
-Top Left Coordinate: B57, Actual Value: Assignment #
-Bottom Left Coordinate: B60, Actual Value: Marks scored
-Top Right Coordinate: I57, Actual Value: Subject total (%)
-Bottom Right Coordinate: I60, Actual Value: None
+Top Left: B57, Value: Assignment #
+Top Right: I57, Value: Subject total (%)
+Bottom Left: B60, Value: Marks scored
+Bottom Right: I60, Value: None
+DF: 
+
+               0    1    2    3    4    5              6                  7
+0   Assignment #  1.0  2.0  3.0  4.0  5.0  Marks to date  Subject total (%)
+1       Due date  NaN  NaN  NaN  NaN  NaN           None               None
+2  Marks (total)  NaN  NaN  NaN  NaN  NaN              0               None
+3   Marks scored  NaN  NaN  NaN  NaN  NaN              0               None
 
 

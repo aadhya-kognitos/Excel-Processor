@@ -1,5 +1,10 @@
 {
 "Table 1": {
+"Columns": ["PROJECT NAME", "REPORT DATE", "PROJECT STATUS", "COMPLETED"],
+"Row Names": [],
+"Last Row": ["27%"]
+},
+"Table 2": {
 "Columns": ["TASKS", "ASSIGNED TO", "PRIORITY", "STATUS"],
 "Row Names": ["Set Kick-Off Meeting", "Agree on Objectives", "Detailed Requests", "Hardware Requests", "Final Resource Plan", "Staffing", "Technical Requests", "Testing", "Dev. Complete", "Hardware Configuration", "System Testing"],
 "Last Row": ["System Testing", "Kennedy K.", "★", "NOT STARTED"]

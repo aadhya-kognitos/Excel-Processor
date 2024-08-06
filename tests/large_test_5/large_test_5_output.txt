@@ -1,7 +1,13 @@
-Table 0:
-Top Left Coordinate: A1, Actual Value: Command
-Bottom Left Coordinate: A6, Actual Value: nano
-Top Right Coordinate: C1, Actual Value: Description
-Bottom Right Coordinate: C6, Actual Value: Opens the nano text editor, which allows you to edit files inside the terminal. If <file> is specified, nano will open it for editing.
+Table Name: Table 1
+Column Sequences: [[(0, 0), (0, 1), (0, 2)]] 
+
+Top Left: A1, Value: Command
+Top Right: C1, Value: Description
+Bottom Left: A6, Value: nano
+Bottom Right: C6, Value: Opens the nano text editor, which allows you to edit files inside the terminal. If <file> is specified, nano will open it for editing.
+DF: 
+
+         0
+0  Command
 
 

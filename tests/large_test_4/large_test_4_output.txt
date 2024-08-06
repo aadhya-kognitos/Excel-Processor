@@ -1,14 +1,43 @@
-Table 0:
-Top Left Coordinate: B6, Actual Value: REVENUE
-Bottom Left Coordinate: C43, Actual Value: 0
-Top Right Coordinate: D6, Actual Value: 2021
-Bottom Right Coordinate: D43, Actual Value: 0
+Table Name: Table 1
+Column Sequences: [[(5, 1), (5, 2), (5, 3)], [(15, 2), (15, 3)]] 
+
+Table Name: Table 2
+Column Sequences: [[(15, 1), (15, 2), (15, 3)]] 
+
+Table Name: Table 3
+Column Sequences: [[(38, 1)]] 
+
+[[(38, 1)]]
+Table Name: Table 4
+Column Sequences: [] 
+
+Top Left: B6, Value: REVENUE
+Top Right: D6, Value: 2021
+Bottom Left: B14, Value: TOTAL REVENUE
+Bottom Right: D14, Value: 0
+DF: 
+
+         0
+0  REVENUE
 
 
-Table 1:
-Top Left Coordinate: B16, Actual Value: EXPENSES
-Bottom Left Coordinate: C43, Actual Value: 0
-Top Right Coordinate: D16, Actual Value: 2021
-Bottom Right Coordinate: D43, Actual Value: 0
+Top Left: B16, Value: EXPENSES
+Top Right: D16, Value: 2021
+Bottom Left: B41, Value: INCOME TAX EXPENSE
+Bottom Right: D41, Value: 0
+DF: 
+
+          0
+0  EXPENSES
+
+
+Top Left: B39, Value: NET INCOME BEFORE TAXES
+Top Right: D39, Value: 0
+Bottom Left: B41, Value: INCOME TAX EXPENSE
+Bottom Right: D41, Value: 0
+DF: 
+
+                         0
+0  NET INCOME BEFORE TAXES
 
 

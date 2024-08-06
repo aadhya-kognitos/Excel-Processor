@@ -1,230 +1,205 @@
 Table Name: Table 1
-With columns of ['TASK', 'LABOR HRS', 'RATE', 'MATERIALS UNITS', '$/UNIT', 'FIXED COST', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['CATEGORY', 'Task', 'Task', 'Task', 'Task', 'CATEGORY', 'Task', 'Task', 'Task', 'Task', 'Task', 'CATEGORY', 'Task', 'Task', 'Task', 'Task']
-With last rows of ['Task', '', '', '', '', '', '', '', '']
-Local Column Occurrences: [(4, 1), (4, 3), (4, 5), (3, 6), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
-
-Local Row Name Occurrences: [(5, 1), (12, 1), (19, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (5, 1), (12, 1), (19, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (5, 1), (12, 1), (19, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1)] 
-
-Local Last Row Occurrences: [(6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (20, 1), (21, 1), (22, 1), (23, 1), (25, 1)] 
-
-Columns Found: [(3, 6), (3, 7), (3, 8), (3, 9)] 
-
-Row Names Found: [(5, 1), (6, 1), (6, 1), (6, 1), (6, 1), (5, 1), (6, 1), (6, 1), (6, 1), (6, 1), (6, 1), (5, 1), (6, 1), (6, 1), (6, 1), (6, 1)] 
-
-Last Row Found: [(25, 1)] 
+Column Sequences: [[(3, 2), (3, 4), (3, 6), (3, 7), (3, 8), (3, 9)], [(4, 1), (4, 2), (4, 3), (4, 4)], [(31, 2), (31, 3), (31, 4)], [(35, 2), (35, 3), (35, 4)]] 
 
 Table Name: Table 2
-With columns of ['SUMMARY', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Total Income', 'Total Expenses']
-With last rows of ['Total Expenses', '2430.00', '2300.00', '130.00']
-Local Column Occurrences: [(31, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
-
-Local Row Name Occurrences: [(32, 1), (33, 1)] 
-
-Local Last Row Occurrences: [(33, 1)] 
-
-Columns Found: [(31, 1), (31, 2), (31, 3), (31, 4)] 
-
-Row Names Found: [(32, 1), (33, 1)] 
-
-Last Row Found: [] 
+Column Sequences: [[(31, 1), (31, 2), (31, 3), (31, 4)], [(35, 2), (35, 3), (35, 4)]] 
 
 Table Name: Table 3
-With columns of ['INCOME', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['OPERATING INCOME', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6']
-With last rows of ['Category 7', '115.00', '50.00', '(65.00)']
-Local Column Occurrences: [(36, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
-
-Local Row Name Occurrences: [(37, 1), (38, 1), (39, 1), (40, 1), (41, 1), (42, 1), (43, 1)] 
-
-Local Last Row Occurrences: [(44, 1)] 
-
-Columns Found: [(35, 2), (35, 3), (35, 4)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
+Column Sequences: [[(35, 2), (35, 3), (35, 4)], [(36, 1)]] 
 
 Table Name: Table 4
-With columns of ['EXPENSES', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['OPERATING EXPENSE', 'Accounting & Legal', 'Advertising', 'Depreciation', 'Dues & Subscriptions', 'Insurance', 'Interest Expense', 'Maintenance/Improvements', 'Taxes & Licenses', 'Telephone', 'Travel', 'Utilities', 'Web Hosting & Domains']
-With last rows of ['Web Hosting & Domains', '', '', '']
-Local Column Occurrences: [(48, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(48, 1)]] 
 
-Local Row Name Occurrences: [(49, 1), (50, 1), (51, 1), (52, 1), (53, 1), (54, 1), (55, 1), (56, 1), (57, 1), (58, 1), (59, 1), (60, 1), (61, 1)] 
-
-Local Last Row Occurrences: [(61, 1)] 
-
-Columns Found: [(48, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
+[[(48, 1)]]
 Table Name: Table 5
-With columns of ['PAYROLL', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Payroll Expenses', 'Salaries & Wages', 'Contractor Wages']
-With last rows of ['Contractor Wages', '', '', '']
-Local Column Occurrences: [(63, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(63, 1)]] 
 
-Local Row Name Occurrences: [(64, 1), (65, 1), (66, 1)] 
-
-Local Last Row Occurrences: [(66, 1)] 
-
-Columns Found: [(63, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
+[[(63, 1)]]
 Table Name: Table 6
-With columns of ['OFFICE', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Office Supplies', 'Postage']
-With last rows of ['Postage', '', '', '']
-Local Column Occurrences: [(68, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(68, 1)]] 
 
-Local Row Name Occurrences: [(69, 1), (70, 1)] 
-
-Local Last Row Occurrences: [(70, 1)] 
-
-Columns Found: [(68, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
+[[(68, 1)]]
 Table Name: Table 7
-With columns of ['Clothing', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Cleaning', 'Salon/Barber', 'Pet Supplies']
-With last rows of ['Pet Supplies', '', '', '']
-Local Column Occurrences: [(72, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(72, 1)]] 
 
-Local Row Name Occurrences: [(73, 1), (74, 1), (75, 1)] 
-
-Local Last Row Occurrences: [(75, 1)] 
-
-Columns Found: [(72, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
+[[(72, 1)]]
 Table Name: Table 8
-With columns of ['ENTERTAINMENT', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Video/DVD/Movies', 'Concerts/Plays', 'Sports', 'Outdoor Recreation']
-With last rows of ['Outdoor Recreation', '', '', '']
-Local Column Occurrences: [(77, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(77, 1)]] 
 
-Local Row Name Occurrences: [(78, 1), (79, 1), (80, 1), (81, 1)] 
-
-Local Last Row Occurrences: [(81, 1)] 
-
-Columns Found: [(77, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
+[[(77, 1)]]
 Table Name: Table 9
-With columns of ['HEALTH', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Health Insurance', 'Gym Membership', 'Doctors/Dentist Visits', 'Medicine/Prescriptions', 'Veterinarian', 'Life Insurance']
-With last rows of ['Life Insurance', '', '', '']
-Local Column Occurrences: [(83, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(83, 1)]] 
 
-Local Row Name Occurrences: [(84, 1), (85, 1), (86, 1), (87, 1), (88, 1), (89, 1)] 
-
-Local Last Row Occurrences: [(89, 1)] 
-
-Columns Found: [(83, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
+[[(83, 1)]]
 Table Name: Table 10
-With columns of ['VACATION/HOLIDAY', 'BUDGET', 'ACTUAL', 'UNDER/OVER']
-With row names of ['Airfare', 'Accommodations', 'Food', 'Souvenirs', 'Pet Boarding', 'Rental Car']
-With last rows of ['Rental Car', '', '', '']
-Local Column Occurrences: [(91, 1), (3, 7), (31, 2), (35, 2), (3, 8), (31, 3), (35, 3), (3, 9), (31, 4), (35, 4)] 
+Column Sequences: [[(91, 1)]] 
 
-Local Row Name Occurrences: [(92, 1), (93, 1), (94, 1), (95, 1), (96, 1), (97, 1)] 
+[[(91, 1)]]
+Top Left: B5, Value: TASK
+Top Right: J5, Value: None
+Bottom Left: B26, Value: Task
+Bottom Right: J26, Value: None
+DF: 
 
-Local Last Row Occurrences: [(97, 1)] 
-
-Columns Found: [(91, 1)] 
-
-Row Names Found: [] 
-
-Last Row Found: [] 
-
-Table 0:
-Top Left Coordinate: G4, Actual Value: FIXED COST
-Bottom Left Coordinate: G26, Actual Value: None
-Top Right Coordinate: O4, Actual Value: None
-Bottom Right Coordinate: O26, Actual Value: None
-
-
-Table 1:
-Top Left Coordinate: B32, Actual Value: SUMMARY
-Bottom Left Coordinate: B34, Actual Value: Total Expenses
-Top Right Coordinate: E32, Actual Value: UNDER/OVER
-Bottom Right Coordinate: E34, Actual Value: None
-
-
-Table 2:
-Top Left Coordinate: C36, Actual Value: BUDGET
-Bottom Left Coordinate: C36, Actual Value: BUDGET
-Top Right Coordinate: F36, Actual Value: None
-Bottom Right Coordinate: F36, Actual Value: None
+           0     1     2      3       4      5     6      7     8
+0       TASK   HRS  RATE  UNITS  $/UNIT    NaN  None    NaN  None
+1   CATEGORY  None  None   None    None    NaN  None    NaN  None
+2       Task    10    15     50      10  200.0  None  800.0  None
+3       Task  None  None   None    None    NaN  None    NaN  None
+4       Task  None  None   None    None    NaN  None    NaN  None
+5       Task  None  None   None    None    NaN  None    NaN  None
+6       Task  None  None   None    None    NaN  None    NaN  None
+7       None  None  None   None    None    NaN  None    NaN  None
+8   CATEGORY  None  None   None    None    NaN  None    NaN  None
+9       Task  None  None   None    None    NaN  None    NaN  None
+10      Task  None  None   None    None    NaN  None    NaN  None
+11      Task  None  None   None    None    NaN  None    NaN  None
+12      Task  None  None   None    None    NaN  None    NaN  None
+13      Task  None  None   None    None    NaN  None    NaN  None
+14      None  None  None   None    None    NaN  None    NaN  None
+15  CATEGORY  None  None   None    None    NaN  None    NaN  None
+16      Task  None  None   None    None    NaN  None    NaN  None
+17      Task  None  None   None    None    NaN  None    NaN  None
+18      Task  None  None   None    None    NaN  None    NaN  None
+19      Task  None  None   None    None    NaN  None    NaN  None
+20      None  None  None   None    None    NaN  None    NaN  None
+21      Task  None  None   None    None    NaN  None    NaN  None
 
 
-Table 3:
-Top Left Coordinate: B49, Actual Value: EXPENSES
-Bottom Left Coordinate: B49, Actual Value: EXPENSES
-Top Right Coordinate: E49, Actual Value: None
-Bottom Right Coordinate: E49, Actual Value: None
+Top Left: B32, Value: SUMMARY
+Top Right: E32, Value: UNDER/OVER
+Bottom Left: B34, Value: Total Expenses
+Bottom Right: E34, Value: None
+DF: 
+
+                0       1       2           3
+0         SUMMARY  BUDGET  ACTUAL  UNDER/OVER
+1    Total Income    None    None        None
+2  Total Expenses    None    None        None
 
 
-Table 4:
-Top Left Coordinate: B64, Actual Value: PAYROLL
-Bottom Left Coordinate: B64, Actual Value: PAYROLL
-Top Right Coordinate: E64, Actual Value: None
-Bottom Right Coordinate: E64, Actual Value: None
+Top Left: C36, Value: BUDGET
+Top Right: E36, Value: UNDER/OVER
+Bottom Left: C44, Value: 300
+Bottom Right: E44, Value: None
+DF: 
+
+        0       1           2
+0  BUDGET  ACTUAL  UNDER/OVER
+1    None    None        None
+2    None    None        None
+3    6000    6000        None
+4     200     150        None
+5     100     100        None
+6      55      20        None
+7     500     500        None
+8     300     200        None
 
 
-Table 5:
-Top Left Coordinate: B69, Actual Value: OFFICE
-Bottom Left Coordinate: B69, Actual Value: OFFICE
-Top Right Coordinate: E69, Actual Value: None
-Bottom Right Coordinate: E69, Actual Value: None
+Top Left: B49, Value: EXPENSES
+Top Right: E49, Value: None
+Bottom Left: B62, Value: Web Hosting & Domains
+Bottom Right: E62, Value: None
+DF: 
+
+                           0       1       2     3
+0                   EXPENSES     NaN     NaN  None
+1          OPERATING EXPENSE     NaN     NaN  None
+2         Accounting & Legal  2250.0  2250.0  None
+3                Advertising    25.0     NaN  None
+4               Depreciation    40.0     NaN  None
+5       Dues & Subscriptions    44.0     NaN  None
+6                  Insurance    20.0     NaN  None
+7           Interest Expense    15.0     NaN  None
+8   Maintenance/Improvements     NaN     NaN  None
+9           Taxes & Licenses    29.0     NaN  None
+10                 Telephone     NaN     NaN  None
+11                    Travel     NaN     NaN  None
+12                 Utilities     NaN     NaN  None
+13     Web Hosting & Domains     NaN     NaN  None
 
 
-Table 6:
-Top Left Coordinate: B73, Actual Value: Clothing
-Bottom Left Coordinate: B73, Actual Value: Clothing
-Top Right Coordinate: E73, Actual Value: None
-Bottom Right Coordinate: E73, Actual Value: None
+Top Left: B64, Value: PAYROLL
+Top Right: E64, Value: None
+Bottom Left: B67, Value: Contractor Wages
+Bottom Right: E67, Value: None
+DF: 
+
+                  0     1     2     3
+0           PAYROLL  None  None  None
+1  Payroll Expenses  None  None  None
+2  Salaries & Wages  None  None  None
+3  Contractor Wages  None  None  None
 
 
-Table 7:
-Top Left Coordinate: B78, Actual Value: ENTERTAINMENT
-Bottom Left Coordinate: B78, Actual Value: ENTERTAINMENT
-Top Right Coordinate: E78, Actual Value: None
-Bottom Right Coordinate: E78, Actual Value: None
+Top Left: B69, Value: OFFICE
+Top Right: E69, Value: None
+Bottom Left: B71, Value: Postage
+Bottom Right: E71, Value: None
+DF: 
+
+                 0     1     2     3
+0           OFFICE  None  None  None
+1  Office Supplies  None  None  None
+2          Postage  None  None  None
 
 
-Table 8:
-Top Left Coordinate: B84, Actual Value: HEALTH
-Bottom Left Coordinate: B84, Actual Value: HEALTH
-Top Right Coordinate: E84, Actual Value: None
-Bottom Right Coordinate: E84, Actual Value: None
+Top Left: B73, Value: Clothing
+Top Right: E73, Value: None
+Bottom Left: B76, Value: Pet Supplies
+Bottom Right: E76, Value: None
+DF: 
+
+              0     1     2     3
+0      Clothing  None  None  None
+1      Cleaning  None  None  None
+2  Salon/Barber  None  None  None
+3  Pet Supplies  None  None  None
 
 
-Table 9:
-Top Left Coordinate: B92, Actual Value: VACATION/HOLIDAY
-Bottom Left Coordinate: B92, Actual Value: VACATION/HOLIDAY
-Top Right Coordinate: E92, Actual Value: None
-Bottom Right Coordinate: E92, Actual Value: None
+Top Left: B78, Value: ENTERTAINMENT
+Top Right: E78, Value: None
+Bottom Left: B82, Value: Outdoor Recreation
+Bottom Right: E82, Value: None
+DF: 
+
+                    0     1     2     3
+0       ENTERTAINMENT  None  None  None
+1    Video/DVD/Movies  None  None  None
+2      Concerts/Plays  None  None  None
+3              Sports  None  None  None
+4  Outdoor Recreation  None  None  None
+
+
+Top Left: B84, Value: HEALTH
+Top Right: E84, Value: None
+Bottom Left: B90, Value: Life Insurance
+Bottom Right: E90, Value: None
+DF: 
+
+                        0     1     2     3
+0                  HEALTH  None  None  None
+1        Health Insurance  None  None  None
+2          Gym Membership  None  None  None
+3  Doctors/Dentist Visits  None  None  None
+4  Medicine/Prescriptions  None  None  None
+5            Veterinarian  None  None  None
+6          Life Insurance  None  None  None
+
+
+Top Left: B92, Value: VACATION/HOLIDAY
+Top Right: E92, Value: None
+Bottom Left: B98, Value: Rental Car
+Bottom Right: E98, Value: None
+DF: 
+
+                  0     1     2     3
+0  VACATION/HOLIDAY  None  None  None
+1           Airfare  None  None  None
+2    Accommodations  None  None  None
+3              Food  None  None  None
+4         Souvenirs  None  None  None
+5      Pet Boarding  None  None  None
+6        Rental Car  None  None  None
 
 

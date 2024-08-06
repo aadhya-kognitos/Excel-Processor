@@ -1,19 +1,24 @@
 import openpyxl
 from openpyxl.utils import get_column_letter
+from collections import Counter, deque
 import json
 from sys import argv
 from math import inf
-import locale
-import datetime
+import pandas as pd
 import pdb
 
 # Helper class to represent a table in the spreadsheet
 class Table:
     def __init__(self):
         self.column_headers = []
-        self.row_names = []
-        self.last_row = []
+        self.row_name_vals = []
+        self.last_row_vals = []
+        self.row_names_found = []
+        self.last_row_found = []
+        self.last_row_name_val = []
+        self.last_row_val = []
         self.corner_coords = []
+        self.num_columns = 0
 
 
 # Helper class to represent a cell in the spreadsheet
@@ -36,7 +41,8 @@ class ExcelProcessor:
         self.max_col = self.ws.max_column
         self.matrix =  [[None for _ in range(self.max_col)] for _ in range(self.max_row)]
         self.json_data = None
-        self.global_col_coordinates = []
+        self.global_coordinates_found = []
+        self.global_columns_found = []
         self.tables = []
         # for all such coordinates found
         self.columns_found = []
@@ -44,7 +50,13 @@ class ExcelProcessor:
         self.last_row_found = []
         self.corner_coordinates = []
 
-    
+
+    def print_workbook_contents(self):
+        # Iterate through each row in the worksheet
+        for row in self.ws.iter_rows(values_only=True):
+            # Print each cell value in the row
+            print(row)
+        
     def get_row(self,row):
         """ Converts 1-indexed row to 0-indexed row."""
         return row - 1
@@ -58,13 +70,6 @@ class ExcelProcessor:
         # y is the row index (1-based)
         column_letter = get_column_letter(x)
         return f"{column_letter}{y}"
-
-    def format_cells_in_ws(self):
-        for row in range(1, self.max_row + 1):
-            for col in range(1, self.max_col + 1):
-                cell = self.ws.cell(row=row, column=col)
-                formatted_value = self.format_cell_value(cell)
-                cell.value = formatted_value
     
     def read_json(self):
         """ Read contents of txt file with 
@@ -92,15 +97,6 @@ class ExcelProcessor:
         row_names = table.get("Row Names", [])
         last_row = table.get("Last Row", [])
         return columns, row_names, last_row
-
-    def get_global_col_coordinates(self, columns):
-        for row in range(1, self.max_row + 1):
-            for col in range(1, self.max_col + 1):
-                cell_value = self.ws.cell(row=row, column=col).value
-                cell_value = str(cell_value)
-                if cell_value in columns:
-                    self.global_col_coordinates.append((self.get_row(row), self.get_col(col)))
-    
     
     def pre_pass(self, columns, row_names, last_row):
         """ Store arrays for each table that provides just their row and column information."""
@@ -114,7 +110,7 @@ class ExcelProcessor:
                 for col in range(1, self.max_col + 1):
                     cell_value = self.ws.cell(row=row, column=col).value
                     cell_value = str(cell_value)
-                    if column == cell_value:
+                    if cell_value == column:
                         local_column_occurrences.append((self.get_row(row), self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Column"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = column
@@ -125,7 +121,7 @@ class ExcelProcessor:
                 for col in range(1, self.max_col + 1):
                     cell_value = self.ws.cell(row=row, column=col).value
                     cell_value = str(cell_value)
-                    if row_name == cell_value:
+                    if cell_value == row_name:
                         local_row_name_occurrences.append((self.get_row(row),self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Row Name"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = row_name
@@ -136,7 +132,7 @@ class ExcelProcessor:
                 for col in range(1, self.max_col + 1):
                     cell_value = self.ws.cell(row=row, column=col).value
                     cell_value = str(cell_value)
-                    if last_row_value == cell_value:
+                    if cell_value == last_row_value:
                         local_last_row_occurrences.append((self.get_row(row),self.get_col(col)))
                         self.matrix[self.get_row(row)][self.get_col(col)].type = "Last Row"
                         self.matrix[self.get_row(row)][self.get_col(col)].value = last_row_value
@@ -144,234 +140,296 @@ class ExcelProcessor:
         # print(f"local_row_name_occurrences: {local_row_name_occurrences} \n")
         # print(f"local_last_row_occurrences: {local_last_row_occurrences} \n")
         return local_column_occurrences, local_row_name_occurrences, local_last_row_occurrences
-        
-    
-    def filter_out_floating_rows(self, local_column_occurrences, local_last_row_occurrences):
-        """ Filter out floating rows from the table."""
-        # Given the last_row_occurrences list, starting from the first coordinate in the last_row occurrence traverse the matrix
-        # from that coordinate up (same column) until you reach a row/col that contains a column value (from global column coordinates).
-        # If that coordinate also exists in the local column occurrence, then that row value is good and we should keep it
-        # If that coordinate does not exist in the local column occurrence, then that row value is bad and we should discard
-            # Discard the coordinate of that row value from the last_row_occurrences list
-        # Repeat until you reach the end of the local last_row_occurrences list
-        filtered_last_row_occurrences = []
-        #print(f"local_column_occurrences: {local_column_occurrences} \n")
-        for coord in local_last_row_occurrences:
-            col_index = coord[1]
-            for row_index in range(coord[0], -1, -1):
-                if (row_index, col_index) in self.global_col_coordinates and (row_index, col_index) not in local_column_occurrences: 
-                    break
-                elif (row_index, col_index) in self.global_col_coordinates and (row_index, col_index) in local_column_occurrences:
-                    filtered_last_row_occurrences.append(coord)
-                    break
-        #print(f"filtered last row occurrences: {filtered_last_row_occurrences} \n")
-        return filtered_last_row_occurrences
-    
-    def filter_out_floating_cols(self, local_column_occurrences, filtered_last_row_occurrences, row_name_occurrences):
-        """ Filter out floating columns from the table."""
-        # Given the local_column occurrences list, starting from the first coordinate in the the list traverse the matrix
-        # from that coordinate down. If a coordinate also exists in the filtered_last_row_occurrences list, then that column value is good and we
-        # should keep it.
-        # If a coordinate does not exist in the filtered_last_row_occurrences list, then that column value is bad and we should discard
-            # Discard the coordinate of that column value from the local_column_occurrences list
-        # Repeat until you reach the end of the local_column_occurrences list
-        #pdb.set_trace()
-        filtered_column_occurrences = []
-        for col_occurrence in local_column_occurrences:
-            col_index = col_occurrence[1]
-            for row_index in range(col_occurrence[0], self.max_row):
-                if (row_index, col_index) in filtered_last_row_occurrences or (row_index, col_index) in row_name_occurrences:
-                    filtered_column_occurrences.append(col_occurrence)
-                    break
-        #print(f"filtered column occurrences: {filtered_column_occurrences} \n")
-        return filtered_column_occurrences
-    
-    def filter_out_near_identical_tables(self, filtered_column_occurrences, filtered_last_row_occurrences, row_name_occurrences, 
-                                        columns, row_names, last_row):
-        """ Filter out near identical tables from the table."""
-        # Create three lists- one holds all coordinates of columns found so far, one holds all coordinates of row names found so far,
-        # and one holds all coordinates of last rows found so far.
-        # Given the columns list, starting from the first actual column name, we want to find the first match in our matrix. Once that match is found,
-        # we will break our loop, add it to our column coordinates found so far, and add it to our table struct 
-        # then find the next first match
-        #pdb.set_trace()
-        columns_found = []
-        row_names_found = []
-        last_rows_found = []
 
-        # holds all tables found so far and will return only table with the closest proportion of match to 1
-        all_tables_found = False
-        tables_found = []
-        #Find first match in matrix of columns
-        while not all_tables_found:
-            # for current table
-            current_table_columns = []
-            current_table_row_names = []
-            current_table_last_row = []
-            #Traverse all columns in matrix and find first match and upload it to tablestruct
-            first_coordinate_x = -1
-            for coordinate in filtered_column_occurrences:
-                if coordinate not in self.columns_found:
-                    if first_coordinate_x == -1:
-                        first_coordinate_x = coordinate[0]
-                    row = coordinate[0]
-                    col = coordinate[1]
-                    cell_value = self.matrix[row][col].value
-                    cell_type = self.matrix[row][col].type
-                    if cell_value in columns and cell_type == "Column" and row >= first_coordinate_x - 1 and row <= first_coordinate_x + 1\
-                        and cell_value not in columns_found:
-                        self.columns_found.append(coordinate)
-                        columns_found.append(cell_value)
-                        current_table_columns.append((row, col))
-            first_coordinate_y = -1
-            for coordinate in row_name_occurrences:
-                if coordinate not in self.row_names_found:
-                    if first_coordinate_y == -1:
-                        first_coordinate_y = coordinate[1]
-                    row = coordinate[0]
-                    col = coordinate[1]
-                    cell_value = self.matrix[row][col].value
-                    cell_type = self.matrix[row][col].type
-                    if cell_value in row_names and cell_type == "Row Name" and col >= first_coordinate_y - 1 and col <= first_coordinate_y + 1\
-                        and cell_value not in row_names_found:
-                        self.row_names_found.append(coordinate)
-                        row_names_found.append(cell_value)
-                        current_table_row_names.append((row, col))
+    def find_column_sequence(self, local_column_occurrences, column_names):
+        """ From the local column occurrences, find each sequence of columnns available"""
+        column_sequences = []
+        columns_seen = []
 
-            for coordinate in filtered_last_row_occurrences:
-                #pdb.set_trace()
-                row = coordinate[0]
-                col = coordinate[1]
-                cell_value = self.matrix[row][col].value
-                cell_type = self.matrix[row][col].type
-                if cell_value in last_row and cell_type == "Last Row":
-                    not_floater_row = False
-                    for row_index in range(row, -1, -1):
-                        if self.matrix[row_index][col].type == "Column" and (row_index, col) in current_table_columns:
-                            not_floater_row = True
-                            break
-                    if not_floater_row:
-                        current_table_last_row.append((row, col))
-                        last_rows_found.append(cell_value)
-            #Given all coordinate lists, process table
-            t = Table()
-            t.column_headers = current_table_columns.copy()
-            t.row_names = current_table_row_names.copy()
-            t.last_row = current_table_last_row.copy()
-            if len(t.column_headers) + len(t.row_names) + len(t.last_row) > 0:
-                tables_found.append(t)
+        #Pass 0: For each row, note where a column sequence occurs
+        for coordinate in local_column_occurrences:
+            if coordinate in columns_seen or coordinate in self.global_columns_found:
+                continue
             else:
-                all_tables_found = True
-            
-            # columns_sum = 0
-            # row_names_sum = 0
-            # last_row_sum = 0
-            # for table in tables_found:
-            #     columns_sum += len(table.column_headers)
-            #     row_names_sum += len(table.row_names)
-            #     last_row_sum += len(table.last_row)
-            # if len(columns) + len(row_names) + len(last_row) >= columns_sum + row_names_sum + last_row_sum:
-            #     all_tables_found = True
-            
-        total_terms = len(columns) + len(row_names) + len(last_row)
-        proportions_list = []
-        closest_proportion_tables = []
-        for table in tables_found:
-            total_terms_in_current_table = len(table.column_headers) + len(table.row_names) + len(table.last_row)
-            proportion = total_terms_in_current_table / total_terms
-            proportions_list.append(abs(1-proportion))
-            # print(f"Pre-Closest Proportion Table:")    
-            # print(f"Column Coordinate: {table.column_headers}")
-            # print(f"Row Name Coordinate: {table.row_names}")
-            # print(f"Row Coordinate: {table.last_row}")
-            # print("\n")
+                columns_counter = Counter(column_names)
+                row = coordinate[0]
+                starting_col = coordinate[1]
+                current_sequence = []
+                for col in range(starting_col, self.max_col):
+                    if self.matrix[row][col].type == "Column" and self.matrix[row][col].value in column_names:
+                        if columns_counter[self.matrix[row][col].value] > 0:
+                            columns_counter[self.matrix[row][col].value] -= 1
+                            current_sequence.append((row, col))
+                columns_seen.extend(current_sequence)
+                column_sequences.append(current_sequence)
+                current_sequence = []
         
-        if proportions_list:
-            min_proportion_value = min(proportions_list)
-            for index in range(0, len(proportions_list)):
-                if proportions_list[index] == min_proportion_value:
-                    closest_proportion_tables.append(tables_found[index])
+        column_sequences.sort(key=lambda seq: seq[0][0] if seq else 0)
+        print(f"Column Sequences: {column_sequences} \n")
+        if not column_sequences:
+            return None
 
-        for table in closest_proportion_tables:
-            last_row_extension = []
-            row = table.last_row[0][0]
-            col = table.last_row[0][1]
-            for col_index in range (col, min(col+len(columns), self.max_col)):
-                for row_index in range(row, -1, -1):
-                    if self.matrix[row_index][col_index].type == "Column" and self.matrix[row_index][col_index].value in columns:
-                        last_row_extension.append((row, col_index))
-                        break
-            for col_index in range(col, max(-1, col-len(columns)), -1):
-                for row_index in range(row, -1, -1):
-                    if self.matrix[row_index][col_index].type == "Column" and self.matrix[row_index][col_index].value in columns:
-                        last_row_extension.append((row, col_index))
-                        break
-            table.last_row.extend(last_row_extension)
-            index = 0
-            # print(f"Table: {index}")    
-            # print(f"Column Coordinates: {table.column_headers}")
-            # print(f"Row Name Coordinates: {table.row_names}")
-            # print(f"Row Coordinate: {table.last_row}")
-            # print("\n")
-            index += 1
-        return closest_proportion_tables
+        # Pass 1: Find the sequence of column headers with the highest match
+        best_sequence_score = inf
+        best_sequence = []
+        global_sequence_set = set(self.global_columns_found)
+        for sequence in column_sequences:
+            #check if sequence is already a column found above
+            # Check if any item in the subsequence is in the sequence set
+            if any(item in global_sequence_set for item in sequence):
+                continue
+            sequence_score = len(sequence) / len(column_names)
+            inverted_sequence_score = abs((1 - sequence_score))
+            if inverted_sequence_score < best_sequence_score:
+                best_sequence_score = inverted_sequence_score
+                best_sequence = sequence
+        
+        if best_sequence_score <= abs(1 - (len(column_names) - 1) / (len(column_names))):
+            self.global_columns_found.extend(best_sequence)
+            return best_sequence
+        
+        #Pass 2: We've computed sequence scores for each sequence and noted in which row each sequence lies
+                 # If passing threshold sequence DNE, we need to examine adjacent rows max 2 at a time to find if they contain the entire sequence
+        best_sequence_score = inf
+        best_sequence = []
+        for index, sequence in enumerate(column_sequences):
+            if "PROJECTED MONTHLY INCOME" in column_names:
+                #pdb.set_trace()
+                pass
+            if not sequence:
+                continue
+            if any(item in global_sequence_set for item in sequence):
+                continue
+            for next_sequence in column_sequences[index + 1:]:
+                if not next_sequence:
+                    continue
+                if next_sequence[0][0] == sequence[0][0] + 1:
+                    column_counter = Counter(column_names)
+                    combined_sequence = sequence + next_sequence
+                    for item in combined_sequence:
+                        if column_counter[self.matrix[item[0]][item[1]].value] > 0:
+                            column_counter[self.matrix[item[0]][item[1]].value] -= 1
+                    found_sequence = True
+                    for item, count in column_counter.items():
+                        if count > 0:
+                            found_sequence = False
+                            break
+                    if found_sequence:
+                        self.global_columns_found.extend(combined_sequence)
+                        return combined_sequence
+        
+        #Pass 3: If we still haven't found a sequence that satisfies the threshold, we need to assume a subtable exists and construct a sequence given a main column header
+        # Reconstruct the column sequence from self.global_columns_found
+        old_column_sequences = column_sequences.copy()
+        old_column_sequences.sort(key=lambda seq: seq[0][0] if seq else 0)
+        print(old_column_sequences)
+        min_value = 0
+        #Minor fix for when the sequeence is not found altogether
+        if not old_column_sequences[0]:
+            pass
+        elif old_column_sequences[0][0]:
+            min_value = old_column_sequences[0][0][0]
+        column_sequences = []
+        for item in self.global_columns_found:
+            columns_counter = Counter(column_names)
+            row = item[0]
+            starting_col = item[1]
+            current_sequence = []
+            for col in range(starting_col, self.max_col):
+                if self.matrix[row][col].type == "Column" and self.matrix[row][col].value in column_names:
+                    if columns_counter[self.matrix[row][col].value] > 0:
+                        columns_counter[self.matrix[row][col].value] -= 1
+                        current_sequence.append((row, col))
+            columns_seen.extend(current_sequence)
+            column_sequences.append(current_sequence)
+            current_sequence = []
+        
+        highest_sequence = []
+        if column_sequences:
+            column_sequences.sort(key=lambda seq: seq[0][0] if seq else 0)
+            largest_value = 0
+            for sequence in column_sequences:
+                if not sequence:
+                    continue
+                if sequence[0][0] > largest_value and sequence[0][0] < min_value:
+                    largest_value = sequence[0][0]
+                    highest_sequence = sequence
+        
+        final_sequence = []
+        old_column_sequences.append(highest_sequence)
+        for sequence in old_column_sequences:
+            if not sequence:
+                continue
+            for item in sequence:
+                final_sequence.append(item)
+        return final_sequence
+    
+    def form_table_with_column_sequence(self, column_sequence):
+        table = Table()
+        table.column_headers = column_sequence
+        return table
+    
+    def find_column_boundaries(self, column_sequence):
+        col_sequence = column_sequence.copy()
+        if not col_sequence:
+            return None
+        highest_row_value = max(col_sequence, key=lambda x: x[0])[0]
+        lowest_col_value = min(col_sequence, key=lambda x: x[1])[1]
+        highest_col_value = max(col_sequence, key=lambda x: x[1])[1]
+        column_boundary_left = (highest_row_value, lowest_col_value)
+        column_boundary_right = (highest_row_value, highest_col_value)
+        return column_boundary_left, column_boundary_right
+        
+    
+    def find_final_row_name(self, local_row_name_occurrences, row_names, column_boundary_left):
+        if local_row_name_occurrences:
+            next_table_found = False
+            if "Electricity" in row_names:
+                #pdb.set_trace()
+                pass
+            row_name_sequence = []
+            row_name_counter = Counter(row_names)
+            row_index = column_boundary_left[0] + 1
 
-    def display_table_coordinates(self):
-        index = 0
-        for table in self.tables:
-            all_coords = table.column_headers + table.row_names + table.last_row
-            if all_coords:
-                # Find the top-left most coordinate (minimum row and column)
-                top_left = min(all_coords, key=lambda x: (x[0], x[1]))
-                top_left_xl = self.xy_to_excel(top_left[1] + 1, top_left[0] + 1)
-                
-                # Find the bottom-left most coordinate (maximum row, minimum column)
-                bottom_left = min([(coord[0], coord[1]) for coord in all_coords if coord[0] == max(all_coords, key=lambda x: x[0])[0]], key=lambda x: x[1])
-                bottom_left_xl = self.xy_to_excel(bottom_left[1] + 1, bottom_left[0] + 1)
-                
-                # Find the top-right most coordinate (minimum row, maximum column)
-                top_right_row = top_left[0]
-                top_right_col = max([coord[1] for coord in table.last_row + table.row_names]
-)
-                top_right_xl = self.xy_to_excel(top_right_col + 1, top_right_row + 1)
+            while not next_table_found:
+                column_boundary_left_col = column_boundary_left[1] - 1
+                if column_boundary_left[1] - 1 < 0:
+                    column_boundary_left_col = column_boundary_left[1]
+                for col in range(column_boundary_left_col, column_boundary_left_col + 2):
+                    if "Gym Membership" in row_names:
+                        #pdb.set_trace()
+                        pass
+                    if any((row_index, col) == coord for coord in self.global_columns_found) or row_index == self.max_row:
+                        next_table_found = True
+                    elif self.matrix[row_index][col].type == "Row Name" and self.matrix[row_index][col].value in row_names:
+                        row_name_counter[self.matrix[row_index][col].value] -= 1
+                        row_name_sequence.append((row_index, col))
+                row_index += 1
+            if row_name_sequence:
+                return max(row_name_sequence, key=lambda x: x[0])
+        else:
+            return None
+    
+    def find_final_last_row(self, local_last_row_occurrences, last_row, row_names, column_boundary_left, column_boundary_right):
+        if local_last_row_occurrences:
+            next_table_found = False
+            row_index = column_boundary_left[0] + 1
+            while not next_table_found:
+                for col in range(column_boundary_left[1], column_boundary_right[1]):
+                    if "Life Insurance" in last_row:
+                        #pdb.set_trace()
+                        pass
+                    if row_index == self.max_row:
+                        next_table_found = True
+                    elif any((row_index, col) == coord for coord in self.global_columns_found) or \
+                    (self.matrix[row_index][col].type == "Last Row" and self.matrix[row_index][col].value not in last_row) or\
+                    (self.matrix[row_index][col].type == "Row Name" and self.matrix[row_index][col].value not in row_names):
+                        next_table_found = True
+                row_index += 1
+            row_index -= 1
+            if row_index == self.max_row:
+                row_index -= 1
+            for row in range(row_index, column_boundary_left[0], -1):
+                for col in range(column_boundary_left[1], column_boundary_right[1]):
+                    if self.matrix[row][col].type == "Last Row" \
+                    or self.matrix[row][col].type == "Row Name" \
+                        and self.matrix[row][col].value in last_row or self.matrix[row][col].value in row_names:
+                        return (row, col)
+        else:
+            return None
+    
+    def find_table_corners(self, table):
+        column_boundary_left, column_boundary_right = self.find_column_boundaries(table.column_headers)
+        top_left = column_boundary_left
+        top_left_to_excel = self.xy_to_excel(top_left[1] + 1, top_left[0] + 1)
+        top_right = column_boundary_right
+        top_right_to_excel = self.xy_to_excel(top_right[1] + 1, top_right[0] + 1)
+        if table.last_row_val:
+            bottom_left = (table.last_row_val[0], column_boundary_left[1])
+            bottom_left_to_excel = self.xy_to_excel(bottom_left[1] + 1, bottom_left[0] + 1)
+            bottom_right = (table.last_row_val[0], column_boundary_right[1])
+            bottom_right_to_excel = self.xy_to_excel(bottom_right[1] + 1, bottom_right[0] + 1)
+        elif table.last_row_name_val:
+            bottom_left = (table.last_row_name_val[0], column_boundary_left[1])
+            bottom_left_to_excel = self.xy_to_excel(bottom_left[1] + 1, bottom_left[0] + 1)
+            bottom_right = (table.last_row_name_val[0], column_boundary_right[1])
+            bottom_right_to_excel = self.xy_to_excel(bottom_right[1] + 1, bottom_right[0] + 1)
+        else:
+            return None
+        print(f"Top Left: {top_left_to_excel}, Value: {self.ws[top_left_to_excel].value}")
+        print(f"Top Right: {top_right_to_excel}, Value: {self.ws[top_right_to_excel].value}")
+        print(f"Bottom Left: {bottom_left_to_excel}, Value: {self.ws[bottom_left_to_excel].value}")
+        print(f"Bottom Right: {bottom_right_to_excel}, Value: {self.ws[bottom_right_to_excel].value}")
+        return top_left_to_excel, top_right_to_excel, bottom_left_to_excel, bottom_right_to_excel
+    
+    #def display_table_as_df(self,table):
+    def find_df_table(self, table):
+        """ Create pandas DataFrames for each table using corner coordinates. """
+        if table.corner_coords:
+            top_left, top_right, bottom_left, bottom_right = table.corner_coords
+            start_row = int(top_left[1:])
+            end_row = int(bottom_left[1:])
+            start_col = openpyxl.utils.column_index_from_string(top_left[0])
+            end_col = openpyxl.utils.column_index_from_string(top_right[0])
+            
+            data = []
+            for row in range(start_row, end_row + 1):
+                row_data = []
+                for col in range(start_col, end_col + 1):
+                    cell_value = self.ws.cell(row=row, column=col).value
+                    row_data.append(cell_value)
+                data.append(row_data)
+            
+            df = pd.DataFrame(data)
+            print(f"DF: \n")
+            print(f"{df}")
+            print("\n")
 
-                bottom_right_xl = self.xy_to_excel(top_right_col + 1, bottom_left[0] + 1)
-
-
-                self.corner_coordinates.append((self.ws[top_left_xl].value, self.ws[bottom_left_xl].value, self.ws[top_right_xl].value, self.ws[bottom_right_xl].value))
-                print(f"Table {index}:")    
-                print(f"Top Left Coordinate: {top_left_xl}, Actual Value: {self.ws[top_left_xl].value}")
-                print(f"Bottom Left Coordinate: {bottom_left_xl}, Actual Value: {self.ws[bottom_left_xl].value}")
-                print(f"Top Right Coordinate: {top_right_xl}, Actual Value: {self.ws[top_right_xl].value}")
-                print(f"Bottom Right Coordinate: {bottom_right_xl}, Actual Value: {self.ws[bottom_right_xl].value}")
-                print("\n")
-                index += 1
-                
-
-
+            
     def process_tables(self):
         self.read_json()
         self.populate_cells()
-        global_columns = []
-        for _, table_data in self.json_data.items():
-            columns, row_names, last_row = self.get_table_data(table_data)
-            global_columns.extend(columns)
-        self.get_global_col_coordinates(global_columns)
+        # global_columns = []
+        # for _, table_data in self.json_data.items():
+        #     columns, row_names, last_row = self.get_table_data(table_data)
+        #     global_columns.extend(columns)
         for table_name, table_data in self.json_data.items():
-            # print(f"Table Name: {table_name}")
+            print(f"Table Name: {table_name}")
             columns, row_names, last_row = self.get_table_data(table_data)
+            num_columns = len(columns)
+            # print(f"With columns of {columns}")
+            # print(f"With row names of {row_names}")
+            # print(f"With last rows of {last_row}")
             local_column_occurrences, local_row_name_occurrences, local_last_row_occurrences = self.pre_pass(columns, row_names, last_row)
             # self.print_matrix()
             # print(f"Local Column Occurrences: {local_column_occurrences} \n")
             # print(f"Local Row Name Occurrences: {local_row_name_occurrences} \n")
             # print(f"Local Last Row Occurrences: {local_last_row_occurrences} \n")
-            filtered_last_row_occurrences = self.filter_out_floating_rows(local_column_occurrences,local_last_row_occurrences)
-            filtered_column_occurrences = self.filter_out_floating_cols(local_column_occurrences, filtered_last_row_occurrences, local_row_name_occurrences)
-            filtered_tables = self.filter_out_near_identical_tables(filtered_column_occurrences, filtered_last_row_occurrences,
-                                                                   local_row_name_occurrences, columns, row_names, last_row)
-            self.tables.extend(filtered_tables)
-        self.display_table_coordinates()
-        
+            column_sequence = self.find_column_sequence(local_column_occurrences, columns)
+            # print(f"Columns Found: {column_sequence} \n")
+            filtered_table = self.form_table_with_column_sequence(column_sequence)
+            filtered_table.row_names_found = local_row_name_occurrences
+            filtered_table.last_row_found = local_last_row_occurrences
+            filtered_table.row_name_vals = row_names
+            filtered_table.last_row_vals = last_row
+            self.tables.append(filtered_table)
+        for index, table in enumerate(self.tables):
+            if table.column_headers:
+                column_boundary_left, column_boundary_right = self.find_column_boundaries(table.column_headers)
+                if table.row_names_found:
+                    table.last_row_name_val = self.find_final_row_name(table.row_names_found, table.row_name_vals, column_boundary_left)
+                if table.last_row_found:
+                    table.last_row_val = self.find_final_last_row(table.last_row_found, table.last_row_vals, table.row_name_vals, column_boundary_left, column_boundary_right)
+                table.corner_coords = self.find_table_corners(table)
+                # print(f"Table {index}:")
+                # print(f"Column Headers: {table.column_headers}")
+                # print(f"Last Row Name: {table.last_row_name_val}")
+                # print(f"Last Row: {table.last_row_val}")
+                self.find_df_table(table)
+
+
+
+        #self.display_table_coordinates()
 
 def main():
     ex = ExcelProcessor(
@@ -381,5 +439,6 @@ def main():
     ex.process_tables()
 
 if __name__ == "__main__":
-    main()
+    main()                      
+
 

@@ -1,14 +1,26 @@
-Table 0:
-Top Left Coordinate: C2, Actual Value: Jan
-Bottom Left Coordinate: C10, Actual Value: 0
-Top Right Coordinate: O2, Actual Value: Year
-Bottom Right Coordinate: O10, Actual Value: 0
+Table Name: Table 1
+Column Sequences: [[(1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9), (1, 10), (1, 11), (1, 12), (1, 13), (1, 14)], [(5, 2), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7), (5, 8), (5, 9), (5, 10), (5, 11), (5, 12), (5, 13), (5, 14)]] 
+
+Table Name: Table 2
+Column Sequences: [[(5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7), (5, 8), (5, 9), (5, 10), (5, 11), (5, 12), (5, 13), (5, 14)]] 
+
+Top Left: C2, Value: Jan
+Top Right: O2, Value: Year
+Bottom Left: C4, Value: 0
+Bottom Right: O4, Value: 0
+DF: 
+
+     0
+0  Jan
 
 
-Table 1:
-Top Left Coordinate: B6, Actual Value: Category
-Bottom Left Coordinate: B10, Actual Value: Total
-Top Right Coordinate: O6, Actual Value: Year
-Bottom Right Coordinate: O10, Actual Value: 0
+Top Left: B6, Value: Category
+Top Right: O6, Value: Year
+Bottom Left: B10, Value: Total
+Bottom Right: O10, Value: 0
+DF: 
+
+          0
+0  Category
 
 

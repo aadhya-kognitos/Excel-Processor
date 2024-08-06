@@ -1,7 +1,21 @@
-Table 0:
-Top Left Coordinate: C30, Actual Value: CHECKLIST ITEMS
-Bottom Left Coordinate: V41, Actual Value: Income
-Top Right Coordinate: AH30, Actual Value: SUB-TOTALS
-Bottom Right Coordinate: AH41, Actual Value: 0
+Table Name: Table 1
+Column Sequences: [[(9, 2)], [(10, 2)], [(11, 2)], [(12, 2), (12, 22)], [(13, 2)]] 
+
+[[(9, 2)], [(10, 2)], [(11, 2)], [(12, 2), (12, 22)], [(13, 2)]]
+Table Name: Table 2
+Column Sequences: [[(18, 2), (18, 8), (18, 28)]] 
+
+Table Name: Table 3
+Column Sequences: [[(29, 2), (29, 15), (29, 21), (29, 25), (29, 33)]] 
+
+Top Left: C30, Value: CHECKLIST ITEMS
+Top Right: AH30, Value: SUB-TOTALS
+Bottom Left: C41, Value: ☐
+Bottom Right: AH41, Value: 0
+DF: 
+
+Empty DataFrame
+Columns: []
+Index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 
